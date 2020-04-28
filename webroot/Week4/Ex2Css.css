@@ -1,0 +1,30 @@
+caption
+{
+	background-color: red
+}
+caption
+{
+	font-size: 30px;
+}
+th
+{
+	background-color: grey;
+	border-collapse:collapse;
+}
+table
+{
+	border-style: solid 1pt black;
+	border-radius: 20px;
+	border-collapse:collapse;
+}
+tr
+{
+ 	border-style: solid 1pt black;
+ 	border-radius: 20px;
+ 	border-collapse:collapse;
+}
+td
+{
+	border-style: solid 1pt black;
+	border-style: 20px;
+}

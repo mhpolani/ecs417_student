@@ -1,0 +1,84 @@
+A CSS rule-set consists of a selector and a declaration block:
+
+ h1(selector) {property:value; color:blue;} This shit inside the curly braces is called the declaration
+
+The selector points to the HTML element you want to style.
+
+The declaration block contains one or more declarations separated by semicolons.
+
+Each declaration includes a CSS property name and a value, separated by a colon.
+
+A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.
+
+CSS selectors are used to "find" (or select) the HTML elements you want to style.
+
+We can divide CSS selectors into five categories:
+
+Simple selectors (select elements based on name, id, class)
+Combinator selectors (select elements based on a specific relationship between them)
+Pseudo-class selectors (select elements based on a certain state)
+Pseudo-elements selectors (select and style a part of an element)
+Attribute selectors (select elements based on an attribute or attribute value)
+Selector	Example	Example description
+.class	.intro	Selects all elements with class="intro"
+#id	#firstname	Selects the element with id="firstname"
+*	*	Selects all elements
+element	p	Selects all <p> elements
+element,element,..	div, p	Selects all <div> elements and all <p> elements
+
+When there is more than one style specified for an HTML document, all the style sheets will cascade into a new "virtual" style sheet that has the following rules:
+1- Inline style(inside an HTML element)
+2- External and Internal Style sheets
+3-Browser default
+
+Property	Description
+border	Sets all the border properties in one declaration
+border-bottom	Sets all the bottom border properties in one declaration
+border-bottom-color	Sets the color of the bottom border
+border-bottom-style	Sets the style of the bottom border
+border-bottom-width	Sets the width of the bottom border
+border-color	Sets the color of the four borders
+border-left	Sets all the left border properties in one declaration
+border-left-color	Sets the color of the left border
+border-left-style	Sets the style of the left border
+border-left-width	Sets the width of the left border
+border-radius	Sets all the four border-*-radius properties for rounded corners
+border-right	Sets all the right border properties in one declaration
+border-right-color	Sets the color of the right border
+border-right-style	Sets the style of the right border
+border-right-width	Sets the width of the right border
+border-style	Sets the style of the four borders
+border-top	Sets all the top border properties in one declaration
+border-top-color	Sets the color of the top border
+border-top-style	Sets the style of the top border
+border-top-width	Sets the width of the top border
+border-width	Sets the width of the four borders
+
+There are five different position values:
+-static: An element with a static position is not positioned in any special way; it is always positioned according to the normal flow of the page.
+
+-relative: An element with a relative position is positioned relative to its normal position.
+
+-fixed: An element with a fixed position is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled.
+A fixed element does not leave a gap in the page where it would normally have been located.
+-absolute: This element is positioned relative to the nearest positioned ancestor. If it has no positioned ancestors, it uses the document body(html page) and moves along with page scrolling
+-sticky: This element is positioned based on the user's scroll position.
+
+Overlapping elements:
+When elements are positioned, they can overlap other elements.
+The z-index property specifies the stack order of an element( which element should be placed in front of or behind the others.
+An element can have a positive or a negative stack order.
+
+-The overflow propert specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area.
+-The overflow property has the following values:
+visible - Default. The overflow is not clipped. The content renders outside the element's box
+hidden - The overflow is clipped, and the rest of the content will be invisible
+scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content
+auto - Similar to scroll, but it adds scrollbars only when necessary
+
+Floating elements:
+-Displace an element out of its position in the normal flow via the float property.
+-Element can be floated to left or right.
+-Item is moved all the way to the far left or far right of its container block.
+-This leads to the rest of the content beig wrapped around the floated element.
+

@@ -1,0 +1,20 @@
+html, body, table, th, tr, td, caption, head
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: center;
+}
+.images
+{
+	border-radius:2000px;
+}
+table
+{
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dotted;
+  border-left-style: solid;
+}

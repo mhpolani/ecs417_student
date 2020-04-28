@@ -1,0 +1,45 @@
+p
+{
+	align-content: center;
+	background-color:green;
+	padding-left: 40px
+}
+table
+{
+	border-collapse: collapse;
+	border-top: 4px solid blue;
+	border-bottom: 1px solid;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+}
+tr
+{
+	border: 1pt solid;
+}
+}
+th
+{
+	border:solid 1pt black;
+}
+caption
+{
+	font-weight: bold;
+	padding:5px;
+	text-align: center;
+	text-transform: uppercase;
+	border-top: 1px solid deeppink;
+}
+th
+{
+	background-color: lightgrey;
+	padding: 0.75 em;
+}
+tbody td
+{
+	padding:0.75 em;
+}
+td
+{
+	border: solid 1pt black;
+}
+
