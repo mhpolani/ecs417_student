@@ -1,13 +1,13 @@
 <?php
-$dbhost = getenv("MYSQL_SERVICE_HOST");
-$dbport = getenv("MYSQL_SERVICE_PORT");
-$dbuser = getenv("DATABASE_USER");
-$dbpwd = getenv("DATABASE_PASSWORD");
-$dbname = getenv("DATABASE_NAME");
-// Creates connection
-$conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
-// Checks connection
-if ($conn->connect_error) {
-    die("Database connection error:" . $conn->connect_error);
+$host = 'localhost';
+$user = 'root';
+$pass = '';
+$db_name = 'blog';
+
+$conn = new MySQLi($host,$user,$pass,$db_name);
+
+if($con-> connect_error)
+{
+    die('Database connection error" ' . $conn->connect_error);
 }
 ?>
