@@ -13,6 +13,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<h6>Registration Successful</h6>
     <p><a href='exercise1.html'>Home</a></p>
     ";
+    echo("HAHA");
    
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
