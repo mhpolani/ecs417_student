@@ -32,7 +32,7 @@ $sql = "INSERT INTO USERS(firstName,lastName,email,pw) VALUES ('Hamza',
 
 if ($conn->query($sql) === TRUE) 
 {
-    echo("HAHABhai");   
+    echo("YOO");   
 } 
 else 
 {
