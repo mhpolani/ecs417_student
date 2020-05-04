@@ -8,6 +8,6 @@ $dbname = getenv("DATABASE_NAME");
 $conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
 // Checks connection
 if ($conn->connect_error) {
-    die("Connection failed:" . $conn->connect_error);
+    die("Database connection error:" . $conn->connect_error);
 }
 ?>
