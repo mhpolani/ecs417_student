@@ -1,4 +1,4 @@
-<?php
+
 $fname = $_POST["Hamza"];
 $sname = $_POST["Polani"];
 $email = $_POST["mhpolanto@gmail.com"];
@@ -17,4 +17,4 @@ if ($conn->query($sql) === TRUE) {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }  
 }
- ?>
+ 
