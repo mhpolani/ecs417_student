@@ -1,11 +1,9 @@
 <?php
-$fname = $_POST["fname"];
-$sname = $_POST["sname"];
-$email = $_POST["email"];
+$fname = $_POST["Hamza"];
+$sname = $_POST["Polani"];
+$email = $_POST["mhpolanto@gmail.com"];
 $pass1 = $_POST["pass1"];
   if ($_SERVER['REQUEST_METHOD'] == 'POST'){ 
-
-  
 $sql = "INSERT INTO USERS (firstName, lastName, email, password) VALUES ('$fname',
 '$sname', '$email', '$pass1')";
   
@@ -18,6 +16,15 @@ if ($conn->query($sql) === TRUE) {
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
+if (!mysqli_query($con,$sql)
+{
+    echo "Not Inserted";
+}
+else
+{
+    echo "Inserted";
+}
+header("refresh:2; url=index.php")
   
 $conn->close();
 }
