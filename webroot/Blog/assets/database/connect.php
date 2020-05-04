@@ -27,7 +27,7 @@ $sname = $_POST["Polani"];
 $email = $_POST["mhpolanto@gmail.com"];
 $pass1 = $_POST["pass1"];
 
-$sql = "INSERT INTO DETAILS VALUES ('$fname',
+$sql = "INSERT INTO DETAILS(firstName,lastName,email,password) VALUES ('$fname',
 '$sname', '$email', '$pass1')";
 
 if ($conn->query($sql) === TRUE) 
