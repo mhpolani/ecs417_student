@@ -15,17 +15,6 @@ if ($conn->query($sql) === TRUE) {
    
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
-}
-if (!mysqli_query($con,$sql)
-{
-    echo "Not Inserted";
-}
-else
-{
-    echo "Inserted";
-}
-header("refresh:2; url=index.php")
-  
-$conn->close();
+}  
 }
  ?>
