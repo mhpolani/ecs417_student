@@ -27,7 +27,7 @@ else
 // $email = $_POST["mhpolanto@gmail.com"];
 // $pass1 = $_POST["pass1"];
 
-$sql = "INSERT INTO USERS(firstName,lastName,email,pw) VALUES ('Hamza',
+$sql = "INSERT INTO USERS(firstName,lastName,email,password) VALUES ('Hamza',
 'Hamza', 'mhpolanto@gmail.com', '123')";
 
 if ($conn->query($sql) === TRUE) 
