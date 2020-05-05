@@ -79,7 +79,7 @@ function selectOne($table, $conditions)
 function create($table,$data)
 {
     global $conn;
-    $sql = "INSERT INTO $table SET ";
+    $sql = "INSERT INTO USERS SET ";
     
     $i = 0;
     foreach($data as $key => $value)        
