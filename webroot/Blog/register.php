@@ -1,5 +1,13 @@
-<?php include ('db2.php'); ?>
-<?php include ('users.php') ?>
+<?php include ('db.php'); ?>
+<?php if (isset($_POST['register-btn']))
+{
+    unset($_POST['register-btn']);
+    unset($_POST['passwordConfirmation']);
+    $_POST['ad'] = 0;
+    $_POST['pw'] = password_hash($_POST['pw'], PASSWORD_DEFAULT);
+    dd($_POST);
+} 
+?>
 
 <!DOCTYPE html>
  <html lang = "en">

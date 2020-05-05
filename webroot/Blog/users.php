@@ -1,5 +1,5 @@
 <?php
-include("db2.php");
+include("db.php");
 
 if (isset($_POST['register-btn']))
 {
