@@ -1,5 +1,5 @@
 <?php
-require('/assets/database/connect.php');
+require('connect.php');
 
 function dd($value)
 {
