@@ -35,7 +35,7 @@ function selectAll($table, $conditions = [])
             $i++;
         }
         
-        $stmt = $conn->prepare($sql);
+        $stmt = $conn->prepare($sql);   
         $values = array_values($conditions);
         $types = str_repeat('s',count($values));  //
         $stmt->bind_param($types, ...$values);   //Bind parameters—also called dynamic parameters or bind variables—are an alternative way to pass data to the database. ... When using bind parameters you do not write the actual values but instead insert placeholders into the SQL statement. That way the statements do not change when executing them with different values.
@@ -47,7 +47,7 @@ function selectAll($table, $conditions = [])
 
 function selectOne($table, $conditions)
 {
-    global $conn;
+    
     $sql = "SELECT * FROM $table";
         
         // $sql = "SELECT * FROM $tab
@@ -65,23 +65,44 @@ function selectOne($table, $conditions)
             $i++;
         }
         
-        $sql = $sql . " LIMIT 1";
-        $stmt = $conn->prepare($sql);
+        global $conn; 
+        $sql = $sql . " LIMIT 1";    //Limits records grabbed to only 1
+        $stmt = $conn->prepare($sql);               //start of executeQuery()
         $values = array_values($conditions);
         $types = str_repeat('s',count($values));  //
         $stmt->bind_param($types, ...$values);   //Bind parameters—also called dynamic parameters or bind variables—are an alternative way to pass data to the database. ... When using bind parameters you do not write the actual values but instead insert placeholders into the SQL statement. That way the statements do not change when executing them with different values.
         $stmt->execute();
         $records = $stmt->get_result()->fetch_assoc();
-        return $records;    
+        return $records;       //end of executeQuery()
 }
 
+function create($table,$data)
+{
+    global $conn;
+    $sql = "INSERT INTO USERS SET ";
+    
+    $i = 0;
+    foreach($conditions as $key => $value)        
+    {
+        if ($i === 0)
+        {
+            $sql = $sql . " $key=?";
+        }
+        else
+        {
+            $sql = $sql . ", $key=?";                
+        }
+        $i++;
+    }
+    dd($sql)
+}
 
 $conditions = 
 [
     'firstName' => 'Hamza',
     'ad' => 1
 ];
-$users = selectOne('USERS',$conditions);
+$users = create('USERS',$conditions);
 dd($users);
 
 
