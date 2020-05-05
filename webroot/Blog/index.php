@@ -1,3 +1,5 @@
+<?php include("path.php")?>
+
 <!DOCTYPE html>
  <html lang = "en">
   <head>
@@ -18,7 +20,7 @@
   </head>
   <body>
   	<header>
-      <a href = "/index.php" class = "logo">
+      <a href = "<?php echo BASE_URL . '/index.php'?>" class = "logo">
   			<h1 class = "logo-text"><span>Hamza</span>Productions</h1>
         </a>
   		<i class = "fa fa-bars menu-toggle"></i>

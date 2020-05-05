@@ -1,3 +1,4 @@
+<?php include("path.php")?>
 <?php include('users.php');
 ?>
 
@@ -66,7 +67,7 @@
           <div>
               <button type = "submit" name = "register-btn" class = "btn btn-big">Register</button>
           </div>
-          <p>Or<a href = "login.php">Sign In</a></p>
+          <p>Or<a href = "<?php echo BASE_URL . '/login.php'?>">Sign In</a></p>
           </form>
 	
 
