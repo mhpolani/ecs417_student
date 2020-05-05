@@ -1,3 +1,11 @@
+<?php
+if (isset($_POST['register-btn']))
+{
+    var_dump($_POST);
+    die();
+}
+?>
+
 <!DOCTYPE html>
  <html lang = "en">
   <head>
@@ -37,7 +45,7 @@
 
       <div class="author-content">
 
-          <form action="register.html" method="post">
+          <form action="register.php" method="post">
           <h2 class = "form-title">Register</h2>
 
             <!-- <div class="msg error">

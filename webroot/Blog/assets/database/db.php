@@ -75,6 +75,25 @@ function selectOne($table, $conditions)   //
         return $records;
 }
 
+function create($table,$data)
+{
+    global $conn;
+    // $sql = "INSERT INTO USERS SET
+    $i = 0;
+    foreach ($conditions as $key => $value)
+    {
+        if($i == 0)
+        {   
+        $sql = $sql . " $key = ";
+        }
+        else 
+        {
+            $sql = $sql . " $key = ?";
+        }
+        $i++;
+    }
+}
+
 $conditions = [
     'admin' => 1,
     'username' => 'Hamza'
