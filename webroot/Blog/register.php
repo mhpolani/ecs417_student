@@ -56,8 +56,12 @@
             </div> -->
             
           <div>
-              <label>Username</label>
+              <label>First Name</label>
               <input type = "text" name = "username" class = "text-input">
+          </div>
+          <div>
+              <label>Second name</label>
+              <input type = "text" name = "secondname" class = "text-input">
           </div>
           <div>
               <label>Email</label>
