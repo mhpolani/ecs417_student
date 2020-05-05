@@ -79,10 +79,10 @@ function selectOne($table, $conditions)
 function create($table,$data)
 {
     global $conn;
-    $sql = "INSERT INTO USERS SET ";
+    $sql = "INSERT INTO $table SET ";
     
     $i = 0;
-    foreach($conditions as $key => $value)        
+    foreach($data as $key => $value)        
     {
         if ($i === 0)
         {
@@ -97,12 +97,12 @@ function create($table,$data)
     dd($sql);
 }
 
-$conditions = 
+$data = 
 [
     'firstName' => 'Hamza',
     'ad' => 1
 ];
-$users = create('USERS',$conditions);
+$users = create('USERS',$data);
 dd($users);
 
 
