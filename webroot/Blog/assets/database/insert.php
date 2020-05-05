@@ -5,7 +5,7 @@ $sname = $_POST["Polani"];
 $email = $_POST["mhpolanto@gmail.com"];
 $pass1 = $_POST["pass"];
 
-$sql = "INSERT INTO USERS (firstName, lastname, email, pw,ad) VALUES ('Hamza', 'Polani', 'mhpolanto@gmail.com', '123','yes')";
+$sql = "INSERT INTO USERS (firstName, lastname, email, pw,ad) VALUES ("Hamza", "Polani", "mhpolanto@gmail.com", "123","si")";
 
 global $conn;
 if ($conn->query($sql) === TRUE) 
