@@ -101,6 +101,30 @@ function create($table,$data)
 
 }
 
+function update($table, $id, $data)
+{
+    global $conn;
+    $sql = "UPDATE $table SET ";
+    
+    $i = 0;
+    foreach($data as $key => $value)        
+    {
+        if ($i === 0)
+        {
+            $sql = $sql . " $key=?";
+        }
+        else
+        {
+            $sql = $sql . ", $key=?";                
+        }
+        $i++;
+    }
+    $sql = $sql . " WHERE id=? ";
+    $data['id'] = $id;
+    $stmt = executeQuery($sql,$data);
+    return $stmt->affected_rows;
+
+}
 function executeQuery($sql,$data)
 {
     global $conn;
@@ -120,7 +144,7 @@ $data =
     'pw' => '123',
     'ad' => 1,
 ];
-$id = create('USERS',$data);
+$id = update('USERS',23,$data);
 dd($id);
 
 
