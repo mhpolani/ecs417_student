@@ -1,4 +1,5 @@
 <?php
+require('connect.php');
 $fname = $_POST["Hamza"];
 $sname = $_POST["Polani"];
 $email = $_POST["mhpolanto@gmail.com"];
