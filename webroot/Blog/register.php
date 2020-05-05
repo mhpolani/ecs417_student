@@ -5,7 +5,9 @@
     unset($_POST['passwordConfirmation']);
     $_POST['ad'] = 0;
     $_POST['pw'] = password_hash($_POST['pw'], PASSWORD_DEFAULT);
-    dd($_POST);
+    $user_id = create('USERS', $_POST);
+    $user = selectOne('USERS', ['id' => $user_id]);
+    dd($user);
 } 
 ?>
 
@@ -56,12 +58,8 @@
             </div> -->
             
           <div>
-              <label>First Name</label>
+              <label>Username</label>
               <input type = "text" name = "username" class = "text-input">
-          </div>
-          <div>
-              <label>Second name</label>
-              <input type = "text" name = "secondname" class = "text-input">
           </div>
           <div>
               <label>Email</label>
