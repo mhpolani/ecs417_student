@@ -5,6 +5,7 @@ function dd($value) //to be deleted
 {
   echo "<pre>", print_r($value,true),"</pre>";
   die();
+}
 
 function selectAll($table, $conditions =[])   //
 {
@@ -99,8 +100,8 @@ $conditions = [
     'username' => 'Hamza'
 ];
 // $users = selectAll('USERS',$conditions);  selectAll paramater conditions is an array
-$users = selectOne('USERS', $conditions);
-dd($users);
+// $users = selectOne('USERS', $conditions);
+// dd($users);
 
 
 ?>

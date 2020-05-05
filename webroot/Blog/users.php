@@ -1,8 +1,9 @@
 
 <?php
+include("/assets/database/db.php");
 if (isset($_POST['register-btn']))
 {
-    var_dump($_POST);
+    dd($_POST);
     die();
 }
 ?>
