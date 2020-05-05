@@ -124,6 +124,15 @@ function update($table, $id, $data)
     $stmt = executeQuery($sql,$data);
     return $stmt->affected_rows;  //will return a negative value if query fails 
 }
+
+function delete($table, $id)
+{
+    global $conn;
+    $sql = "DELETE from $table WHERE id=?";
+    $stmt = executeQuery($sql,['id' => $id]);
+    return $stmt->affected_rows;  //will return a negative value if query fails 
+}
+
 function executeQuery($sql,$data)
 {
     global $conn;
@@ -134,13 +143,7 @@ function executeQuery($sql,$data)
     $stmt->execute();
     return $stmt;
 }
-function delete($table, $id)
-{
-    global $conn;
-    $sql = "DELETE from $table WHERE id=?";
-    $stmt = executeQuery($sql,['id' => $id]);
-    return $stmt->affected_rows;  //will return a negative value if query fails 
-}
+
 
 
 $data = 
