@@ -1,7 +1,11 @@
 <?php
 require('connect.php');
 
-
+function dd($value)
+{
+    echo "<pre>", print_r($users), "</pre";
+    die();
+}
 
 function selectAll($table)
 {
@@ -13,5 +17,6 @@ function selectAll($table)
     return $records;
 }
 $users = selectAll('USERS');
-echo "<pre>", print_r($users), "</pre";
+dd($users);
+
 
