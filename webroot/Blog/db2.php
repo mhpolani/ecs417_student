@@ -6,6 +6,16 @@ function dd($value)
     echo "<pre>", print_r($value,true), "</pre";
     die();
 }
+function executeQuery($sql,$data)
+{
+    global $conn;
+    $stmt = $conn->prepare($sql);
+    $values = array_values($data);
+    $types = str_repeat('s',count($values));
+    $stmt->bind_param($types, ...$values);
+    $stmt->execute();
+    return $stmt;
+}
 
 function selectAll($table, $conditions = [])
 {
@@ -133,16 +143,7 @@ function delete($table, $id)
     return $stmt->affected_rows;  //will return a negative value if query fails 
 }
 
-function executeQuery($sql,$data)
-{
-    global $conn;
-    $stmt = $conn->prepare($sql);
-    $values = array_values($data);
-    $types = str_repeat('s',count($values));
-    $stmt->bind_param($types, ...$values);
-    $stmt->execute();
-    return $stmt;
-}
+
 
 //The selectAll function returns all the records in the database, provided that the conditions, if passed, are met.
 //All the records in the table represent an array that in turn holds arrays, each of which represents a record.
