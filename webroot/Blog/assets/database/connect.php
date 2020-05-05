@@ -28,7 +28,7 @@ $sname = $_POST["Polani"];
 $email = $_POST["mhpolanto@gmail.com"];
 $pass1 = $_POST["pass"];
 
-$sql = "INSERT INTO USERS SET firstName = $fname ,lastName = $sname ,email = $email ,pw = $pass1, ad = '1'";  
+$sql = "INSERT INTO USERS SET firstName = '$fname' ,lastName = '$sname' ,email = '$email' ,pw = '$pass1', ad = '1'";  
 
 
 if ($conn->query($sql) === TRUE) 
