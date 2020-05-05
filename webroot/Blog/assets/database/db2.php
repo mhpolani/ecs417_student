@@ -3,7 +3,7 @@ require('connect.php');
 
 function dd($value)
 {
-    echo "<pre>", print_r($users), "</pre";
+    echo "<pre>", print_r($value,true), "</pre";
     die();
 }
 
@@ -26,11 +26,11 @@ function selectAll($table, $conditions = [])
         {
             if ($i === 0)
             {
-                $sql = $sql . " WHERE $key = $value";
+                $sql = $sql . " WHERE $key=$value";
             }
             else
             {
-                $sql = $sql . " AND $key = $value";                
+                $sql = $sql . " AND $key=$value";                
             }
             $i++;
         }
@@ -40,8 +40,8 @@ function selectAll($table, $conditions = [])
 
 $conditions = 
 [
-    'ad' => '1',
-    'firstName' => 'Hamza'
+    'firstName' => 'Hamza',
+    'ad' => '1'
 ];
 $users = selectAll('USERS',$conditions);
 dd($users);
