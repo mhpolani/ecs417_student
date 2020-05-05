@@ -9,4 +9,6 @@ if (isset($_POST['register-btn']))
     $_POST['pw'] = password_hash($_POST['pw'], PASSWORD_DEFAULT);
     echo "<pre>", print_r($_POST ,true), "</pre";
     die();
+    dd($_POST);
+
 }
