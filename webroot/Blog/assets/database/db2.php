@@ -79,7 +79,7 @@ function selectOne($table, $conditions)
 function create($table,$data)
 {
     global $conn;
-    $sql = "INSERT INTO USERS SET ";
+    $sql = "INSERT INTO $table SET ";
     
     $i = 0;
     foreach($data as $key => $value)        
@@ -119,10 +119,9 @@ $data =
     'email' => 'mhpolanto@gmail.com',
     'pw' => '123',
     'ad' => 1,
-    
 ];
-$users = create('USERS',$data);
-dd($users);
+$id = create('USERS',$data);
+dd($id);
 
 
 
