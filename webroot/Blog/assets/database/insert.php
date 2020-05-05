@@ -6,7 +6,7 @@ $pass1 = $_POST["pass"];
 
 $sql = "INSERT INTO USERS SET firstName = $fname ,lastName = $sname ,email = $email ,pw = $pass1, ad = '1'";  
 
-
+global $conn;
 if ($conn->query($sql) === TRUE) 
 {
     echo(" yo");   
