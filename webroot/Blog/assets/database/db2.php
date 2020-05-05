@@ -41,7 +41,7 @@ function selectAll($table, $conditions = [])
 $conditions = 
 [
     'ad' => 'si',
-    'username' => 'Hamza'
+    'firstName' => 'Hamza'
 ];
 $users = selectAll('USERS',$conditions);
 dd($users);
