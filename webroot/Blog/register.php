@@ -1,3 +1,4 @@
+<?php include ('db2.php'); ?>
 <?php if (isset($_POST['register-btn']))
 {
     unset($_POST['register-btn']);
