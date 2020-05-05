@@ -122,8 +122,7 @@ function update($table, $id, $data)
     $sql = $sql . " WHERE id=?";
     $data['id'] = $id;
     $stmt = executeQuery($sql,$data);
-    return $stmt->affected_rows;
-
+    return $stmt->affected_rows;  //will return a negative value if query fails 
 }
 function executeQuery($sql,$data)
 {
