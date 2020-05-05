@@ -1,6 +1,4 @@
-<?php
-include("db.php");
-if (isset($_POST['register-btn']))
+<?php if (isset($_POST['register-btn']))
 {
     unset($_POST['register-btn']);
     unset($_POST['passwordConfirmation']);
