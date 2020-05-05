@@ -94,13 +94,32 @@ function create($table,$data)
         }
         $i++;
     }
-    dd($sql);
+    
+    $stmt = executeQuery($sql,$data);
+    $id = $stmt->insert_id;   //grab the id of the record
+    return $id;
+
+}
+
+function executeQuery($sql,$data)
+{
+    global $conn;
+    $stmt = $conn->prepare($sql);
+    $values = array_values($data);
+    $types = str_repeat('s',count($values));
+    $stmt->bind_param($types, ...$values);
+    $stmt->execute();
+    return $stmt;
 }
 
 $data = 
 [
     'firstName' => 'Hamza',
-    'ad' => 1
+    'lastName' => 'Polani',
+    'email' => 'mhpolanto@gmail.com',
+    'pw' => '123',
+    'ad' => 1,
+    
 ];
 $users = create('USERS',$data);
 dd($users);
