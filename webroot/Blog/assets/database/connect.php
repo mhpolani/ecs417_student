@@ -19,20 +19,20 @@ if ($conn->connect_error)
 }
 else
 {
-    echo("yesYESYES");
+    echo("yes");
 }
 
-// $fname = $_POST["Hamza"];
-// $sname = $_POST["Polani"];
-// $email = $_POST["mhpolanto@gmail.com"];
-// $pass1 = $_POST["123"];
+$fname = $_POST["Hamza"];
+$sname = $_POST["Polani"];
+$email = $_POST["mhpolanto@gmail.com"];
+$pass1 = $_POST["123"];
 
-$sql = "INSERT INTO USERS (firstName,lastName,email,pw) VALUES ('Hamza',
-'Polani', 'mhpolanto@gmail.com', '123')";
+$sql = "INSERT INTO USERS (firstName,lastName,email,pw) VALUES ('$fname',
+'$sname', '$email', '$pass1')";
 
 if ($conn->query($sql) === TRUE) 
 {
-    echo("YOO");   
+    echo(" yo");   
 } 
 else 
 {
