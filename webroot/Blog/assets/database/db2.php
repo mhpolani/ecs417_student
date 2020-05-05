@@ -134,6 +134,14 @@ function executeQuery($sql,$data)
     $stmt->execute();
     return $stmt;
 }
+function delete($table, $id)
+{
+    global $conn;
+    $sql = "DELETE from $table WHERE id=?";
+    $stmt = executeQuery($sql,['id' => $id]);
+    return $stmt->affected_rows;  //will return a negative value if query fails 
+}
+
 
 $data = 
 [
@@ -143,7 +151,7 @@ $data =
     'pw' => '123',
     'ad' => 1,
 ];
-$id = update('USERS',23,$data);
+$id = delete('USERS',23,$data);
 dd($id);
 
 
