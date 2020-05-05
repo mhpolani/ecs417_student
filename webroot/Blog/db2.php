@@ -154,8 +154,8 @@ $data =
     'pw' => '123',
     'ad' => 1,
 ];
-$id = delete('USERS',23,$data);
-dd($id);
+
+
 
 
 
