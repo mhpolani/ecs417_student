@@ -1,10 +1,10 @@
 
 <?php
-include("/assets/database/db.php");
 if (isset($_POST['register-btn']))
 {
-  echo "<pre>", print_r($value,true),"</pre>";
-  die();
-    
+   unset($_POST['register-btn'], $_POST['passwordConfirmation']);
+   $_POST['admin'] = 0;
+   echo "<pre>", print_r($value,true),"</pre>";
+   die();
 }
 ?>
