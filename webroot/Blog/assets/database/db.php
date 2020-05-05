@@ -1,5 +1,5 @@
 <?php
-require('/connect.php');
+require('connect.php');
 
 function dd($value) //to be deleted
 {
