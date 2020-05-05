@@ -27,7 +27,7 @@ else
 // $email = $_POST["mhpolanto@gmail.com"];
 // $pass1 = $_POST["123"];
 
-$sql = "INSERT INTO USERS (firstName,lastName,email,pw) VALUES ('Hamza',
+$sql = "INSERT INTO USERS (ad,firstName,lastName,email,pw) VALUES ('1','Hamza',
 'Polani', 'mhpolanto@gmail.com', '123')";
 
 if ($conn->query($sql) === TRUE) 
@@ -40,12 +40,6 @@ else
 }
 $conn->close();  
 
-$sql = "SELECT * FROM USERS";
-$stmt = $conn->prepare($sql);
-$stmt-> execute();
-$users = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
-
-echo "<pre>", print_r($users),"</pre>";
 ?>
 
 
