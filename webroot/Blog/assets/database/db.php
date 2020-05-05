@@ -79,9 +79,10 @@ function selectOne($table, $conditions)   //
 function create($table,$data)
 {
     global $conn;
-    // $sql = "INSERT INTO USERS SET
+    $sql = "INSERT INTO $table SET";
+
     $i = 0;
-    foreach ($conditions as $key => $value)
+    foreach ($data as $key => $value)
     {
         if($i == 0)
         {   
@@ -89,10 +90,13 @@ function create($table,$data)
         }
         else 
         {
-            $sql = $sql . " $key = ?";
+            $sql = $sql . ", $key = ?";
         }
         $i++;
     }
+    $stmt = executeQuery($sql,$data);
+    $id = $stmt->insert_id;
+    return $id;
 }
 
 $conditions = [

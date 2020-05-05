@@ -3,7 +3,8 @@
 include("/assets/database/db.php");
 if (isset($_POST['register-btn']))
 {
-    dd($_POST);
-    die();
+  echo "<pre>", print_r($value,true),"</pre>";
+  die();
+    
 }
 ?>
