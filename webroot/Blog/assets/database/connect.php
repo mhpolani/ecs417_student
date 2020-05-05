@@ -22,13 +22,14 @@ else
     echo("yes");
 }
 
-// $fname = $_POST["Hamza"];
-// $sname = $_POST["Polani"];
-// $email = $_POST["mhpolanto@gmail.com"];
-// $pass1 = $_POST["123"];
 
-$sql = "INSERT INTO USERS (ad,firstName,lastName,email,pw) VALUES ('1','Hamza',
-'Polani', 'mhpolanto@gmail.com', '123')";
+$fname = $_POST["Hamza"];
+$sname = $_POST["Polani"];
+$email = $_POST["mhpolanto@gmail.com"];
+$pass1 = $_POST["pass"];
+
+$sql = "INSERT INTO USERS (ad,firstName,lastName,email,pw) VALUES ('1','$fname',
+'$sname', '$email', '$pass1')";
 
 if ($conn->query($sql) === TRUE) 
 {
