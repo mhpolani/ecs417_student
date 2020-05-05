@@ -45,7 +45,7 @@ $stmt = $conn->prepare($sql);
 $stmt-> execute();
 $users = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 
-var_dump($users);
+echo "<pre>", print_r($users),"</pre>";
 ?>
 
 
