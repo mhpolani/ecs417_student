@@ -1,9 +1,4 @@
-<?php
-if (isset($_POST['register-btn']))
-{
-    var_dump($_POST);
-    die();
-}
+<?php include('users.php');
 ?>
 
 <!DOCTYPE html>
