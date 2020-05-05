@@ -81,7 +81,9 @@ $conditions =
     'firstName' => 'Hamza',
     'ad' => 1
 ];
-$users = selectOne('USERS',$conditions);
+$users = selectAll('USERS',$conditions);
+
+$users2 = selectOne('USERS',$conditions);
 
 dd($users);
 
