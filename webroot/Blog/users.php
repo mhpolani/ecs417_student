@@ -1,5 +1,4 @@
 <?php
-<?php
 require('connect.php');
 
 function dd($value)
