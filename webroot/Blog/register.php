@@ -1,5 +1,5 @@
 
-<?php include('app/control/users.php');?>
+<?php include('users.php'); ?>
 
 <!DOCTYPE html>
  <html lang = "en">
