@@ -45,12 +45,45 @@ function selectAll($table, $conditions = [])
     }
 }
 
+function selectOne($table, $conditions)
+{
+    global $conn;
+    $sql = "SELECT * FROM $table";
+        
+        // $sql = "SELECT * FROM $tab
+        $i = 0;
+        foreach($conditions as $key => $value)        
+        {
+            if ($i === 0)
+            {
+                $sql = $sql . " WHERE $key=?";
+            }
+            else
+            {
+                $sql = $sql . " AND $key=?";                
+            }
+            $i++;
+    
+        
+        $stmt = $conn->prepare($sql);
+        $values = array_values($conditions);
+        $types = str_repeat('s',count($values));  //
+        $stmt->bind_param($types, ...$values);   //Bind parameters—also called dynamic parameters or bind variables—are an alternative way to pass data to the database. ... When using bind parameters you do not write the actual values but instead insert placeholders into the SQL statement. That way the statements do not change when executing them with different values.
+        $stmt->execute();
+        $records = $stmt->get_result()->fetch_assoc();
+        return $records;    
+    }
+}
+
+
 $conditions = 
 [
     'firstName' => 'Hamza',
     'ad' => 1
 ];
-$users = selectAll('USERS',$conditions);
+$users = selectOne('USERS',$conditions);
+
 dd($users);
 
-
+//The selectAll function returns all the records in the database, provided that the conditions, if passed, are met.
+//All the records in the table represent an array that in turn holds arrays, each of which represents a record.

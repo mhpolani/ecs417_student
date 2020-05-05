@@ -106,6 +106,9 @@ $conditions = [
 // $users = selectAll('USERS',$conditions);  selectAll paramater conditions is an array
 // $users = selectOne('USERS', $conditions);
 // dd($users);
+//The selectAll function returns all the records in the database, provided that the conditions, if passed, are met.
+//All the records in the table represent an array that in turn holds arrays, each of which represents a record.
+
 
 
 ?>
