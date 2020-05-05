@@ -119,7 +119,7 @@ function update($table, $id, $data)
         }
         $i++;
     }
-    $sql = $sql . " WHERE id=? ";
+    $sql = $sql . " WHERE id=?";
     $data['id'] = $id;
     $stmt = executeQuery($sql,$data);
     return $stmt->affected_rows;
@@ -138,7 +138,7 @@ function executeQuery($sql,$data)
 
 $data = 
 [
-    'firstName' => 'Hamza',
+    'firstName' => 'HAMZAAAA',
     'lastName' => 'Polani',
     'email' => 'mhpolanto@gmail.com',
     'pw' => '123',
