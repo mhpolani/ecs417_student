@@ -94,7 +94,7 @@ function create($table,$data)
         }
         $i++;
     }
-    dd($sql)
+    dd($sql);
 }
 
 $conditions = 
