@@ -53,7 +53,7 @@
           <div>
               <button type = "submit" name = "login-btn" class = "btn btn-big">Login</button>
           </div>
-          <p><a href = "<?php echo BASE_URL . '/register.php'?>">Sign Up</a></p>
+          <p><a href = "register.php">Sign Up</a></p>
           </form>
 	
 
