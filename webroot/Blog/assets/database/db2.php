@@ -26,15 +26,19 @@ function selectAll($table, $conditions = [])
         {
             if ($i === 0)
             {
-                $sql = $sql . " WHERE $key=$value";
+                $sql = $sql . " WHERE $key=?";
             }
             else
             {
-                $sql = $sql . " AND $key=$value";                
+                $sql = $sql . " AND $key=?";                
             }
             $i++;
         }
         dd($sql);
+        $stmt = $conn->prepare($sql);
+        $stmt->execute();
+        $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+        return $records;    
     }
 }
 
