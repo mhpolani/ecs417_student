@@ -1,5 +1,5 @@
 <?php
-require('connect.php');
+require('/assets/database/connect.php');
 
 function dd($value)
 {
@@ -143,21 +143,6 @@ function executeQuery($sql,$data)
     $stmt->execute();
     return $stmt;
 }
-
-
-
-$data = 
-[
-    'firstName' => 'HAMZAAAA',
-    'lastName' => 'Polani',
-    'email' => 'mhpolanto@gmail.com',
-    'pw' => '123',
-    'ad' => 1,
-];
-
-
-
-
 
 //The selectAll function returns all the records in the database, provided that the conditions, if passed, are met.
 //All the records in the table represent an array that in turn holds arrays, each of which represents a record.
