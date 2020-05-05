@@ -40,7 +40,7 @@ function selectAll($table, $conditions = [])
 
 $conditions = 
 [
-    'ad' => 'si',
+    'ad' => '1',
     'firstName' => 'Hamza'
 ];
 $users = selectAll('USERS',$conditions);
