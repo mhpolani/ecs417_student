@@ -20,15 +20,30 @@ function selectAll($table, $conditions = [])
     }
     else
     {
-
+        // $sql = "SELECT * FROM $tab
+        $i = 0;
+        foreach($conditions as $key => $value)        
+        {
+            if ($i === 0)
+            {
+                $sql = $sql . " WHERE $key = $value";
+            }
+            else
+            {
+                $sql = $sql . " AND $key = $value";                
+            }
+            $i++;
+        }
+        dd($sql);
     }
 }
+
 $conditions = 
 [
-    'ad' => yes,
-    'username' => "Hamza"
+    'ad' => 'yes',
+    'username' => 'Hamza'
 ];
-$users = selectAll('USERS');
+$users = selectAll('USERS',$conditions);
 dd($users);
 
 
