@@ -18,7 +18,7 @@
     <!-- Custom Styling -->
   	<link rel = "stylesheet" href = "../admin.css" type = "text/css">
       
-     <title>Admin Section - Manage Topics</title>
+     <title>Admin Section - Manage Months</title>
   </head>
   <body>
   	
@@ -33,13 +33,13 @@
             <!-- Admin Content -->
             <div class="admin-content">
                 <div class="button-group">
-                    <a href="create.php" class="btn btn-big">Add Topic</a>
-                    <a href="index.php" class = "btn btn-big">Manage Topics</a>
+                    <a href="create.php" class="btn btn-big">Add Month</a>
+                    <a href="index.php" class = "btn btn-big">Manage Month</a>
                 </div>            
             
 
             <div class = "content">
-                <h2 class="page-title">Manage Topics</h2>
+                <h2 class="page-title">Manage Month</h2>
                 <table>
                     <thead>
                         <th>#</th>

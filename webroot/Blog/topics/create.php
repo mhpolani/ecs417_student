@@ -53,7 +53,7 @@
                         <textarea name = "body" class = "body"></textarea>
                     </div> 
                     <div>
-                        <button type = "submit" class = "btn btn-big">Add Topic</button>
+                        <button type = "submit" class = "btn btn-big">Add Month</button>
                     </div>
                </form>
             </div>
