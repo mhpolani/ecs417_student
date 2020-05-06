@@ -1,8 +1,6 @@
 <?php
 include('db.php');
-
-
-
+include('validateUser.php');
 
 $username = '';
 $email = '';
@@ -10,19 +8,7 @@ $password = '';
 $passwordConfirmation = '';
 if (isset($_POST['register-btn']))
 {
-    $errors = array();
-    if (empty($_POST['username']))   // to prevent a user with null details to be created (validation)
-    {
-        array_push($errors, 'Username is required');
-    }
-    if (empty($_POST['email']))    
-    {
-        array_push($errors, 'Email is required');
-    }
-    if (empty($_POST['password']))    
-    {
-        array_push($errors, 'Password is required');
-    }
+    $errors = validateUser($_POST);
     // if (empty($_POST['passwordConfirmation'] !== $_POST['password']))    
     // {
     //     array_push($errors, 'Passwords do not match');
