@@ -10,8 +10,6 @@ $password = '';
 $passwordConfirmation = '';
 if (isset($_POST['register-btn']))
 {
-    
-    
     if (empty($_POST['username']))   // to prevent a user with null details to be created (validation)
     {
         array_push($errors, 'Username is required');
@@ -70,16 +68,15 @@ if (isset($_POST['register-btn']))
 
     if (isset($_POST['login-btn']))    //validate login
     {
-        $errors = array();
         if(empty($_POST['username']))
         {
             array_push($errors, 'Username is required.');
         }
-
         if(empty($_POST['password']))
         {
             array_push($errors, 'Password is required.');
         }
+        
         if(count($errors) === 0)
         {
             $users = selectOne('USERS', ['username' => $_POST['username']]);
