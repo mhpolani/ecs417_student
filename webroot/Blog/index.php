@@ -24,7 +24,7 @@ include('db.php');
   <body>
   <?php include('header.php'); ?>
 	
-	<?php if(isset($_SESSION['message'])); ?>
+	<?php if(isset($_SESSION['message'])): ?>
 	  <div class="msg <?php echo $_SESSION['type']; ?>">
 	  <li><?php echo $_SESSION['message'];?></li>
 	  <?php 
