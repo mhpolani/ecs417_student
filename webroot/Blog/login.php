@@ -1,4 +1,4 @@
-<?php include("path.php")?>
+<?php include('users.php');?>
 <!DOCTYPE html>
  <html lang = "en">
   <head>
@@ -19,6 +19,17 @@
 
           <form action="register.html" method="post">
           <h2 class = "form-title">Login</h2>
+           
+          <form action="register.php" method="post">
+          <h2 class = "form-title">Register</h2>
+
+            <?php if(count($errors) > 0):?>            
+                <div class="msg error">
+                 <?php foreach ($errors as $error): ?>
+                      <li><?php echo $error; ?></li>
+                <?php endforeach; ?>
+            </div>    
+            <?php endif; ?>       
 
           <div>
               <label>Username</label>
@@ -32,7 +43,7 @@
           <div>
               <button type = "submit" name = "login-btn" class = "btn btn-big">Login</button>
           </div>
-          <p><a href = "register.php">Sign Up</a></p>
+          <p><a href = "<?php echo 'register.php' ?>">Sign Up</a></p>
           </form>
 	
 

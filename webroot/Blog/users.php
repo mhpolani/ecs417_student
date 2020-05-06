@@ -68,4 +68,45 @@ if (isset($_POST['register-btn']))
     }
 }
 
+    if (isset($_POST['login-btn']))    //validate login
+    {
+        $errors = array();
+        if(empty($_POST['username']))
+        {
+            array_push($errors, 'Username is required.');
+        }
+
+        if(empty($_POST['password']))
+        {
+            array_push($errors, 'Password is required.');
+        }
+        if(count($errors) === 0)
+        {
+            $users = selectOne('USERS', ['username' => $_POST('username']));
+            if($user && password_verify($_POST['password'], $user['password']))   //verifies password entered against encrypted pass in the database
+            {
+                // Log user in
+                $_SESSION['ID'] = $user['ID'];
+                $_SESSION['username'] = $user['username'];
+                $_SESSION['admin'] = $user['admin'];
+                $_SESSION['message'] = 'You are now logged in!';
+                $_SESSION['type'] = 'success';
+                if ($_SESSION['admin'])
+                {
+                    header('location: dashboard.php');
+                } 
+                else 
+                {
+                    header('location: index.php');
+                }
+                exit();       
+            }
+            else
+            {
+                array_push($errors, 'Wrong credentials.');
+            }
+        }
+    }
+
+
 ?>
