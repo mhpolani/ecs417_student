@@ -1,5 +1,9 @@
 <?php
 include('db.php');
+$username = '';
+$email = '';
+$password = '';
+$passwordConfirmation = '';
 if (isset($_POST['register-btn']))
 {
     $errors = array();
@@ -29,5 +33,12 @@ if (isset($_POST['register-btn']))
         $user = selectOne('USERS', ['ID' => $user_id]);
         dd($user);
     }   
+    else  //prevents wipeout of all data if there is an error
+    {
+        $username = $_POST['username'];
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+        $passwordConfirmation = $_POST['passwordConfirmation'];
+    }
 }
 ?>
