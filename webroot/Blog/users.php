@@ -56,7 +56,7 @@ if (isset($_POST['register-btn']))
     if (isset($_POST['login-btn']))    //validate login
     {
         dd($_POST);
-        // $errors = validateLogin($_POST);
+        $errors = validateLogin($_POST);
 
         // if(count($errors) === 0)
         // {
