@@ -1,3 +1,4 @@
+<?php include('../posts.php'); ?>
 <!DOCTYPE html>
  <html lang = "en">
   <head>
@@ -60,7 +61,7 @@
                       </select>  
                     </div>
                     <div> 
-                        <button type = "submit" class = "btn btn-big">Add Post</button>
+                        <button type = "submit" name = "add-post" class = "btn btn-big">Add Post</button>
                     </div>
                </form>
             </div>
