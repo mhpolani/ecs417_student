@@ -82,7 +82,7 @@ if (isset($_POST['register-btn']))
         }
         if(count($errors) === 0)
         {
-            $users = selectOne('USERS', ['username' => $_POST('username']));
+            $users = selectOne('USERS', ['username' => $_POST['username']]);
             if($user && password_verify($_POST['password'], $user['password']))   //verifies password entered against encrypted pass in the database
             {
                 // Log user in
