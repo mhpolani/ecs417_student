@@ -1,6 +1,6 @@
 <?php
 include('db.php');
-include('index.php');
+
 
 
 $errors = array();
@@ -41,7 +41,7 @@ if (isset($_POST['register-btn']))
         $_POST['password'] = password_hash($_POST['password'], PASSWORD_DEFAULT);
         $user_id = create('USERS', $_POST);
         $user = selectOne('USERS', ['ID' => $user_id]);
-        dd($user);
+        
         // Log user in
         $_SESSION['ID'] = $user['ID'];
         $_SESSION['username'] = $user['username'];
