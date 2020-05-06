@@ -15,10 +15,10 @@ function validateUser($user)
     {
         array_push($errors, 'Password is required');
     }
-    if (empty($user['passwordConfirmation'] !== $user['password']))    
-    {
-        array_push($errors, 'Passwords do not match');
-    }
+    // if (empty($user['passwordConfirmation'] !== $user['password']))    
+    // {
+    //     array_push($errors, 'Passwords do not match');
+    // }
     return $errors;
 }
  ?>
