@@ -46,7 +46,7 @@ if (isset($_POST['register-btn']))
         $_SESSION['admin'] = $user['admin'];
         $_SESSION['message'] = 'You are now logged in!';
         $_SESSION['type'] = 'success';
-        header('location : ' . 'index.php');
+        header('location: ' . 'index.php');
         exit();
         
     }   
