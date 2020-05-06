@@ -21,43 +21,21 @@
      <title>Admin Section - Add Month</title>
   </head>
   <body>
-  	<header>
-  		<div class = "logo">
-  			<h1 class = "logo-text"><span>Hamza</span>Productions</h1>
-  		</div>
-  		<i class = "fa fa-bars menu-toggle"></i>
-  		<ul class = "nav">
-  				<li>
-				<a href = "#">
-					<i class="fas fa-user-tie"></i>
-					Hamza Polani
-					<i class="fas fa-angle-double-down" style = "font-size:.8em"></i>
-				</a>
-				<ul>
-				<li><a href = "#" class = "logout">Logout</a></li>
-			 </ul>
-  		</li>
-  		</ul>
-      </header>
+  	
+      <?php include('../adminHeader.php'); ?>
       
 	  <!-- Admin Page Wrapper -->
 	  <div class = "admin-wrapper">
 	
-            <!-- Left Sidebar -->
-            <div class="left-sidebar">
-                <ul>
-                    <li><a href="../posts/index.html">Manage Posts</a></li>
-                    <li><a href="../users/index.html">Manage Users</a></li>
-                    <li><a href="index.html">Manage Topics</a></li>
-                </ul>
-            </div>
-            <!-- End of left sidebar -->
+      <?php include('../adminSidebar.php'); ?>
+            
+            
 
             <!-- Admin Content -->
             <div class="admin-content">
                 <div class="button-group">
-                    <a href="create.html" class="btn btn-big">Add Month</a>
-                    <a href="index.html" class = "btn btn-big">Manage Month</a>
+                    <a href="create.php" class="btn btn-big">Add Month</a>
+                    <a href="index.php" class = "btn btn-big">Manage Month</a>
                 </div>            
             
 
