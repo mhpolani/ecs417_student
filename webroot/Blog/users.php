@@ -8,6 +8,18 @@ if (isset($_POST['register-btn']))
     {
         array_push($errors, 'Username is required');
     }
+    if (empty($_POST['email']))    
+    {
+        array_push($errors, 'Email is required');
+    }
+    if (empty($_POST['password']))    
+    {
+        array_push($errors, 'Password is required');
+    }
+    if (empty($_POST['passwordConfirmation'] !== $_POST['password']))    
+    {
+        array_push($errors, 'Passwords do not match');
+    }
     dd($errors);
 
     unset($_POST['register-btn'], $_POST['passwordConfirmation']);
