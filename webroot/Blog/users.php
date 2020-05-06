@@ -23,10 +23,10 @@ if (isset($_POST['register-btn']))
     {
         array_push($errors, 'Password is required');
     }
-    if (empty($_POST['passwordConfirmation'] !== $_POST['password']))    
-    {
-        array_push($errors, 'Passwords do not match');
-    }
+    // if (empty($_POST['passwordConfirmation'] !== $_POST['password']))    
+    // {
+    //     array_push($errors, 'Passwords do not match');
+    // }
     $existingUser = selectOne('USERS', ['email' => $user['email']]);
     if (isset($existingUser))
     {
