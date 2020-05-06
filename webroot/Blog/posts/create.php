@@ -54,6 +54,10 @@
                         <textarea name = "body" class = "body"></textarea>
                     </div> 
                     <div>
+                    <label>Image</label>
+                    <input type = "file" name = "image" class = "text-input">                    
+                    </div>
+                    <div>
                         <label>Months</label>
                       <select name="topic" class = "text-input">
                           <option value="Poetry">January</option>
@@ -61,7 +65,7 @@
                       </select>  
                     </div>
                     <div> 
-                        <button type = "submit" name = "add-post" class = "btn btn-big">Add Post</button>
+                        <button type = "submit" name ="add-post" class = "btn btn-big">Add Post</button>
                     </div>
                </form>
             </div>
