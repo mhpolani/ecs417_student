@@ -20,7 +20,6 @@ if (isset($_POST['register-btn']))
     {
         array_push($errors, 'Passwords do not match');
     }
-    dd($errors);
     if(count($errors) === 0)
     {
         unset($_POST['register-btn'], $_POST['passwordConfirmation']);
@@ -29,9 +28,6 @@ if (isset($_POST['register-btn']))
         $user_id = create('USERS', $_POST);
         $user = selectOne('USERS', ['ID' => $user_id]);
         dd($user);
-    }
-
-    
-    
+    }   
 }
 ?>
