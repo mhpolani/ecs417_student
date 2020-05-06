@@ -22,9 +22,12 @@
   </head>
   <body>
   	
+  <?php include("../adminHeader.php"); ?>
       
 	  <!-- Admin Page Wrapper -->
 	  <div class = "admin-wrapper">
+
+      <?php include("../adminSidebar.php"); ?>
 	
        
             <!-- Admin Content -->

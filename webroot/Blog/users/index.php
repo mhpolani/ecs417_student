@@ -18,44 +18,51 @@
     <!-- Custom Styling -->
   	<link rel = "stylesheet" href = "../admin.css" type = "text/css">
       
-     <title>Admin Section - Edit Month</title>
+     <title>Admin Section - Manage Users</title>
   </head>
   <body>
+  <?php include("../adminHeader.php"); ?>
   	
-      <?php include('../adminHeader.php'); ?>
       
 	  <!-- Admin Page Wrapper -->
 	  <div class = "admin-wrapper">
-	
-      <?php include('../adminSidebar.php'); ?>
-            
-            
 
+      <?php include("../adminSidebar.php"); ?>
+       
             <!-- Admin Content -->
             <div class="admin-content">
                 <div class="button-group">
-                    <a href="create.php" class="btn btn-big">Add Month</a>
-                    <a href="index.php" class = "btn btn-big">Manage Month</a>
+                    <a href="create.html" class="btn btn-big">Add Topic</a>
+                    <a href="index.html" class = "btn btn-big">Manage Topics</a>
                 </div>            
             
 
             <div class = "content">
+                <h2 class="page-title">Manage Topics</h2>
+                <table>
+                    <thead>
+                        <th>#</th>
+                        <th>Month</th>
+                        <th colspan="2">Action</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Jan</td>
+                            <td><a href="#" class = "edit">Edit</a></td>
+                            <td><a href="#" class = "delete">Delete</a></td>
+                            
+                        </tr>
+                         <tr>
+                            <td>1</td>
+                            <td>Feb</td>
+                            <td><a href="#" class = "edit">Edit</a></td>
+                            <td><a href="#" class = "delete">Delete</a></td>
+                            
+                        </tr>
 
-                <h2 class="page-title">Edit Month</h2>
-
-               <form action="create.html" method = "post">
-                   <div>
-                       <label>Month</label>
-                       <input type="text" name = "title" class = "text-input">
-                   </div>
-                   <div>
-                        <label>Description</label>
-                        <textarea name = "body" class = "body"></textarea>
-                    </div> 
-                    <div>
-                        <button type = "submit" class = "btn btn-big">Edit Topic</button>
-                    </div>
-               </form>
+                    </tbody>
+                </table>
             </div>
       </div>
 
@@ -68,7 +75,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>  
 
 	<!-- Custom Script -->
-	<script src = "../scripts.js"></script>
+	<script src = "../../scripts.js"></script>
 
   </body>
   </html>
