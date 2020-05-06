@@ -1,5 +1,5 @@
 <?php 
-include("path.php");
+
 include('db.php');
 ?>
 
@@ -23,7 +23,12 @@ include('db.php');
   </head>
   <body>
   <?php include('header.php'); ?>
-	  
+	
+	<?php if(isset($_SESSION['message'])); ?>
+	  <div class="msg <?php echo $_SESSION['type']; ?>">
+	  <li><?php echo $_SESSION['message'];?></li>
+	  </div>
+
 	  <!-- Page Wrapper -->
 	  <div class = "page-wrapper">
 		  <!-- Post Slider -->
