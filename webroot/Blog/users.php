@@ -1,5 +1,4 @@
 <?php
-
 include('db.php');
 
 $errors = array();
@@ -41,6 +40,15 @@ if (isset($_POST['register-btn']))
         $user_id = create('USERS', $_POST);
         $user = selectOne('USERS', ['ID' => $user_id]);
         dd($user);
+        // Log user in
+        $_SESSION['ID'] = $user['ID'];
+        $_SESSION['username'] = $user['username'];
+        $_SESSION['admin'] = $user['admin'];
+        $_SESSION['message'] = 'You are now logged in!';
+        $_SESSION['type'] = 'success';
+        header('location : ' . 'index.php');
+        exit();
+        
     }   
     else  //prevents wipeout of all data if there is an error
     {

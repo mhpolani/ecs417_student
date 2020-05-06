@@ -19,7 +19,7 @@
         </a>
   		<i class = "fa fa-bars menu-toggle"></i>
   		<ul class = "nav">
-          <li><a href = "/index.php" class = "navbar">Home</a></li>
+          <li><a href = "index.php" class = "navbar">Home</a></li>
   			<li><a href = "#">About Myself</a></li>
   			<li><a href = "#">Services</a></li>
 			<li>
@@ -64,7 +64,7 @@
           </div>
           <div>
               <label>Confirm Password</label>
-              <input type = "password" name = "passwordConfirmation"value = "<?php echo $passwordConfirmation; ?>" class = "text-input">              
+              <input type = "password" name = "passwordConfirmation" value = "<?php echo $passwordConfirmation; ?>" class = "text-input">              
           </div>
           <div>
               <button type = "submit" name = "register-btn" class = "btn btn-big">Register</button>
