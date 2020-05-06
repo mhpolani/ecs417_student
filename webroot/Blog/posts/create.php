@@ -41,7 +41,7 @@
 
             <div class = "content">
 
-                <h2 class="page-title">Manage Posts</h2>
+                <h2 class="page-title">Add Posts</h2>
 
                <form action="create.html" method = "post">
                    <div>
