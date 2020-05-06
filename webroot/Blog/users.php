@@ -106,6 +106,8 @@ if (isset($_POST['register-btn']))
                 array_push($errors, 'Wrong credentials.');
             }
         }
+        $username = $_POST['username'];
+        $password = $_POST['password'];
     }
 
 
