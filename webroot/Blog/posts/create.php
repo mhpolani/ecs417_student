@@ -18,7 +18,7 @@
     <!-- Custom Styling -->
   	<link rel = "stylesheet" href = "../admin.css" type = "text/css">
       
-     <title>Admin Section - Edit User</title>
+     <title>Admin Section - Add Post</title>
   </head>
   <body>
   	
@@ -31,52 +31,40 @@
             
             
 
-            <!-- Admin Content -->            
+            <!-- Admin Content -->
             <div class="admin-content">
                 <div class="button-group">
-                    <a href="create.php" class="btn btn-big">Add User</a>
-                    <a href="index.php" class = "btn btn-big">Manage User</a>
+                    <a href="create.php" class="btn btn-big">Add Post</a>
+                    <a href="index.php" class = "btn btn-big">Manage Posts</a>
                 </div>            
             
 
             <div class = "content">
 
-                <h2 class="page-title">Edit User</h2>
+                <h2 class="page-title">Manage Posts</h2>
 
                <form action="create.html" method = "post">
+                   <div>
+                       <label>Title</label>
+                       <input type="text" name = "title" class = "text-input">
+                   </div>
+                   <div>
+                        <label>Body</label>
+                        <textarea name = "body" class = "body"></textarea>
+                    </div> 
                     <div>
-              <label>Username</label>
-              <input type = "text" name = "username" class = "text-input">
-          </div>
-          <div>
-              <label>Email</label>
-              <input type = "email" name = "email" class = "text-input">
-          </div>
-          <div>
-              <label>Password</label>
-              <input type = "password" name = "password" class = "text-input">
-          </div>
-          <div>
-              <label>Confirm Password</label>
-              <input type = "password" name = "passwordConfirmation" class = "text-input">              
-          </div>
-          <div>
-                <label>Role</label>
-              <select name="role" class = "text-input">
-                  <option value="Admin">Admin</option>
-                  <option value="Editor">Editor</option>
-              </select>  
-            </div>
-
-                <div>
-                    <button type = "submit" class = "btn btn-big">Update User</button>
-                </div>
-
+                        <label>Months</label>
+                      <select name="topic" class = "text-input">
+                          <option value="Poetry">January</option>
+                          <option value="Life Lessons">February</option>
+                      </select>  
+                    </div>
+                    <div> 
+                        <button type = "submit" class = "btn btn-big">Add Post</button>
+                    </div>
                </form>
-               
             </div>
       </div>
-
             <!-- End of Admin Content -->
 		  
 	</div>
