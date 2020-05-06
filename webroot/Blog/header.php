@@ -17,14 +17,17 @@
 					<i class="fas fa-angle-double-down" style = "font-size:.8em"></i>
 				</a>
 				<ul>
-				<li><a href = "#">Dashboard</a></li>
+					<?php if($_SESSION['admin']): ?>
+				<li><a href = "<?php echo 'dashboard.php' ?>">Dashboard</a></li>
+					<?php endif; ?>
+
 				<li><a href = "#" class = "logout">Logout</a></li>
 			 </ul>
   		</li>
 
 			<?php else: ?>
-			<li><a href = "#"> Sign Up </a></li>
-			<li><a href = "#"> Login </a></li>
+			<li><a href = "<?php echo 'register.php' ?>"> Sign Up </a></li>
+			<li><a href = "<?php echo 'login.php' ?>"> Login </a></li>
 			
 			<?php endif; ?>
 
