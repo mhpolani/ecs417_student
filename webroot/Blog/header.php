@@ -21,7 +21,7 @@
 				<li><a href = "<?php echo 'dashboard.php' ?>">Dashboard</a></li>
 					<?php endif; ?>
 
-				<li><a href = "#" class = "logout">Logout</a></li>
+				<li><a href = "<?php echo 'logout.php' ?>" class = "logout">Logout</a></li>
 			 </ul>
   		</li>
 
