@@ -55,38 +55,36 @@ if (isset($_POST['register-btn']))
 
     if (isset($_POST['login-btn']))    //validate login
     {
-        dd($_POST);
         $errors = validateLogin($_POST);
-
-        // if(count($errors) === 0)
-        // {
-        //     $user = selectOne('USERS', ['username' => $_POST['username']]);
-        //     if($user && password_verify($_POST['password'], $user['password']))   //verifies password entered against encrypted pass in the database
-        //     {
-        //         // Log user in
-        //         $_SESSION['ID'] = $user['ID'];
-        //         $_SESSION['username'] = $user['username'];
-        //         $_SESSION['admin'] = $user['admin'];
-        //         $_SESSION['message'] = 'You are now logged in!';
-        //         $_SESSION['type'] = 'success';
-        //         if ($_SESSION['admin'])
-        //         {
-        //             header('location: dashboard.php');
-        //         } 
-        //         else 
-        //         {
-        //              header('location: index.php');
-        //         }
-        //         exit();       
-        //     }
-        //     else
-        //     {
-        //         array_push($errors, 'Wrong credentials.');
-        //         print_r($errors);
-        //     }
-        // }
-        // $username = $_POST['username'];
-        // $password = $_POST['password'];
+        
+        if(count($errors) === 0)
+        {
+            $user = selectOne('USERS', ['username' => $_POST['username']]);
+            if($user && password_verify($_POST['password'], $user['password']))   //verifies password entered against encrypted pass in the database
+            {
+                // Log user in
+                $_SESSION['ID'] = $user['ID'];
+                $_SESSION['username'] = $user['username'];
+                $_SESSION['admin'] = $user['admin'];
+                $_SESSION['message'] = 'You are now logged in!';
+                $_SESSION['type'] = 'success';
+                if ($_SESSION['admin'])
+                {
+                    header('location: dashboard.php');
+                } 
+                else 
+                {
+                     header('location: index.php');
+                }
+                exit();       
+            }
+            else
+            {
+                array_push($errors, 'Wrong credentials.');
+            }
+        }
+        $username = $_POST['username'];
+        $password = $_POST['password'];
     }
 
 
