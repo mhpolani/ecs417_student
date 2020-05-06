@@ -43,7 +43,7 @@
 
                 <h2 class="page-title">Add Month</h2>
 
-               <form action="create.html" method = "post">
+               <form action="create.php" method = "post">
                    <div>
                        <label>Month</label>
                        <input type="text" name = "title" class = "text-input">

@@ -43,7 +43,7 @@
 
                 <h2 class="page-title">Edit User</h2>
 
-               <form action="create.html" method = "post">
+               <form action="create.php" method = "post">
                     <div>
               <label>Username</label>
               <input type = "text" name = "username" class = "text-input">
