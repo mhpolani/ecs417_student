@@ -16,12 +16,9 @@
   <?php include('header.php'); ?>
 
       <div class="author-content">
-
-          <form action="register.html" method="post">
-          <h2 class = "form-title">Login</h2>
            
           <form action="register.php" method="post">
-          <h2 class = "form-title">Register</h2>
+          <h2 class = "form-title">Login</h2>
 
             <?php if(count($errors) > 0):?>            
                 <div class="msg error">
