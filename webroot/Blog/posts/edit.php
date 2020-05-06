@@ -18,7 +18,7 @@
     <!-- Custom Styling -->
   	<link rel = "stylesheet" href = "../admin.css" type = "text/css">
       
-     <title>Admin Section - Add Post</title>
+     <title>Admin Section - Edit Posts</title>
   </head>
   <body>
   	
@@ -34,31 +34,37 @@
             <!-- Admin Content -->
             <div class="admin-content">
                 <div class="button-group">
-                    <a href="create.php" class="btn btn-big">Add Month</a>
-                    <a href="index.php" class = "btn btn-big">Manage Month</a>
+                    <a href="create.php" class="btn btn-big">Add Post</a>
+                    <a href="index.php" class = "btn btn-big">Manage Posts</a>
                 </div>            
             
 
             <div class = "content">
 
-                <h2 class="page-title">Add Month</h2>
+                <h2 class="page-title">Edit Post</h2>
 
                <form action="create.html" method = "post">
                    <div>
-                       <label>Month</label>
+                       <label>Title</label>
                        <input type="text" name = "title" class = "text-input">
                    </div>
                    <div>
-                        <label>Description</label>
+                        <label>Body</label>
                         <textarea name = "body" class = "body"></textarea>
                     </div> 
                     <div>
-                        <button type = "submit" class = "btn btn-big">Add Topic</button>
+                        <label>Months</label>
+                      <select name="topic" class = "text-input">
+                          <option value="Poetry">January</option>
+                          <option value="Life Lessons">February</option>
+                      </select>  
+                    </div>
+                    <div> 
+                        <button type = "submit" class = "btn btn-big">Edit Post</button>
                     </div>
                </form>
             </div>
       </div>
-
             <!-- End of Admin Content -->
 		  
 	</div>
@@ -72,3 +78,4 @@
 
   </body>
   </html>
+ 
