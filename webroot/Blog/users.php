@@ -69,19 +69,11 @@ if (isset($_POST['register-btn']))
 
     if (isset($_POST['login-btn']))    //validate login
     {
-        $errors = array();
-        if(empty($_POST['username']))
-        {
-            array_push($errors, 'Username is required.');
-        }
-        if(empty($_POST['password']))
-        {
-            array_push($errors, 'Password is required.');
-        }
+        $errors = validateLogin($_POST);
 
         if(count($errors) === 0)
         {
-            $users = selectOne('USERS', ['username' => $_POST['username']]);
+            $user = selectOne('USERS', ['username' => $_POST['username']]);
             if($user && password_verify($_POST['password'], $user['password']))   //verifies password entered against encrypted pass in the database
             {
                 // Log user in
