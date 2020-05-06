@@ -1,4 +1,5 @@
 <?php
+include('users.php');
 function validateLogin($user)
 {
     $errors = array();
