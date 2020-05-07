@@ -1,7 +1,7 @@
 <?php 
 
 include('db.php');
-// include('validatePosts.php');
+include('validatePosts.php');
 $table = 'POSTS';
 $posts = selectAll($table);
 $title = "";
