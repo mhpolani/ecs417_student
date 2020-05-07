@@ -44,14 +44,22 @@
 
                 <h2 class="page-title">Add Posts</h2>
 
+                 <?php if(count($errors) > 0):?>            
+                <div class="msg error">
+                 <?php foreach ($errors as $error): ?>
+                      <li><?php echo $error; ?></li>
+                <?php endforeach; ?>
+            </div>    
+            <?php endif; ?>       
+
                <form action="create.php" method = "post">
                    <div>
                        <label>Title</label>
-                       <input type="text" name = "title" class = "text-input">
+                       <input type="text" name = "title" value = "<?php echo $title ?>" class = "text-input">
                    </div>
                    <div>
                         <label>Body</label>
-                        <textarea name = "body" class = "body"></textarea>
+                        <textarea name = "body" value = "<?php echo $body ?>" class = "body"></textarea>
                     </div> 
                     <div>
                     <label>Image</label>

@@ -31,7 +31,7 @@ if (isset($_POST['register-btn']))
         $_SESSION['ID'] = $user['ID'];
         $_SESSION['username'] = $user['username'];
         $_SESSION['admin'] = $user['admin'];
-        $_SESSION['message'] = 'You are now logged in!';
+        $_SESSION['message'] = 'You are now logged in! Welcome!';
         $_SESSION['type'] = 'success';
         if ($_SESSION['admin'])
         {

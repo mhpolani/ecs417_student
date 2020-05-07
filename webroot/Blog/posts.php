@@ -4,17 +4,27 @@ include('db.php');
 // include('validatePosts.php');
 $table = 'POSTS';
 $posts = selectAll($table);
-
+$title = "";
+$body = "";
 
 $errors = array();
 if (isset($_POST['add-post']))   //vvvv delicate
 {
+    $errors = validatePost($_POST); 
+
+    if(count($errors) == 0)
+    {
     unset($_POST['add-post']);
     $_POST['user_id'] = 1;
     $_POST['published'] = 1;    
     $post_id = create($table,$_POST);
     header('location: index.php');
-    
+    }
+    else
+    {
+        $title = $_POST['title'];
+        $body = $_POST['body'];
+    }
 }
 
 
