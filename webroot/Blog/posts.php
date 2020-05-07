@@ -7,12 +7,17 @@ include('db.php');
 
 $table = 'ha';
 $errors = array();
+$_POST['USER_ID'] = 1;
+$_POST['PUBLISHED'] = 1;   
 if (isset($_POST['add-post']))
 {
     unset($_POST['add-post']);
-    $_POST['USER_ID'] = 1;
-    $_POST['PUBLISHED'] = 1;    
+     
     dd($_POST);
+ 
+}
+
+
     // $post_id = create($table,$_POST);  //create methods always returns the id of the record it creates
     // global $conn;
     // $sql = "INSERT INTO ha ('USER_ID', 'TITLE', 'IMAGE', 'BODY', 'PUBLISHED') VALUES 
@@ -22,4 +27,3 @@ if (isset($_POST['add-post']))
     // $stmt->bind_param($types, ...$values);
     // $stmt->execute();
     // return $stmt;
-}
