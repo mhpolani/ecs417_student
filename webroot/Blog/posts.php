@@ -5,7 +5,7 @@ include('db.php');
 
 
 
-$table = 'POSTSDEMO';
+$table = 'ha';
 $errors = array();
 if (isset($_POST['add-post']))
 {
