@@ -12,8 +12,9 @@ if (isset($_POST['add-post']))
     unset($_POST['add-post']);
     $_POST['user_id'] = 1;
     $_POST['published'] = 1;    
-    dd($_POST);
- 
+    $post_id = create($table,$_POST);
+    dd($post_id);
+    
 }
 
 
