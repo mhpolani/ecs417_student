@@ -12,7 +12,8 @@ function executeQuery($sql,$data)
     $stmt = $conn->prepare($sql);
     $values = array_values($data);
     $types = str_repeat('s',count($values));
-    $stmt->bind_param($types, ...$values);
+    // $stmt->bind_param($types, ...$values);
+    $stmt->bind_param($types,$values);
     $stmt->execute();
     return $stmt;
 }
