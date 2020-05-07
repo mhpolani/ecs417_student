@@ -9,7 +9,7 @@ $body = "";
 
 if(isset($_GET['id']))  //when the edit button is clicked
 {
-    selectOne($table, ['ID' => $_GET['ID']]);
+    $post = selectOne($table, ['ID' => $_GET['ID']]);
     dd($post);
 }
 
