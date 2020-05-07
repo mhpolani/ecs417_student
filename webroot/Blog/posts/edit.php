@@ -45,23 +45,26 @@
                 <h2 class="page-title">Edit Post</h2>
 
                <form action="create.php" method = "post">
-                   <div>
+                <div>
                        <label>Title</label>
-                       <input type="text" name = "title" class = "text-input">
+                       <input type="text" name = "title" value = "<?php echo $title ?>" class = "text-input">
                    </div>
                    <div>
                         <label>Body</label>
-                        <textarea name = "body" class = "body"></textarea>
+                        <textarea name = "body" value = "<?php echo $body ?>" class = "body"></textarea>
                     </div> 
                     <div>
-                        <label>Months</label>
-                      <select name="topic" class = "text-input">
-                          <option value="Poetry">January</option>
-                          <option value="Life Lessons">February</option>
-                      </select>  
+                    <label>Image</label>
+                    <input type = "file" name = "image" class = "text-input">                    
+                    </div>                    
+                    <div>
+                    <label>
+                        <input type="checkbox" name = "published">
+                          Publish
+                    </label>
                     </div>
                     <div> 
-                        <button type = "submit" class = "btn btn-big">Edit Post</button>
+                        <button type = "submit" class = "btn btn-big">Update Post</button>
                     </div>
                </form>
             </div>
