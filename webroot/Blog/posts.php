@@ -63,6 +63,34 @@ if (isset($_POST['add-post']))   //vvvv delicate
     }
 }
 
+if (isser($_POST['edit-post']))  //update code
+{
+    $errors = validatePost($_POST); 
+    $image_name = time() . '_' . $_FILES['image']['name'];
+    $destination = $image_name;
+    $result = move_uploaded_file($_FILES['image']['tmp_name'], $destination);  //This function returns TRUE on success, or FALSE on failure.
+    $_POST['image'] = $image_name;
+    
+    if(count($errors) == 0)
+    {
+    $ID = $_POST['ID'];
+    unset($_POST['edit-post'], $_POST['ID']);
+    $_POST['user_id'] = 1;
+    $_POST['published'] = isset($_POST['published']) ? 1 : 0;    //Since the 'published' is of type tinyint(boolean) if the published button is clicked, value is set to 1
+
+    $post_id = update($table,$ID,$_POST);
+    $_SESSION['message'] = "Post edited successfully.";
+    $_SESSION['type'] = "success";
+    header('location: index.php');
+    }
+    else
+    {
+        $title = $_POST['title'];
+        $body = $_POST['body'];
+    }
+
+}
+
 
     // $post_id = create($table,$_POST);  //create methods always returns the id of the record it creates
     // global $conn;

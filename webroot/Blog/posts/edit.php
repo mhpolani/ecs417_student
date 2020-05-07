@@ -44,7 +44,8 @@
 
                 <h2 class="page-title">Edit Post</h2>
 
-               <form action="create.php" method = "post">
+               <form action="edit.php" method = "post" enctype = "multipart/form-data">
+               <input type="hidden" name = "ID" value = "<?php echo $ID ?>" > <!-- sends id to update to post.php -->
                 <div>
                        <label>Title</label>
                        <input type="text" name = "title" value = "<?php echo $title ?>" class = "text-input">
@@ -64,7 +65,7 @@
                     </label>
                     </div>
                     <div> 
-                        <button type = "submit" class = "btn btn-big">Update Post</button>
+                        <button type = "submit" name = "edit-post" class = "btn btn-big">Update Post</button>
                     </div>
                </form>
             </div>
