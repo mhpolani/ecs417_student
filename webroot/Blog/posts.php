@@ -13,10 +13,9 @@ if (isset($_POST['add-post']))   //vvvv delicate
     $errors = validatePost($_POST); 
 
     if (!empty($_FILES['image']['name']))
-    {
-        
+    {        
         $image_name = $_FILES['image']['name'];
-        $destination =  "/assets/images" . $image_name;
+        $destination =  "/assets/images/" . $image_name;
         $result = move_uploaded_file($_FILES['image']['tmp_name'], $destination);
         if ($result)
         {
@@ -31,6 +30,7 @@ if (isset($_POST['add-post']))   //vvvv delicate
     {
         array_push($error, "An image for the post is required");
     }
+
     if(count($errors) == 0)
     {
     unset($_POST['add-post']);
