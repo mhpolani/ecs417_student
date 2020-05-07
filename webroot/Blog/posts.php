@@ -14,8 +14,9 @@ if (isset($_POST['add-post']))   //vvvv delicate
 
     if (!empty($_FILES['image']['name']))
     {
+        dd($_FILES);
         $image_name = $_FILES['image']['name'];
-        $destination = "/Images/" . $image_name;
+        $destination = "/Images" . $image_name;
         move_uploaded_file($_FILES['image']['tmp_name'], $destination);
         if ($result)
         {
