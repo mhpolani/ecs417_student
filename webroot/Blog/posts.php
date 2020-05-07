@@ -7,13 +7,14 @@ include('db.php');
 
 $table = 'POSTS';
 $errors = array();
-if (isset($_POST['add-post']))
+if (isset($_POST['add-post']))   //vvvv delicate
 {
     unset($_POST['add-post']);
     $_POST['user_id'] = 1;
     $_POST['published'] = 1;    
     $post_id = create($table,$_POST);
     dd($post_id);
+    header("location: /posts/index.php");
     
 }
 
