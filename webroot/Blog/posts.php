@@ -5,14 +5,13 @@ include('db.php');
 
 
 
-$table = 'ha';
+$table = 'POSTS';
 $errors = array();
-$_POST['USER_ID'] = 1;
-$_POST['PUBLISHED'] = 1;   
 if (isset($_POST['add-post']))
 {
     unset($_POST['add-post']);
-     
+    $_POST['user_id'] = 1;
+    $_POST['published'] = 1;    
     dd($_POST);
  
 }

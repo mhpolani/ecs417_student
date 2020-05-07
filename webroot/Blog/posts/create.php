@@ -57,7 +57,7 @@
                     <label>Image</label>
                     <input type = "file" name = "image" class = "text-input">                    
                     </div>
-                    <div>
+                    <!-- <div>
                         <label>Months</label>
                       <select name="months" class = "text-input">
                           <option value="January">January</option>
@@ -75,7 +75,7 @@
 
 
                       </select>  
-                    </div>
+                    </div> -->
                     <div> 
                         <button type = "submit" name ="add-post" class = "btn btn-big">Add Post</button>
                     </div>
