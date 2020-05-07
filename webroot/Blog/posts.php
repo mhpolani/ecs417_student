@@ -21,10 +21,10 @@ if (isset($_POST['add-post']))   //vvvv delicate
         {
             $_POST['image'] = $image_name;
         }
-        else
-        {
-            array_push($errors, "Failed to upload image.");
-        }
+        // else
+        // {
+        //     array_push($errors, "Failed to upload image.");
+        // }
     // }
     // else
     // {
