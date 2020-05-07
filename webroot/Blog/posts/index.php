@@ -57,7 +57,7 @@
                             <td><?php echo $key + 1; ?></td>
                             <td><?php echo $post['title'] ?></td>
                             <td>Hamza</td>
-                            <td><a href="edit.php?id=<?php echo $post['id']; ?>" class = "edit">Edit</a></td>
+                            <td><a href="edit.php?id=<?php echo $post['ID']; ?>" class = "edit">Edit</a></td>
                             <td><a href="#" class = "delete">Delete</a></td>
                             <?php if($post['published']): ?>
                                 <td><a href="#" class = "unpublish">Unpublish</a></td>
