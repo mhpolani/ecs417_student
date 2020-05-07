@@ -22,7 +22,7 @@
      <title>Admin Section - Manage Posts</title>
   </head>
   <body>
-  	
+
   <?php include("../adminHeader.php"); ?>
       
 	  <!-- Admin Page Wrapper -->
@@ -41,6 +41,9 @@
 
             <div class = "content">
                 <h2 class="page-title">Manage Posts</h2>
+
+                <?php include('../messages.php'); ?>
+
                 <table>
                     <thead>
                         <th>#</th>

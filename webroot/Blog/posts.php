@@ -16,8 +16,11 @@ if (isset($_POST['add-post']))   //vvvv delicate
     {
     unset($_POST['add-post']);
     $_POST['user_id'] = 1;
-    $_POST['published'] = 1;    
+    $_POST['published'] = isset($_POST['published']) ? 1 : 0;    //Since the 'published' is of type tinyint(boolean) if the published button is clicked, value is set to 1
+
     $post_id = create($table,$_POST);
+    $_SESSION['message'] = "Post created successfully.";
+    $_SESSION['type'] = "success";
     header('location: index.php');
     }
     else
