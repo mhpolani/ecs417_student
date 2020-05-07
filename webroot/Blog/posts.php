@@ -7,10 +7,10 @@ $posts = selectAll($table);
 $title = "";
 $body = "";
 
-if(isset($_GET['id']))  //when the edit button is clicked
+if(isset($_GET['ID']))  //when the edit button is clicked
 {
     $post = selectOne($table, ['ID' => $_GET['ID']]);
-    dd($post);
+    
 }
 
 $errors = array();
