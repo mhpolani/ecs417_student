@@ -15,7 +15,7 @@ if (isset($_POST['add-post']))   //vvvv delicate
     // if (!empty($_FILES['image']['name']))
     // {        
         $image_name = time() . '_' . $_FILES['image']['name'];
-        $destination =  "/Images/" .$image_name;
+        $destination =  " /Images" .$image_name;
         $result = move_uploaded_file($_FILES['image']['tmp_name'], $destination);  //This function returns TRUE on success, or FALSE on failure.
         if ($result)
         {
