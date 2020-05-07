@@ -63,7 +63,7 @@ if (isset($_POST['add-post']))   //vvvv delicate
     }
 }
 
-if (isser($_POST['edit-post']))  //update code
+if (isset($_POST['edit-post']))  //update code
 {
     $errors = validatePost($_POST); 
     $image_name = time() . '_' . $_FILES['image']['name'];
