@@ -16,7 +16,7 @@ if (isset($_POST['add-post']))   //vvvv delicate
     {
         dd($_FILES);
         $image_name = $_FILES['image']['name'];
-        $destination = "/Images" . $image_name;
+        $destination = "/assets/images/" . $image_name;
         move_uploaded_file($_FILES['image']['tmp_name'], $destination);
         if ($result)
         {
