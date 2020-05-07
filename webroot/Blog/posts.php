@@ -7,6 +7,12 @@ $posts = selectAll($table);
 $title = "";
 $body = "";
 
+if(isset($_GET['id']))
+{
+    selectOne($table, ['id' => $_GET['id']]);
+    dd($post);
+}
+
 $errors = array();
 if (isset($_POST['add-post']))   //vvvv delicate
 {
