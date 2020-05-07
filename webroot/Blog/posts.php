@@ -7,9 +7,9 @@ $posts = selectAll($table);
 $title = "";
 $body = "";
 
-if(isset($_GET['id']))
+if(isset($_GET['id']))  //when the edit button is clicked
 {
-    selectOne($table, ['id' => $_GET['id']]);
+    selectOne($table, ['ID' => $_GET['ID']]);
     dd($post);
 }
 
