@@ -2,10 +2,10 @@
 
 include('db.php');
 // include('validatePosts.php');
-
-
-
 $table = 'POSTS';
+$posts = selectAll($table);
+
+
 $errors = array();
 if (isset($_POST['add-post']))   //vvvv delicate
 {
@@ -13,7 +13,6 @@ if (isset($_POST['add-post']))   //vvvv delicate
     $_POST['user_id'] = 1;
     $_POST['published'] = 1;    
     $post_id = create($table,$_POST);
-    dd($post_id);
     header("location: register.php");
     
 }
