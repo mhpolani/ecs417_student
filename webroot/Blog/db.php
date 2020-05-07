@@ -10,10 +10,9 @@ function executeQuery($sql,$data)
 {
     global $conn;
     $stmt = $conn->prepare($sql);
-    $values = array_values($data);
+    $values = array_values($data); //  The array_values() function returns an array containing all the values of an array
     $types = str_repeat('s',count($values));
-    // $stmt->bind_param($types, ...$values);
-    $stmt->bind_param($types,$values);
+    $stmt->bind_param($types, ...$values);
     $stmt->execute();
     return $stmt;
 }
