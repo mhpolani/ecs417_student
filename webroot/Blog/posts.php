@@ -14,7 +14,7 @@ if (isset($_POST['add-post']))   //vvvv delicate
     $_POST['published'] = 1;    
     $post_id = create($table,$_POST);
     dd($post_id);
-    header("location: posts/index.php");
+    header("location: register.php");
     
 }
 
