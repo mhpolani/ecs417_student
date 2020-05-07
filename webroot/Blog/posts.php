@@ -13,7 +13,7 @@ if (isset($_POST['add-post']))   //vvvv delicate
     $_POST['user_id'] = 1;
     $_POST['published'] = 1;    
     $post_id = create($table,$_POST);
-    header('location: ../index.php');
+    header('location: index.php');
     
 }
 
