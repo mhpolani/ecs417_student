@@ -1,6 +1,7 @@
 <?php
 session_start();
 require('connect.php');
+
 function dd($value)
 {
     echo "<pre>", print_r($value,true), "</pre";
@@ -141,9 +142,6 @@ function delete($table, $id)
     $stmt = executeQuery($sql,['id' => $id]);
     return $stmt->affected_rows;  //will return a negative value if query fails 
 }
-
-
-
 
 
 //The selectAll function returns all the records in the database, provided that the conditions, if passed, are met.

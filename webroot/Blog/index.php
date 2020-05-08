@@ -41,10 +41,10 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 		<?php foreach ($posts as $post): ?>
 				
 <div class = "post">
-		<img src =<?php echo $post['image'] ;?>alt = " " class = "slider-image">
+		<img src = "Images/.png" alt = " " class = "slider-image">
 		<div class = "post-info">
-	  <h4><a href = "single.php"><?php echo $post['title']; ?>"</a></h4>
-	  <i class = "far fa-user"> Hamza Polani</i>
+	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>"><?php echo $post['title']; ?>"</a></h4>
+	  <i class = "far fa-user"> </i>
 	  &nbsp;
 	  <i class = "far fa-calendar">April 3, 2020</i>	  
 		</div>
@@ -72,14 +72,14 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 				  <div class ="post clearfloats">
 					  <img src = "Images/image.png" alt = "" class = "post-image">
 					  <div class = "post-preview">
-						  <h2><a href = "single.php"><?php echo $post['title']; ?></a></h2>
+						  <h2><a href = "single.php?ID=<?php echo $post['ID']; ?>"><?php echo $post['title']; ?></a></h2>
 						  <i class="fas fa-user-ninja">Hamza Polani</i>
 						  &nbsp;						  
 						  <i class="far fa-calendar-alt">April 27,2020</i>
 						  <p class = "preview-text">
 							<?php echo substr($post['body'], 0, 150) . '....' ?>
 						  </p>
-						  <a href = "single.php" class = "btn read-more">Read More</a>
+						  <a href = "single.php?ID=<?php echo $post['ID']; ?>" class = "btn read-more">Read More</a>
 					  </div>
 				  </div>
 
