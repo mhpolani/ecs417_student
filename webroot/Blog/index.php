@@ -1,6 +1,8 @@
 <?php 
 
 include('db.php');
+$posts = selectAll('POSTS', ['published' => 1]);  //fetching only published posts
+dd($posts);
 ?>
 
 <!DOCTYPE html>
