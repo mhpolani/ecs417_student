@@ -12,13 +12,11 @@ $ID = "";
 if(isset($_GET['ID']))  //when the edit button is clicked
 {
     $post = selectOne($table, ['ID' => $_GET['ID']]);
-    $ID = $post['ID'];
-    $title= $post['title'];
-    $body = $post['body'];
-    $published = $post['published'];
+    // $ID = $post['ID'];
+    // $title= $post['title'];
+    // $body = $post['body'];
+    // $published = $post['published'];
     dd($post);
-
-    
 }
 
 $errors = array();
