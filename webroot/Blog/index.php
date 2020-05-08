@@ -41,7 +41,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 		<?php foreach ($posts as $post): ?>
 				
 <div class = "post">
-		<img src = "Images/homer.png" alt = " " class = "slider-image">
+		<img src = "Images/donut.png" alt = " " class = "slider-image">
 		<div class = "post-info">
 	  <h4><a href = "single.php"><?php echo $post['title']; ?>"</a></h4>
 	  <i class = "far fa-user"> Hamza Polani</i>
@@ -66,69 +66,26 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 				<!-- Main Content -->
 			  <div class="main-content">
 				  <h1 class = "recent-post-title">Recent Posts</h1>
- 
-				  <div class ="post">
+
+					<?php foreach($posts as $post): ?>
+					
+				  <div class ="post clearfloats">
 					  <img src = "Images/image.png" alt = "" class = "post-image">
 					  <div class = "post-preview">
-						  <h2><a href = "single.php">The strongest and sweetest songs yet remain to be sung</a></h2>
+						  <h2><a href = "single.php"><?php echo $post['title']; ?></a></h2>
 						  <i class="fas fa-user-ninja">Hamza Polani</i>
 						  &nbsp;						  
 						  <i class="far fa-calendar-alt">April 27,2020</i>
 						  <p class = "preview-text">
-								Hamza really needs to fill this stuff in ASAP.Ya Allah The Almighty. Protect me and guide me. Oh Allah dont'deprive me
-								Hasbi rabbi jalAllah. Allahu Allah. Maafi khairi khalkAllah. Allahu Allah. Noor-e-Muhammad SalalAlah. 
-							  <p>wowow</p>
+							<?php echo substr($post['body'], 0, 150) . '....' ?>
 						  </p>
 						  <a href = "single.php" class = "btn read-more">Read More</a>
 					  </div>
 				  </div>
 
-				  <div class ="post">
-						<img src = "Images/image.png" alt = "" class = "post-image">
-						<div class = "post-preview">
-							<h2><a href = "single.php">The strongest and sweetest songs yet remain to be sung</a></h2>
-							<i class="fas fa-user-ninja">Hamza Polani</i>
-							&nbsp;						  
-							<i class="far fa-calendar-alt">April 27,2020</i>
-							<p class = "preview-text">
-								Hamza really needs to fill this stuff in ASAP.Ya Allah The Almighty. Protect me and guide me. Oh Allah dont'deprive me
-								Hasbi rabbi jalAllah. Allahu Allah. Maafi khairi khalkAllah. Allahu Allah. Noor-e-Muhammad SalalAlah. 
-							</p>
-							 
-							<a href = "single.php" class = "btn read-more">Read More</a>
-						</div>
-					</div>
+					<?php endforeach; ?>
 
-					<div class ="post">
-							<img src = "Images/image.png" alt = "" class = "post-image">
-							<div class = "post-preview">
-								<h2><a href = "single.php">The strongest and sweetest songs yet remain to be sung</a></h2>
-								<i class="fas fa-user-ninja">Hamza Polani</i>
-								&nbsp;						  
-								<i class="far fa-calendar-alt">April 27,2020</i>
-								<p class = "preview-text">
-									Hamza really needs to fill this stuff in ASAP.Ya Allah The Almighty. Protect me and guide me. Oh Allah dont'deprive me
-									Hasbi rabbi jalAllah. Allahu Allah. Maafi khairi khalkAllah. Allahu Allah. Noor-e-Muhammad SalalAlah. 
-								</p>
-								<a href = "single.php" class = "btn read-more">Read More</a>
-							</div>
-						</div>
- 
-						<div class ="post">
-								<img src = "Images/image.png" alt = "" class = "post-image">
-								<div class = "post-preview">
-									<h2><a href = "single.php">The strongest and sweetest songs yet remain to be sung</a></h2>
-									<i class="fas fa-user-ninja">Hamza Polani</i>
-									&nbsp;						  
-									<i class="far fa-calendar-alt">April 27,2020</i>
-									<p class = "preview-text">
-										Hamza really needs to fill this stuff in ASAP.Ya Allah The Almighty. Protect me and guide me. Oh Allah dont'deprive me
-										Hasbi rabbi jalAllah. Allahu Allah. Maafi khairi khalkAllah. Allahu Allah. Noor-e-Muhammad SalalAlah. 
-									</p>
-									<a href = "single.php" class = "btn read-more">Read More</a>
-								</div>
-							</div> 
-
+			
 			  </div>			  
 			  <!-- End of Main COntent -->
 			  <div class = "sidebar">
