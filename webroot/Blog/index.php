@@ -2,7 +2,7 @@
 
 include('db.php');
 $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published posts
-dd($posts);
+
 ?>
 
 <!DOCTYPE html>
@@ -38,57 +38,19 @@ dd($posts);
 			<i class = "fas fa-chevron-right next"></i>
 			
 			<div class = "post-wrapper">
-
-				<div class = "post">
-          		<img src = "Images/thumbsup.png" alt = " " class = "slider-image">
-          		<div class = "post-info">
-            	<h4><a href = "single.php">I am not afraid to die. I just don't want to be there when it happens.</a></h4>
-            	<i class = "far fa-user"> Hamza Polani</i>
-            	&nbsp;
-				<i class = "far fa-calendar">April 3, 2020</i>
+		<?php foreach ($posts as $post): ?>
 				
-          </div>
-		</div> 
-		<div class = "post">
-				<img src = "Images/crybaby.png" alt = " " class = "slider-image">
-				<div class = "post-info">
-			  <h4><a href = "single.php">I am not afraid to die. I just don't want to be there when it happens.</a></h4>
-			  <i class = "far fa-user"> Hamza Polani</i>
-			  &nbsp;
-			  <i class = "far fa-calendar">April 3, 2020</i>
-			  
-		</div>
-	  </div> 
-	  <div class = "post">
-			<img src = "Images/donut.png" alt = " " class = "slider-image">
-			<div class = "post-info">
-		  <h4><a href = "single.php">I am not afraid to die. I just don't want to be there when it happens.</a></h4>
-		  <i class = "far fa-user"> Hamza Polani</i>
-		  &nbsp;
-		  <i class = "far fa-calendar">April 3, 2020</i>
-		  
-	</div>
-  </div> 
-  <div class = "post">
-		<img src = "Images/homerCool.png" alt = " " class = "slider-image">
-		<div class = "post-info">
-	  <h4><a href = "single.php">I am not afraid to die. I just don't want to be there when it happens.</a></h4>
-	  <i class = "far fa-user"> Hamza Polani</i>
-	  &nbsp;
-	  <i class = "far fa-calendar">April 3, 2020</i>
-	  
-</div>
-</div> 
 <div class = "post">
 		<img src = "Images/wooh.png" alt = " " class = "slider-image">
 		<div class = "post-info">
-	  <h4><a href = "single.php">I am not afraid to die. I just don't want to be there when it happens.</a></h4>
+	  <h4><a href = "single.php"><?php echo $post['title']; ?>"</a></h4>
 	  <i class = "far fa-user"> Hamza Polani</i>
 	  &nbsp;
-	  <i class = "far fa-calendar">April 3, 2020</i>
-	  
-</div>
+	  <i class = "far fa-calendar">April 3, 2020</i>	  
+		</div>
 </div> 
+
+		<?php endforeach; ?>
         
          
       </div>
@@ -96,7 +58,7 @@ dd($posts);
 		</div>
 
 		<!-- End of Post Slider -->
-	  </div>
+	  
 		  
 		  <!-- Content -->
 		  <div class="content clearfloats">
