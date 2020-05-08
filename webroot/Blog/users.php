@@ -6,19 +6,11 @@ $username = '';
 $email = '';
 $password = '';
 $passwordConfirmation = '';
-if (isset($_POST['register-btn']))
+if (isset($_POST['register-btn']) || isset($_POST['create-admin']))
 {
     $errors = validateUser($_POST);
-    // if (empty($_POST['passwordConfirmation'] !== $_POST['password']))    
-    // {
-    //     array_push($errors, 'Passwords do not match');
-    // }
-    $existingUser = selectOne('USERS', ['email' => $user['email']]);
-    if (isset($existingUser))
-    {
-        array_push($errors,'A user with that email already exists.');
-    }
-
+    
+    
     if(count($errors) === 0)
     {
         unset($_POST['register-btn'], $_POST['passwordConfirmation']);
