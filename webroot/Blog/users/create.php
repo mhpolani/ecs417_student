@@ -1,4 +1,3 @@
-<?php include("../users.php"); ?>
 <!DOCTYPE html>
  <html lang = "en">
   <head>
@@ -61,17 +60,9 @@
               <label>Confirm Password</label>
               <input type = "password" name = "passwordConfirmation" class = "text-input">              
           </div>
-          <div>
-                <label>
-                <input type = "checkbox" name = "admin">
-                Admin
-                </label>
-
+            <div>
+                <button type = "submit" class = "btn btn-big">Add User</button>
             </div>
-
-                <div>
-                    <button type = "submit" name = "create-admin" class = "btn btn-big">Add User</button>
-                </div>
 
                </form>
                
