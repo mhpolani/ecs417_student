@@ -58,8 +58,7 @@
                             <td><?php echo $post['title'] ?></td>
                             <td>Hamza</td>
                             <td><a href="edit.php?ID=<?php echo $post['ID']; ?> " class = "edit">Edit</a></td>
-                            <td><a href="edit.php?deletd_id=<?php echo $post['ID']; ?> " class = "edit">Edit</a></td>
-                            <td><a href="" class = "delete">Delete</a></td>
+                            <td><a href="edit.php?delete_id=<?php echo $post['ID']; ?> " class = "edit">Delete</a></td>
                             <?php if($post['published']): ?>
                                 <td><a href="#" class = "unpublish">Unpublish</a></td>
                             <?php else: ?>
