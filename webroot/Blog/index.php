@@ -41,7 +41,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 		<?php foreach ($posts as $post): ?>
 				
 <div class = "post">
-		<img src = "Images/wooh.png" alt = " " class = "slider-image">
+		<img src = "Images/homer.png" alt = " " class = "slider-image">
 		<div class = "post-info">
 	  <h4><a href = "single.php"><?php echo $post['title']; ?>"</a></h4>
 	  <i class = "far fa-user"> Hamza Polani</i>
