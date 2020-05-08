@@ -12,10 +12,10 @@ $ID = "";
 if(isset($_GET['ID']))  //when the edit button is clicked
 {
     $post = selectOne($table, ['ID' => $_GET['ID']]);
-    // $ID = $post['ID'];
-    // $title= $post['title'];
-    // $body = $post['body'];
-    // $published = $post['published'];
+    $ID = $post['ID'];
+    $title= $post['title'];
+    $body = $post['body'];
+    $published = $post['published'];
     dd($post);
 }
 
@@ -75,8 +75,9 @@ if (isset($_POST['edit-post']))  //update code
     unset($_POST['edit-post'], $_POST['ID']);
     $_POST['user_id'] = 1;
     $_POST['published'] = isset($_POST['published']) ? 1 : 0;    //Since the 'published' is of type tinyint(boolean) if the published button is clicked, value is set to 1
+    $_POST['body'] = isset($_POST['body']);
 
-    $post_id = update($table,$ID,$_POST);
+    $post_id = update($table, $ID, $_POST);
     $_SESSION['message'] = "Post edited successfully.";
     $_SESSION['type'] = "success";
     header('location: index.php');
