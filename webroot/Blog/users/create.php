@@ -61,7 +61,7 @@
               <input type = "password" name = "passwordConfirmation" class = "text-input">              
           </div>
             <div>
-                <button type = "submit" class = "btn btn-big">Add User</button>
+                <button type = "submit" name = "admin-form" class = "btn btn-big">Add User</button>
             </div>
 
                </form>

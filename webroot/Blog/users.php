@@ -6,7 +6,7 @@ $username = '';
 $email = '';
 $password = '';
 $passwordConfirmation = '';
-if (isset($_POST['register-btn'])) //|| isset($_POST['create-admin']))
+if (isset($_POST['register-btn']) || isset($_POST['admin-form']))
 {
     $errors = validateUser($_POST);
     
