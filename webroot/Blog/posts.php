@@ -16,7 +16,7 @@ if(isset($_GET['ID']))  //when the edit button is clicked
     $title= $post['title'];
     $body = $post['body'];
     $published = $post['published'];
-    dd($post);
+ 
 }
 
 $errors = array();
