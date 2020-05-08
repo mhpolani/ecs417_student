@@ -1,3 +1,12 @@
+<?php include('posts.php'); //included to get functionality of db.php for reuable functions
+
+if (isset($_GET['ID']))
+{
+	$post = selectOne('POSTS',['ID' => $_GET['ID']]); 
+	dd($post);
+}
+
+?>
 <!DOCTYPE html>
  <html lang = "en">
   <head>
