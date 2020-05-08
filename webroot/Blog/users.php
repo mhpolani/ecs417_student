@@ -9,8 +9,6 @@ $passwordConfirmation = '';
 if (isset($_POST['register-btn']) || isset($_POST['admin-form']))
 {
     $errors = validateUser($_POST);
-    
-    
     if(count($errors) === 0)
     {
         unset($_POST['register-btn'], $_POST['passwordConfirmation']);
