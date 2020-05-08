@@ -87,8 +87,9 @@ if (isset($_POST['edit-post']))  //update code
         $title = $_POST['title'];
         $body = $_POST['body'];
     }
-
 }
+
+// if (isset($_POST['edit-post'])) 
 
 
     // $post_id = create($table,$_POST);  //create methods always returns the id of the record it creates
