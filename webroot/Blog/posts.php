@@ -16,7 +16,15 @@ if(isset($_GET['ID']))  //when the edit button is clicked
     $title= $post['title'];
     $body = $post['body'];
     $published = $post['published'];
- 
+}
+
+if(isset($_GET['delete_id']))  //when the delete button is clicked
+{
+    $count = delete($table,$_GET['delete_id']);
+    $_SESSION['message'] = "Post deleted successfully.";
+    $_SESSION['type'] = "success";
+    header('location: index.php');
+    exit();
 }
 
 $errors = array();
@@ -81,6 +89,7 @@ if (isset($_POST['edit-post']))  //update code
     $_SESSION['message'] = "Post edited successfully.";
     $_SESSION['type'] = "success";
     header('location: index.php');
+    exit();
     }
     else
     {
