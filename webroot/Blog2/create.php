@@ -55,7 +55,7 @@
             </div>    
             <?php endif; ?>       
 
-               <form name = "myForm" action="create.php" method = "post" enctype = "multipart/form-data" onsubmit = "return check()">  <!-- image upload protocol -->
+               <form name = "myForm" action="create.php" method = "post" enctype = "multipart/form-data" >  <!-- image upload protocol -->
                    <div>
                        <label>Title</label>
                        <input id = "title" type="text" name = "title" value = "<?php echo $title ?>" class = "text-input">
@@ -78,7 +78,7 @@
                     </label>
                     </div>
                     <div> 
-                        <button type = "submit" name ="add-post" class = "btn btn-big">Post</button>
+                        <button id = "leggo" type = "submit" name ="add-post" class = "btn btn-big">Post</button>
                     </div>
                     <div> 
                         <button onclick = "checkFunction()" name ="clear-post" class = "btn btn-big">Clear</button>
@@ -118,13 +118,14 @@
     var body = document.forms["myForm"]["body"];
     var titleError = document.getElementById("title_error");
     var bodyError = document.getElementById("body_error");
-    title.addEventListener("whatever", Verify, true);
-    body.addEventListener("whatever", Verify, true);
-    
-    function check()
+    title.addEventListener("click", Verify, true);
+    body.addEventListener("click", Verify, true);
+    leggo.addEventListener("click", check, false);
+    function check(event)
     {
         if (title.value == "")
         {
+            event.preventDefault();
             title.style.border = "1px solid red";
             titleError.textContent = "Title is required!";
             title.focus();
@@ -132,6 +133,7 @@
         }
         if (body.value == "")
         {
+            event.preventDefault();
             body.style.border = "1px solid red";
             bodyError.textContent = "Body is required!";
             body.focus();
