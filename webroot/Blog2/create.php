@@ -38,7 +38,7 @@
             <div class="admin-content">
                 <div class="button-group">
                     <a href="create.php" class="btn btn-big">Add Post</a>
-                    <a href="index.php" class = "btn btn-big">Manage Posts</a>
+                    <a href="postsindex.php" class = "btn btn-big">Manage Posts</a>
                 </div>            
             
 
@@ -76,7 +76,10 @@
                     </label>
                     </div>
                     <div> 
-                        <button type = "submit" name ="add-post" class = "btn btn-big">Add Post</button>
+                        <button type = "submit" name ="add-post" class = "btn btn-big">Post</button>
+                    </div>
+                    <div> 
+                        <button type = "submit" name ="clear-post" class = "btn btn-big">Clear</button>
                     </div>
                </form>
             </div>

@@ -92,13 +92,13 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 					<h2>Quick Links</h2>
 					<br>
 					<ul>
-						<a href = "#"><li>Events</li></a>
-						<a href = "#"><li>Events</li></a>
-						<a href = "#"><li>Events</li></a>
-						<a href = "#"><li>Events</li></a>
-						<a href = "#"><li>Events</li></a>
-						<a href = "#"><li>Events</li></a>
-						<a href = "#"><li>Events</li></a>
+						<a href = "#"><li>About Me</li></a>
+						<a href = "#"><li>Skills and Achievements</li></a>
+						<a href = "#"><li>Education and Qualifications</li></a>
+						<a href = "#"><li>Experience</li></a>
+						<a href = "#"><li>Portfolio</li></a>
+						<a href = "#"><li>Contact</li></a>
+						<a href = "#"><li>Blog</li></a>
 					
 				</div>
 				<div class = "footer-section contact-form">
