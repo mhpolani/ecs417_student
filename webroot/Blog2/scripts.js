@@ -43,11 +43,6 @@ $(document).ready(function()
         });
         function checkFunction() 
         {
-          if (confirm("Are you sure you want to clear all text?"))
-          {
-          }
-          else
-          {
-          }
+          document.getElementById("clickable").innerHTML = "YOU CLICKED ME";
         }
 });

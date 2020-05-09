@@ -79,7 +79,7 @@
                         <button type = "submit" name ="add-post" class = "btn btn-big">Post</button>
                     </div>
                     <div> 
-                        <button onclick = "checkFunction()" type = "submit" name ="clear-post" class = "btn btn-big">Clear</button>
+                        <button id ="clickable" onclick = "checkFunction()" type = "submit" name ="clear-post" class = "btn btn-big">Clear</button>
                     </div>
                </form>
             </div>
