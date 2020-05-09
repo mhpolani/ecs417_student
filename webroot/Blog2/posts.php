@@ -119,7 +119,8 @@ if (isset($_POST['edit-post']))  //update code
 if (isset($_POST['clear-post'])) 
 {
     $title = $_POST['title'];
-    $body = $_POST['body'];
+    // $body = $_POST['body'];
+    $body = htmlentities($_POST['body']);
     unset($_POST['clear-post']);
 }
 
