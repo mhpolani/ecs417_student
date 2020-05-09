@@ -74,7 +74,7 @@ if (isset($_POST['add-post']))   //vvvv delicate
     unset($_POST['add-post']);
     $_POST['user_id'] = $_SESSION['ID'];
     $_POST['published'] = isset($_POST['published']) ? 1 : 0;    //Since the 'published' is of type tinyint(boolean) if the published button is clicked, value is set to 1
-    $_POST['body'] = isset($_POST['body']);
+    $_POST['body'] = htmlentities($_POST['body']);
     $post_id = create($table,$_POST);
     $_SESSION['message'] = "Post created successfully.";
     $_SESSION['type'] = "success";
@@ -102,7 +102,7 @@ if (isset($_POST['edit-post']))  //update code
     unset($_POST['edit-post'], $_POST['ID']);
     $_POST['user_id'] = $_SESSION['ID'];
     $_POST['published'] = isset($_POST['published']) ? 1 : 0;    //Since the 'published' is of type tinyint(boolean) if the published button is clicked, value is set to 1
-    $_POST['body'] = isset($_POST['body']);
+    $_POST['body'] = htmlentities($_POST['body']);
 
     $post_id = update($table, $ID, $_POST);
     $_SESSION['message'] = "Post edited successfully.";
