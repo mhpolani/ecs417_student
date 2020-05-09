@@ -1,5 +1,5 @@
 <?php include('users.php');
-include('restrict.php');
+
 guestsOnly();
 ?>
 <!DOCTYPE html>
