@@ -118,8 +118,8 @@
     var body = document.forms["myForm"]["body"];
     var titleError = document.getElementById("title_error");
     var bodyError = document.getElementById("body_error");
-    title.addEventListener("blur", titleVerify, true);
-    body.addEventListener("blur", bodyVerify, true);
+    title.addEventListener("whatever", Verify, true);
+    body.addEventListener("whatever", Verify, true);
     
     function check()
     {
@@ -139,22 +139,33 @@
         }
     }
     
-    function titleVerify()
-    {
-        if(title.value != "")
-        {
-            title.style.border = "1px solid green";
-            titleError.innerHTML = "";
-            return true;
-        }
-    }
+    // function titleVerify()
+    // {
+    //     if(title.value != "")
+    //     {
+    //         title.style.border = "1px solid green";
+    //         titleError.innerHTML = "";
+    //         return true;
+    //     }
+    // }
 
-    function bodyVerify()
+    // function bodyVerify()
+    // {
+    //     if(body.value != "")
+    //     {
+    //         body.style.border = "1px solid green";
+    //         bodyError.innerHTML = "";
+    //         return true;
+    //     }
+    // }
+    function Verify()
     {
-        if(body.value != "")
+        if(body.value != "") AND (title.value != "")
         {
             body.style.border = "1px solid green";
             bodyError.innerHTML = "";
+            title.style.border = "1px solid green";
+            titleError.innerHTML = "";
             return true;
         }
     }
