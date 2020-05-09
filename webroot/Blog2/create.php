@@ -133,7 +133,7 @@
         if (body.value == "")
         {
             body.style.border = "1px solid red";
-            bodyError.textContent = "Title is required!";
+            bodyError.textContent = "Body is required!";
             body.focus();
             return false;            
         }
