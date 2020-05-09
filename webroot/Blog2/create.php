@@ -97,7 +97,7 @@
 	<script src = "scripts.js"></script>
 
     <script>
-    function checkFunction() 
+    function checkFunction(event) 
         {
           if(confirm("Are you sure you want to clear all of the text? All unsaved changes will be lost."))
           {
