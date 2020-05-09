@@ -21,7 +21,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 	
 	<!-- Custom Styling -->
   	<link rel = "stylesheet" href = "blog.css" type = "text/css">
-  	<title>Blog</title>
+  	<title>Portfolio</title>
   </head>
   <body>
   <?php include('header.php'); ?>
@@ -30,63 +30,14 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 
 	  <!-- Page Wrapper -->
 	  <div class = "page-wrapper">
-		  <!-- Post Slider -->
-		<div class = "post-slider">
-
-			<h1 class = "slider-title">What's Trending?</h1>
-			<i class = "fas fa-chevron-left prev"></i>
-			<i class = "fas fa-chevron-right next"></i>
-			
-			<div class = "post-wrapper">
-		<?php foreach ($posts as $post): ?>
-				
-<div class = "post">
-		<img src = "Images/donut.png" alt = " " class = "slider-image">
-		<div class = "post-info">
-	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>"><?php echo $post['title']; ?>"</a></h4>
-	  <i class = "far fa-user"> </i>
-	  &nbsp;
-	  <i class = "far fa-calendar">April 3, 2020</i>	  
-		</div>
-</div> 
-
-		<?php endforeach; ?>
-        
-         
-      </div>
-      
-		</div>
-
-		<!-- End of Post Slider -->
+		
 	  
 		  
 		  <!-- Content -->
 		  <div class="content clearfloats">
 
 				<!-- Main Content -->
-			  <div class="main-content">
-				  <h1 class = "recent-post-title">Recent Posts</h1>
-
-					<?php foreach($posts as $post): ?>
-					
-				  <div class ="post clearfloats">
-					  <img src = "Images/image.png" alt = "" class = "post-image">
-					  <div class = "post-preview">
-						  <h2><a href = "single.php?ID=<?php echo $post['ID']; ?>"><?php echo $post['title']; ?></a></h2>
-						  <i class="fas fa-user-ninja">Hamza Polani</i>
-						  &nbsp;						  
-						  <i class="far fa-calendar-alt">April 27,2020</i>
-						  <p class = "preview-text">
-							<?php echo substr($post['body'], 0, 150) . '....' ?>
-						  </p>
-						  <a href = "single.php?ID=<?php echo $post['ID']; ?>" class = "btn read-more">Read More</a>
-					  </div>
-				  </div>
-
-					<?php endforeach; ?>
-
-			
-			  </div>			  
+			 
 			  <!-- End of Main COntent -->
 			  <div class = "sidebar">
 				  <div class = "section search">
