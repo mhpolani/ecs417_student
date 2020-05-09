@@ -1,5 +1,5 @@
 <?php 
-
+include('restrict.php');
 include('db.php');
 include('validatePost.php');
 $table = 'POSTS';
@@ -21,6 +21,7 @@ if(isset($_GET['ID']))  //when the edit button is clicked
 
 if(isset($_GET['delete_id']))  //when the delete button is clicked
 {
+    adminOnly();
     $count = delete($table,$_GET['delete_id']);
     $_SESSION['message'] = "Post deleted successfully.";
     $_SESSION['type'] = "success";
@@ -29,6 +30,7 @@ if(isset($_GET['delete_id']))  //when the delete button is clicked
 }
 if (isset($_GET['published']) && isset($_GET['p_id']))
 {
+    adminOnly();
     $published = $_GET['published'];
     $p_id = $_GET['p_id'];
     // update published 
@@ -43,6 +45,7 @@ if (isset($_GET['published']) && isset($_GET['p_id']))
 $errors = array();
 if (isset($_POST['add-post']))   //vvvv delicate
 {
+    adminOnly();
     $errors = validatePost($_POST); 
 
     // if (!empty($_FILES['image']['name']))
@@ -85,6 +88,7 @@ if (isset($_POST['add-post']))   //vvvv delicate
 
 if (isset($_POST['edit-post']))  //update code
 {
+    adminOnly();
     $errors = validatePost($_POST); 
     $image_name = time() . '_' . $_FILES['image']['name'];
     $destination = $image_name;

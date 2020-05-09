@@ -1,4 +1,6 @@
-<?php include('users.php');?>
+<?php include('users.php');
+guestsOnly();
+?>
 <!DOCTYPE html>
  <html lang = "en">
   <head>

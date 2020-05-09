@@ -1,6 +1,7 @@
 <?php
 include('db.php');
 include('validateUser.php');
+include('restrict.php');
 
 $username = '';
 $email = '';
