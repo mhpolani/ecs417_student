@@ -132,6 +132,7 @@
         }
         if (body.value == "")
         {
+            window.alert("The problem is not the condition.");
             body.style.border = "1px solid red";
             bodyError.textContent = "Body is required!";
             body.focus();
@@ -139,36 +140,26 @@
         }
     }
     
-    // function titleVerify()
-    // {
-    //     if(title.value != "")
-    //     {
-    //         title.style.border = "1px solid green";
-    //         titleError.innerHTML = "";
-    //         return true;
-    //     }
-    // }
-
-    // function bodyVerify()
-    // {
-    //     if(body.value != "")
-    //     {
-    //         body.style.border = "1px solid green";
-    //         bodyError.innerHTML = "";
-    //         return true;
-    //     }
-    // }
-    function Verify()
+    function titleVerify()
     {
-        if(body.value != "") AND (title.value != "")
+        if(title.value != "")
         {
-            body.style.border = "1px solid green";
-            bodyError.innerHTML = "";
             title.style.border = "1px solid green";
             titleError.innerHTML = "";
             return true;
         }
     }
+
+    function bodyVerify()
+    {
+        if(body.value != "")
+        {
+            body.style.border = "1px solid green";
+            bodyError.innerHTML = "";
+            return true;
+        }
+    }
+    
         </script>
 
   </body>
