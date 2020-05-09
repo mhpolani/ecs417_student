@@ -114,50 +114,50 @@
     //       }
     //     }
 
-    var title = document.forms["myForm"]["title"];
-    var body = document.forms["myForm"]["body"];
-    var titleError = document.getElementById("title_error");
-    var bodyError = document.getElementById("body_error");
-    title.addEventListener("blur", titleVerify, true);
-    body.addEventListener("blur", bodyVerify, true);
+    // var title = document.forms["myForm"]["title"];
+    // var body = document.forms["myForm"]["body"];
+    // var titleError = document.getElementById("title_error");
+    // var bodyError = document.getElementById("body_error");
+    // title.addEventListener("blur", titleVerify, true);
+    // body.addEventListener("blur", bodyVerify, true);
     
-    function check()
-    {
-        if (title.value == "")
-        {
-            title.style.border = "1px solid red";
-            titleError.textContent = "Title is required!";
-            title.focus();
-            return false;            
-        }
-        if (body.value == "")
-        {
-            body.style.border = "1px solid red";
-            bodyError.textContent = "Title is required!";
-            body.focus();
-            return false;            
-        }
-    }
+    // function check()
+    // {
+    //     if (title.value == "")
+    //     {
+    //         title.style.border = "1px solid red";
+    //         titleError.textContent = "Title is required!";
+    //         title.focus();
+    //         return false;            
+    //     }
+    //     if (body.value == "")
+    //     {
+    //         body.style.border = "1px solid red";
+    //         bodyError.textContent = "Title is required!";
+    //         body.focus();
+    //         return false;            
+    //     }
+    // }
     
-    function titleVerify()
-    {
-        if(title.value != "")
-        {
-            title.style.border = "1px solid green";
-            titleError.innerHTML = "";
-            return true;
-        }
-    }
+    // function titleVerify()
+    // {
+    //     if(title.value != "")
+    //     {
+    //         title.style.border = "1px solid green";
+    //         titleError.innerHTML = "";
+    //         return true;
+    //     }
+    // }
 
-    function bodyVerify()
-    {
-        if(title.value != "")
-        {
-            body.style.border = "1px solid green";
-            bodyError.innerHTML = "";
-            return true;
-        }
-    }
+    // function bodyVerify()
+    // {
+    //     if(title.value != "")
+    //     {
+    //         body.style.border = "1px solid green";
+    //         bodyError.innerHTML = "";
+    //         return true;
+    //     }
+    // }
         </script>
 
   </body>
