@@ -1,4 +1,4 @@
-<?php include('../posts.php');
+<?php include('posts.php');
  
 ?>
 <!DOCTYPE html>
@@ -16,21 +16,21 @@
 	<link href="https://fonts.googleapis.com/css2?family=Candal&family=Raleway&display=swap" rel="stylesheet">
 	
 	<!-- Custom Styling -->
-      <link rel = "stylesheet" href = "../blog.css" type = "text/css">
+      <link rel = "stylesheet" href = "blog.css" type = "text/css">
       
     <!-- Custom Styling -->
-  	<link rel = "stylesheet" href = "../admin.css" type = "text/css">
+  	<link rel = "stylesheet" href = "admin.css" type = "text/css">
       
      <title>Admin Section - Add Post</title>
   </head>
   <body>
   	
-      <?php include('../adminHeader.php'); ?>
+      <?php include('adminHeader.php'); ?>
       
 	  <!-- Admin Page Wrapper -->
 	  <div class = "admin-wrapper">
 	
-      <?php include('../adminSidebar.php'); ?>
+      <?php include('adminSidebar.php'); ?>
             
             
 
@@ -45,6 +45,7 @@
             <div class = "content">
 
                 <h2 class="page-title">Add Posts</h2>
+                <?php include('messages.php'); ?>
 
                  <?php if(count($errors) > 0):?>            
                 <div class="msg error">
@@ -89,7 +90,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>  
 
 	<!-- Custom Script -->
-	<script src = "../scripts.js"></script>
+	<script src = "scripts.js"></script>
 
   </body>
   </html>
