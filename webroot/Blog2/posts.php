@@ -87,7 +87,7 @@ if (isset($_POST['add-post']))   //vvvv delicate
         $body = $_POST['body'];
     }
     }
-}
+
 
 if (isset($_POST['edit-post']))  //update code
 {
