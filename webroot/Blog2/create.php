@@ -55,14 +55,14 @@
             </div>    
             <?php endif; ?>       
 
-               <form action="create.php" method = "post" enctype = "multipart/form-data">  <!-- image upload protocol -->
+               <form id = "myForm" action="create.php" method = "post" enctype = "multipart/form-data">  <!-- image upload protocol -->
                    <div>
                        <label>Title</label>
-                       <input type="text" name = "title" value = "<?php echo $title ?>" class = "text-input">
+                       <input id = "title" type="text" name = "title" value = "<?php echo $title ?>" class = "text-input">
                    </div>
                    <div>
                         <label>Body</label>
-                        <textarea name = "body" value = "<?php echo $body ?>" class = "body"></textarea>
+                        <textarea id = "body" name = "body" value = "<?php echo $body ?>" class = "body"></textarea>
                     </div> 
                     <div>
                     <label>Image</label>
@@ -79,9 +79,9 @@
                         <button type = "submit" name ="add-post" class = "btn btn-big">Post</button>
                     </div>
                     <div> 
-                        <button id ="clickable" onclick = "checkFunction()" type = "reset" name ="clear-post" class = "btn btn-big">Clear</button>
+                        <button id ="clickable" name ="clear-post" class = "btn btn-big">Clear</button>
                     </div>
-                    <p id = "toChange" >Text</p>
+                    
                </form>
             </div>
       </div>
@@ -99,16 +99,14 @@
     <script>
     function checkFunction() 
         {
-            var num;
           if(confirm("Are you sure you want to clear all of the text? All unsaved changes will be lost."))
           {
-            num = 1;
-            document.getElementById("toChange").innerHTML = num;
+            document.getElementById("myForm").reset();
           }
           else
           {
-            num = 2;
-            document.getElementById("toChange").innerHTML = num; 
+            document.getElementById("title").innerHTML = "<?php echo $title ?>";
+            document.getElementById("body").innerHTML = "<?php echo $body ?>";
           }
         }
         </script>
