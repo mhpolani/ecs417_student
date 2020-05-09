@@ -139,7 +139,8 @@
         }
         else
         {
-            
+            console.log(body);
+            console.log(body.value);
             window.alert(body.value);
         }
     }
