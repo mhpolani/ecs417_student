@@ -53,7 +53,9 @@ $posts = selectAll('POSTS', ['published' => 1]);
 					  <div class="post clearfloats">
 
 						  <img src="Images/wooh.png" alt="">
-						  <a href = "" class = "title"><h4><?php echo $['title'] ?></h4></a>
+						  <a href = "" class = "title">
+						  <h4><?php echo $p['title'] ?></h4>
+						  </a>
 					  </div>			
 					  <?php endforeach;?>
 					
