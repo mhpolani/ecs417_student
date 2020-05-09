@@ -120,7 +120,7 @@ if (isset($_POST['clear-post']))
 {
     $title = $_POST['title'];
     $body = $_POST['body'];
-    unset($_POST['edit-post']);
+    unset($_POST['clear-post']);
     dd($_POST);
 }
 

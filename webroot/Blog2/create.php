@@ -97,18 +97,18 @@
 	<script src = "scripts.js"></script>
 
     <script>
-    // function checkFunction() 
-    //     {
-    //       if(confirm("Are you sure you want to clear all of the post? All unsaved changes will be lost."))
-    //       {
-    //         document.getElementById("myForm").reset();
-    //       }
-    //       else
-    //       {
-    //         document.getElementById("title").innerHTML = "<?php echo $title ?>";
-    //         document.getElementById("body").innerHTML = "<?php echo $body ?>";
-    //       }
-    //     }
+    function checkFunction() 
+        {
+          if(confirm("Are you sure you want to clear all of the post? All unsaved changes will be lost."))
+          {
+            document.getElementById("myForm").reset();
+          }
+          else
+          {
+            document.getElementById("title").innerHTML = "<?php echo $title ?>";
+            document.getElementById("body").innerHTML = "<?php echo $body ?>";
+          }
+        }
         </script>
 
   </body>
