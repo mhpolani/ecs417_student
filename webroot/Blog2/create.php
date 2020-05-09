@@ -62,7 +62,7 @@
                    </div>
                    <div>
                         <label>Body</label>
-                        <textarea id = "body" name = "body" value = "<?php echo $body ?>" class = "body"></textarea>
+                        <textarea id = "body2" name = "body" value = "<?php echo $body ?>" class = "body"></textarea>
                     </div> 
                     <div>
                     <label>Image</label>
@@ -106,7 +106,7 @@
           else
           {
             document.getElementById("title").innerHTML = "<?php echo $title ?>";
-            document.getElementById("body").innerHTML = "<?php echo $body ?>";
+            document.getElementById("body2").innerHTML = "<?php echo $body ?>";
           }
         }
         </script>
