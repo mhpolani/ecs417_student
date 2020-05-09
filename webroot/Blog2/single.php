@@ -87,8 +87,8 @@ $posts = selectAll('POSTS', ['published' => 1]);
 			<div class = "footer-content">  <!-- y -->
 
 				<div class = "footer-section about">
-					<h1 class = "logo-text"><span>Hamza</span>Productions</h1>
-					<p>HamzaProductions is a fictional blog chahahahahahahahahahahahahahahaha</p>
+					<h1 class = "logo-text"><span>Hamza</span>Man</h1>
+					<p>Enter filler content here</p>
 					<div class = "contact">
 						<span><i class ="fas fa-phone"></i></span> &nbsp; 123-456-789</span>
 						<span><i class = "fas fa-envelope"></i> &nbsp; info@Mhpolanto.com</span>

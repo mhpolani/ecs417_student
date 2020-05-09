@@ -1,5 +1,5 @@
 <?php include('../posts.php');
- adminOnly();
+ 
 ?>
 <!DOCTYPE html>
  <html lang = "en">

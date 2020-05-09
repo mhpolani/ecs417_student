@@ -1,6 +1,6 @@
 <?php 
 include('restrict.php');
-adminOnly(); ?>
+?>
 <!DOCTYPE html>
  <html lang = "en">
   <head>
