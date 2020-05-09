@@ -41,4 +41,13 @@ $(document).ready(function()
             // instead of a settings object
           ]
         });
+        function checkFunction() 
+        {
+          if (confirm("Are you sure you want to clear all text?"))
+          {
+          }
+          else
+          {
+          }
+        }
 });
