@@ -132,11 +132,15 @@
         }
         if (body.value == "")
         {
-            window.alert("The problem is not the condition.");
             body.style.border = "1px solid red";
             bodyError.textContent = "Body is required!";
             body.focus();
             return false;            
+        }
+        else
+        {
+            
+            window.alert(body.value);
         }
     }
     
