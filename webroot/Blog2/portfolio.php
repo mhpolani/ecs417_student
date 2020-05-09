@@ -37,6 +37,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 		  <div class="content clearfloats">
 
 				<!-- Main Content -->
+				<p class = "aboutme"  >
 			 
 			  <!-- End of Main COntent -->
 			  <div class = "sidebar">

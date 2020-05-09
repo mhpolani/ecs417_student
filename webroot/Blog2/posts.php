@@ -48,7 +48,7 @@ if (isset($_GET['published']) && isset($_GET['p_id']))
 if (isset($_POST['add-post']))   //vvvv delicate
 {
     
-    // $errors = validatePost($_POST); 
+    // $errors = validatePost($_POST);  // no errors shown using PHP
 
     // if (!empty($_FILES['image']['name']))
     // {        
@@ -119,7 +119,7 @@ if (isset($_POST['edit-post']))  //update code
 if (isset($_POST['clear-post'])) 
 {
     $title = $_POST['title'];
-    // $body = $_POST['body'];
+    $body = $_POST['body'];
     $body = htmlentities($_POST['body']);
     unset($_POST['clear-post']);
 }

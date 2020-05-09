@@ -1,5 +1,5 @@
 <header>
-  		<a class = "logo" href = "<?php echo '../index.php'?>" >
+  		<a class = "logo" href = "<?php echo 'index.php'?>" >
   			<h1 class = "logo-text"><span>Hamza</span>Man</h1>
   		</a>
   		<i class = "fa fa-bars menu-toggle"></i>
