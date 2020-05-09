@@ -99,7 +99,6 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 				  <div class = "section topics">
 					  <h2 class = "section-title">Topics</h2>
 					  <ul>
-						
 						  <li><a href = "#">About Me</a></li>
 						  <li><a href = "#">Skills and Achievements</a></li>
 						  <li><a href = "#">Education and Qualifications</a></li>
@@ -141,13 +140,14 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 					<h2>Quick Links</h2>
 					<br>
 					<ul>
-						<a href = "#"><li>Events</li></a>
-						<a href = "#"><li>Events</li></a>
-						<a href = "#"><li>Events</li></a>
-						<a href = "#"><li>Events</li></a>
-						<a href = "#"><li>Events</li></a>
-						<a href = "#"><li>Events</li></a>
-						<a href = "#"><li>Events</li></a>
+					  <li><a href = "#">About Me</a></li>
+					  <li><a href = "#">Skills and Achievements</a></li>
+	     			  <li><a href = "#">Education and Qualifications</a></li>
+					  <li><a href = "#">Experience</a></li>
+					  <li><a href = "#">Portfolio</a></li>
+					  <li><a href = "#">Contact</a></li>
+					  <li><a href = "#">Blog</a></li>	
+					</ul>
 					
 				</div>
 				<div class = "footer-section contact-form">
