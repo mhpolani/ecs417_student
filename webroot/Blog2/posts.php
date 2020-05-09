@@ -116,13 +116,14 @@ if (isset($_POST['edit-post']))  //update code
         $body = $_POST['body'];
     }
 }
-if (isset($_POST['clear-post'])) 
+if (($_POST['clear-post'])) 
 {
     $title = $_POST['title'];
     // $body = $_POST['body'];
     $body = htmlentities($_POST['body']);
     unset($_POST['clear-post']);
 }
+
 
 
 
