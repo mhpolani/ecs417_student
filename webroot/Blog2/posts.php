@@ -9,6 +9,7 @@ $body = "";
 $ID = "";
 $published = "";
 
+$errors = array();
 
 if(isset($_GET['ID']))  //when the edit button is clicked
 {
@@ -42,7 +43,7 @@ if (isset($_GET['published']) && isset($_GET['p_id']))
 }
 
 
-$errors = array();
+
 if (isset($_POST['add-post']))   //vvvv delicate
 {
     adminOnly();
