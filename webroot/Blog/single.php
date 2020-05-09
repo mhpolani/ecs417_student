@@ -2,8 +2,11 @@
 
 if (isset($_GET['ID']))
 {
-	$post = selectOne('POSTS',['ID' => $_GET['ID']]); 
+	$post = selectOne('POSTS',['ID' => $_GET['ID']]); //fetch post clicked from index and display fetched post on single.php
 }
+
+$posts = selectAll('POSTS', ['published' => 1]);
+
 
 ?>
 <!DOCTYPE html>
@@ -46,26 +49,14 @@ if (isset($_GET['ID']))
 				  <div class="section trending">
 					  <h2 class="section-title">Popular</h2>	
 
+						<?php foreach($posts as $p): ?>
 					  <div class="post clearfloats">
+
 						  <img src="Images/wooh.png" alt="">
-						  <a href = "" class = "title"><h4>How to overcome your fears</h4></a>
+						  <a href = "" class = "title"><h4><?php echo $['title'] ?></h4></a>
 					  </div>			
-					  <div class="post clearfloats">
-						  <img src="Images/donut.png" alt="">
-						  <a href = "" class = "title"><h4>How to overcome your fears</h4></a>
-					  </div>			
-					  <div class="post clearfloats">
-						  <img src="Images/crybaby.png" alt="">
-						  <a href = "" class = "title"><h4>How to overcome your fears</h4></a>
-					  </div>			
-					  <div class="post clearfloats">
-						  <img src="Images/homerCool.png" alt="">
-						  <a href = "" class = "title"><h4>How to overcome your fears</h4></a>
-					  </div>			
-					  <div class="post clearfloats">
-						  <img src="Images/thumbsup.png" alt="">
-						  <a href = "" class = "title"><h4>How to overcome your fears</h4></a>
-					  </div>			
+					  <?php endforeach;?>
+					
 
 				  </div>
 
