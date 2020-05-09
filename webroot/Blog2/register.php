@@ -51,7 +51,7 @@
           <div>
               <button type = "submit" name = "register-btn" class = "btn btn-big">Register</button>
           </div>
-          <p>Or<a href = "login.php">Sign In</a></p>
+          <p>or<a href = "login.php"> Sign In</a></p>
           </form>
 	
 
