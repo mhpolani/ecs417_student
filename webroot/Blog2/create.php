@@ -79,7 +79,7 @@
                         <button type = "submit" name ="add-post" class = "btn btn-big">Post</button>
                     </div>
                     <div> 
-                        <button id ="clickable" onclick = "checkFunction()" type = "submit" name ="clear-post" class = "btn btn-big">Clear</button>
+                        <button id ="clickable" onclick = "checkFunction()" type = "reset" name ="clear-post" class = "btn btn-big">Clear</button>
                     </div>
                     <p id = "toChange" >Text</p>
                </form>
