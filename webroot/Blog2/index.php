@@ -99,6 +99,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 				  <div class = "section topics">
 					  <h2 class = "section-title">Topics</h2>
 					  <ul>
+						
 						  <li><a href = "#">About Me</a></li>
 						  <li><a href = "#">Skills and Achievements</a></li>
 						  <li><a href = "#">Education and Qualifications</a></li>

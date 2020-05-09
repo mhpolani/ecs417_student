@@ -1,4 +1,6 @@
-<?php include('../posts.php'); ?>
+<?php include('../posts.php');
+ adminOnly();
+?>
 <!DOCTYPE html>
  <html lang = "en">
   <head>
