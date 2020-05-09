@@ -86,6 +86,7 @@ if (isset($_POST['add-post']))   //vvvv delicate
     //     $title = $_POST['title'];
     //     $body = $_POST['body'];
     // }
+    }
 }
 
 if (isset($_POST['edit-post']))  //update code
@@ -128,6 +129,3 @@ if (isset($_POST['clear-post']))
 
 
 // if (isset($_POST['edit-post'])) 
-
-
-    
