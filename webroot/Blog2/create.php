@@ -63,7 +63,7 @@
                    </div>
                    <div>
                         <label>Body</label>
-                        <textarea  name = "body2" class = "body"> <?php echo $body ?></textarea>
+                        <textarea  name = "body" class = "body"> <?php echo $body ?></textarea>
                         <div id = "body_error" class = "value_error"></div>
                     </div> 
                     <div>
@@ -121,43 +121,43 @@
     // title.addEventListener("blur", titleVerify, true);
     // body.addEventListener("blur", bodyVerify, true);
     
-    // function check()
-    // {
-    //     if (title.value == "")
-    //     {
-    //         title.style.border = "1px solid red";
-    //         titleError.textContent = "Title is required!";
-    //         title.focus();
-    //         return false;            
-    //     }
-    //     if (body.value == "")
-    //     {
-    //         body.style.border = "1px solid red";
-    //         bodyError.textContent = "Title is required!";
-    //         body.focus();
-    //         return false;            
-    //     }
-    // }
+    function check()
+    {
+        if (title.value == "")
+        {
+            title.style.border = "1px solid red";
+            titleError.textContent = "Title is required!";
+            title.focus();
+            return false;            
+        }
+        if (body.value == "")
+        {
+            body.style.border = "1px solid red";
+            bodyError.textContent = "Title is required!";
+            body.focus();
+            return false;            
+        }
+    }
     
-    // function titleVerify()
-    // {
-    //     if(title.value != "")
-    //     {
-    //         title.style.border = "1px solid green";
-    //         titleError.innerHTML = "";
-    //         return true;
-    //     }
-    // }
+    function titleVerify()
+    {
+        if(title.value != "")
+        {
+            title.style.border = "1px solid green";
+            titleError.innerHTML = "";
+            return true;
+        }
+    }
 
-    // function bodyVerify()
-    // {
-    //     if(title.value != "")
-    //     {
-    //         body.style.border = "1px solid green";
-    //         bodyError.innerHTML = "";
-    //         return true;
-    //     }
-    // }
+    function bodyVerify()
+    {
+        if(title.value != "")
+        {
+            body.style.border = "1px solid green";
+            bodyError.innerHTML = "";
+            return true;
+        }
+    }
         </script>
 
   </body>
