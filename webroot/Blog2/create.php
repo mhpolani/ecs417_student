@@ -81,7 +81,7 @@
                     <div> 
                         <button id ="clickable" onclick = "checkFunction()" type = "submit" name ="clear-post" class = "btn btn-big">Clear</button>
                     </div>
-                    <p id = "toChange" ></p>
+                    <p id = "toChange" >Text</p>
                </form>
             </div>
       </div>
@@ -95,6 +95,23 @@
 
 	<!-- Custom Script -->
 	<script src = "scripts.js"></script>
+
+    <script>
+    function checkFunction() 
+        {
+            var num;
+          if(confirm("Are you sure you want to clear all of the text? All unsaved changes will be lost."))
+          {
+            num = 1;
+            document.getElementById("toChange").innerHTML = num;
+          }
+          else
+          {
+            num = 2;
+            document.getElementById("toChange").innerHTML = num; 
+          }
+        }
+        </script>
 
   </body>
   </html>
