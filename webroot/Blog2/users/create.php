@@ -1,5 +1,5 @@
 <?php 
-include('restrict.php');
+include('../restrict.php');
 adminOnly();?>
 <!DOCTYPE html>
  <html lang = "en">
