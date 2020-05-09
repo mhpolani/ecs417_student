@@ -151,7 +151,7 @@
 
     function bodyVerify()
     {
-        if(title.value != "")
+        if(body.value != "")
         {
             body.style.border = "1px solid green";
             bodyError.innerHTML = "";
