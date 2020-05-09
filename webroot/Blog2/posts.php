@@ -120,7 +120,6 @@ if (isset($_POST['clear-post']))
 {
     $title = $_POST['title'];
     $body = $_POST['body'];
-    $body = htmlentities($_POST['body']);
     unset($_POST['clear-post']);
 }
 
