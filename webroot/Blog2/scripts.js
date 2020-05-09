@@ -43,6 +43,13 @@ $(document).ready(function()
         });
         function checkFunction() 
         {
-          document.getElementById("clickable").innerHTML = "YOU CLICKED ME";
+          if(confirm("Are you sure you want to clear all of the text? All unsaved changes will be lost."))
+          {
+            document.getElementById("toChange").innerHTML = '1';
+          }
+          else
+          {
+            
+          }
         }
 });

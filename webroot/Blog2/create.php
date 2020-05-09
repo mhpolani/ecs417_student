@@ -81,6 +81,7 @@
                     <div> 
                         <button id ="clickable" onclick = "checkFunction()" type = "submit" name ="clear-post" class = "btn btn-big">Clear</button>
                     </div>
+                    <p id = "toChange" ></p>
                </form>
             </div>
       </div>
