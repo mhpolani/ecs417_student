@@ -139,13 +139,7 @@
             body.focus();
             return false;            
         }
-        else
-        {
-            console.log(body);
-            console.log(body.value);
-            window.alert(body.value);
-            window.alert(body);
-        }
+        
     }
     
     function titleVerify()
