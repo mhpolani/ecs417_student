@@ -3,7 +3,7 @@ include('restrict.php');
 include('db.php');
 include('validatePost.php');
 $table = 'POSTS';
-$posts = selectAll($table);
+$posts = selectAll($table);   //makes all the posts available to view on postsindex
 $title = "";
 $body = "";
 $ID = "";
@@ -48,7 +48,7 @@ if (isset($_GET['published']) && isset($_GET['p_id']))
 if (isset($_POST['add-post']))   //vvvv delicate
 {
     
-    $errors = validatePost($_POST); 
+    // $errors = validatePost($_POST); 
 
     // if (!empty($_FILES['image']['name']))
     // {        
