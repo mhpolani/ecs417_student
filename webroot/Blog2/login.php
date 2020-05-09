@@ -1,6 +1,6 @@
 <?php include('users.php');
 
-guestsOnly();
+
 ?>
 <!DOCTYPE html>
  <html lang = "en">
