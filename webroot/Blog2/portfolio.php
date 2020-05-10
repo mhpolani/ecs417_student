@@ -83,9 +83,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">Portfolio & Links</a></h4>
 	  <i class="fas fa-pen-fancy"></i>
 	  <p class = "posttext">
-	  Below you can find links that will redirect you to my CV and an article I co-authored for a renowned medical journal:
-		<a href = "CV.pdf">CV</a>
-		<hr>
+	  Below you can find a link that will redirect you to an article I co-authored for a renowned medical journal while this you can look at my CV <a href = "CV.pdf"> here </a>.
 		<a href = "https://www.cureus.com/articles/12863-knowledge-attitudes-and-practices-among-nurses-in-pakistan-towards-diabetic-foot?utm_medium=email&utm_source=transaction">Knowledge, Attitudes, and Practices Among Nurses in Pakistan Towards Diabetic Foot</a>
 	 </p>
 	  &nbsp;
