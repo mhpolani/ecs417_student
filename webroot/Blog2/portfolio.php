@@ -33,7 +33,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 
 			<div class = "post-slider">
 
-			<h1 class = "portfolio-title">Hamza Polani</h1>
+			<h1 class = "portfolio-title">Muhammad Hamza Polani</h1>
 			<i class = "fas fa-chevron-left prev"></i>
 			<i class = "fas fa-chevron-right next"></i>
 			
@@ -44,6 +44,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 		<img src = "Images/guy.png" alt = " " class = "Pslider-image">
 		<div class = "post-info">
 	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">About Myself</a></h4>
+	  <i class = "far fa-user"> </i> 
 	  <p class = "posttext">
 	   I have an inquisitive mind that is entertained with a plethora of interests such as programming, reading, politics, weightlifting and video-gaming.  Since writing my first program in Java, I have been possessed with the idea of using software to solve practical problems. I have a strong conviction in the power of programming to develop the lives of people everywhere.
 	  </p>
@@ -54,11 +55,13 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 </div> 
 
 <div class = "post">
-		<img src = "Images/ac.png" alt = " " class = "Pslider-image">
+		<img src = "Images/qual.jpeg" alt = " " class = "Pslider-image">
 		<div class = "post-info">
-	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">Skills and Achievements</a></h4>
+	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">Skills & Achievements</a></h4>
 	  <i class = "far fa-user"> </i>
-	  <p class = "posttext">I have an inquisitive mind that is entertained with a plethora of interests such as programming, reading, politics, weightlifting and video-gaming.  Since writing my first program in Java, I have been possessed with the idea of using software to solve practical problems. I have a strong conviction in the power of programming to develop the lives of people everywhere. </p>
+	  <p class = "posttext">
+		Over the span of the last ten years, I have attained several awards in the fields of sports, debating
+	  </p>
 	  &nbsp;
 	  <i class = "far fa-calendar">April 3, 2020</i>	  
 		</div>
@@ -66,7 +69,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 <div class = "post">
 		<img src = "Images/kgs.png" alt = " " class = "Pslider-image">
 		<div class = "post-info">
-	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">Education and Qualifiations</a></h4>
+	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">Education & Qualifiations</a></h4>
 	  <i class = "far fa-user"> </i>
 	  <p class = "posttext">I am currently studying Computer Science with Management at the Queen Mary University of London. I had the pleasure of completing my A-levels from Karachi Grammar School in 2018 and my GCSEs from Bahria College Karachi in 2016.</p>
 	  &nbsp;
@@ -75,21 +78,60 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 </div> 
 
 <div class = "post">
-		<img src = "Images/kgs.png" alt = " " class = "Pslider-image">
+		<img src = "Images/links.png" alt = " " class = "Pslider-image">
 		<div class = "post-info">
-	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">The tales of Hamza</a></h4>
+	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">Portfolio & Links</a></h4>
 	  <i class = "far fa-user"> </i>
 	  <p class = "posttext">
-	  My personal blog. Includes articles and essays I have written since I was a young child. Please take a look.
+	  Below you can find links that will redirect you to my CV and an article I co-authored for a renowned medical journal:
+		<a href = "CV.pdf">CV</a>
+		<a href = "https://www.cureus.com/articles/12863-knowledge-attitudes-and-practices-among-nurses-in-pakistan-towards-diabetic-foot?utm_medium=email&utm_source=transaction">Knowledge, Attitudes, and Practices Among Nurses in Pakistan Towards Diabetic Foot</a>
+	 </p>
+	  &nbsp;
+	  <i class = "far fa-calendar">April 3, 2020</i>	  
+		</div>
+</div> 
+
+<div class = "post">
+		<img src = "Images/blog.png" alt = " " class = "Pslider-image">
+		<div class = "post-info">
+	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">The tales of HamzaMan</a></h4>
+	  <i class = "far fa-user"> </i>
+	  <p class = "posttext">
+	  My personal blog. Includes articles and essays I have written since I was a young child. 
 	  </p>
 	  &nbsp;
 	  <i class = "far fa-calendar">April 3, 2020</i>	  
 		</div>
 </div> 
-        
-         
-      </div>
-      
+		
+<div class = "post">
+		<img src = "Images/contact.jpeg" alt = " " class = "Pslider-image">
+		<div class = "post-info">
+	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">Contact me!</a></h4>
+	  <i class = "far fa-user"> </i>
+	  <p class = "posttext">
+	  You can contact me through any of my social media pages that can be found on the footer of this page. Alternatively, you can fill out the contact form on this website and one of my team members will get back to you via email.
+	  </p>
+	  &nbsp;
+	  <i class = "far fa-calendar">April 3, 2020</i>	  
+		</div>
+</div> 
+		 
+<div class = "post">
+		<img src = "Images/ac.png" alt = " " class = "Pslider-image">
+		<div class = "post-info">
+	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">Hobbies & Interests</a></h4>
+	  <i class = "far fa-user"> </i>
+	  <p class = "posttext">
+	  In my spare time, I am a weightlifting and gaming enthusiast. Squash,DC comics,fiction books and first person shooter games are a few of the things I am an avid fan of.
+	  </p>
+	  &nbsp;
+	  <i class = "far fa-calendar">April 3, 2020</i>	  
+		</div>
+</div> 
+
+      </div>      
 		</div>
 
 	  
