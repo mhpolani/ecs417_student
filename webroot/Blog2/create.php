@@ -125,6 +125,7 @@
     {
         if (title.value == "")
         {
+            window.alert("I was called.");
             event.preventDefault();
             title.style.border = "1px solid red";
             titleError.textContent = "Title is required!";
@@ -133,6 +134,7 @@
         }
         if (body.value == "")
         {
+            window.alert("I was called.");
             event.preventDefault();
             body.style.border = "1px solid red";
             bodyError.textContent = "Body is required!";
