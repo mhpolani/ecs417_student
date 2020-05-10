@@ -44,7 +44,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 		<img src = "Images/guy.png" alt = " " class = "Pslider-image">
 		<div class = "post-info">
 	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">About Myself</a></h4>
-	  <i class = "far fa-user"> </i> 
+	  <i class = "far fa-user"></i> 
 	  <p class = "posttext">
 	  Since writing my first program in Java, I have been possessed with the idea of using software to solve practical problems. I have a strong conviction in the power of programming to develop the lives of people everywhere.
 	  </p>
@@ -70,7 +70,6 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 		<img src = "Images/kgs.png" alt = " " class = "Pslider-image">
 		<div class = "post-info">
 	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">Education & Qualifiations</a></h4>
-	  <i class = "far fa-user"> </i>
 	  <i class="fas fa-brain"></i>
 	  <p class = "posttext">I am currently studying Computer Science with Management at the Queen Mary University of London. I had the pleasure of completing my A-levels from Karachi Grammar School in 2018 and my GCSEs from Bahria College Karachi in 2016.</p>
 	  &nbsp;
@@ -82,7 +81,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 		<img src = "Images/links.png" alt = " " class = "Pslider-image">
 		<div class = "post-info">
 	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">Portfolio & Links</a></h4>
-	  <i class = "far fa-user"> </i>
+	  <i class="fas fa-pen-fancy"></i>
 	  <p class = "posttext">
 	  Below you can find links that will redirect you to my CV and an article I co-authored for a renowned medical journal:
 		<a href = "CV.pdf">CV</a>
@@ -98,7 +97,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 		<img src = "Images/blog.png" alt = " " class = "Pslider-image">
 		<div class = "post-info">
 	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">The tales of HamzaMan</a></h4>
-	  <i class = "far fa-user"> </i>
+	  <i class="fas fa-book"></i>
 	  <p class = "posttext">
 	  My personal blog. Includes articles and essays I have written since I was a young child. 
 	  </p>
@@ -111,7 +110,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 		<img src = "Images/contact.jpeg" alt = " " class = "Pslider-image">
 		<div class = "post-info">
 	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">Contact me!</a></h4>
-	  <i class = "far fa-user"> </i>
+	  <i class="fas fa-address-book"></i>
 	  <p class = "posttext">
 	  You can contact me through any of my social media pages that can be found on the footer of this page. Alternatively, you can fill out the contact form on this website and one of my team members will get back to you via email.
 	  </p>
@@ -124,7 +123,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 		<img src = "Images/ac.png" alt = " " class = "Pslider-image">
 		<div class = "post-info">
 	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">Hobbies & Interests</a></h4>
-	  <i class = "far fa-user"> </i>
+	  <i class="fas fa-dumbbell"></i>
 	  <p class = "posttext">
 	  In my spare time, I am a weightlifting and driving enthusiast. Squash, DC comics, fiction books and first person shooter games are also a few of the things I am an avid fan of.
 	  </p>
