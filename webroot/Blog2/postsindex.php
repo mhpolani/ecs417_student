@@ -51,7 +51,7 @@
                         <th>#</th>
                         <th>Title</th>
                         <th>Author</th>
-                        <th  colspan = "3">Action</th>
+                        <th  colspan = "4">Action</th>
                     </thead>
                     <tbody>
                         <?php foreach ($posts as $key => $post): ?>
@@ -60,13 +60,13 @@
                             <td><?php echo $post['title'] ?></td>
                             <td>Hamza</td>
                             <td><a href="edit.php?ID=<?php echo $post['ID']; ?> " class = "edit">Edit</a></td>
-                            <td><a href="edit.php?delete_id=<?php echo $post['ID']; ?> " class = "edit">Delete</a></td>
+                            <td><a href="edit.php?delete_id=<?php echo $post['ID']; ?> " class = "delete">Delete</a></td>
                             <?php if($post['published']):?>
                                 <td><a href="edit.php?published=0&p_id=<?php echo $post['ID']?>" class = "unpublish">Unpublish</a></td>
                             <?php else: ?>
                                 <td><a href="edit.php?published=1&p_id=<?php echo $post['ID']?>" class = "publish">Publish</a></td>
                             <?php endif; ?>
-                            
+                            <td><a href="edit.php?delete_id=<?php echo $post['ID']; ?> " class = "preview">Preview</a></td>
                         </tr>
                             <?php endforeach; ?>
                          

@@ -30,6 +30,17 @@ if(isset($_GET['delete_id']))  //when the delete button is clicked
     exit();
 }
 
+if(isset($_GET['preview_id']))  //when the preview button is clicked
+{
+    
+    $count = delete($table,$_GET['delete_id']);
+    $_SESSION['message'] = "Post deleted successfully.";
+    $_SESSION['type'] = "success";
+    header('location: postsindex.php');
+    exit();
+}
+
+
 if (isset($_GET['published']) && isset($_GET['p_id']))
 {
     
