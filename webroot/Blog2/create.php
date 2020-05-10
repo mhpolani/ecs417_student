@@ -125,15 +125,15 @@
     {
         if (title.value == "")
         {
-            window.alert("I was called.");
+            window.alert("Please fill in the title field before you can proceed.");
             title.style.border = "1px solid red";
             titleError.textContent = "Title is required!";
             title.focus();
             return false;            
         }
         if (body.value == "")
-        {
-            window.alert("I was called.");
+        {   
+            window.alert("Please fill in the body field before you can proceed.");
             body.style.border = "1px solid red";
             bodyError.textContent = "Body is required!";
             body.focus();
