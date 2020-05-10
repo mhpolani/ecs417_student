@@ -243,6 +243,7 @@ header .menu-toggle
 {
 	height: 130px;
 	padding: 0px 5px;
+
 }
 .post-slider .post-wrapper .post .slider-image
 {
@@ -268,6 +269,11 @@ header .menu-toggle
 	text-align:center;
 	margin: 30px auto;
 	font-family: 'Raleway', sans-serif;
+}
+.posttext
+{
+	height: 300px;
+	height:100%;
 }
 
 
