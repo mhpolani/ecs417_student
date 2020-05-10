@@ -146,7 +146,7 @@ function delete($table, $id)
 function getPublishedPosts()
 {
     global $conn;
-    $sql = "SELECT x.*, y.username FROM POSTS AS x JOIN USERS AS y ON x.ID = y.ID WHERE x.published='?' ORDER BY x.created_at DESC";
+    $sql = "SELECT * FROM POSTS WHERE published=? ORDER BY created_at DESC";
     $stmt = executeQuery($sql, ['published' => 1]);
     $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
     return $records;   

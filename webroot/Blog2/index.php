@@ -4,6 +4,7 @@ include('db.php');
 $posts = selectAll('POSTS', ['published' => 1]);  
 // $posts = array();
 // $posts = getPublishedPosts()  //fetching only published posts for use in displaying them publicly
+
 ?>
 
 <!DOCTYPE html>
