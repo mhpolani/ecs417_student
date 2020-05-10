@@ -59,6 +59,7 @@
                             <td><?php echo $key + 1; ?></td>
                             <td><?php echo $post['title'] ?></td>
                             <td>Hamza</td>
+                            <td><a href="edit.php?published=1&p_id=<?php echo $post['ID']?>" class = "preview">Preview</a></td>                        
                             <td><a href="edit.php?ID=<?php echo $post['ID']; ?> " class = "edit">Edit</a></td>
                             <td><a href="edit.php?delete_id=<?php echo $post['ID']; ?> " class = "edit">Delete</a></td>
                             <?php if($post['published']):?>
@@ -66,7 +67,7 @@
                             <?php else: ?>
                                 <td><a href="edit.php?published=1&p_id=<?php echo $post['ID']?>" class = "publish">Publish</a></td>
                             <?php endif; ?>    
-                            <td><a href="edit.php?published=1&p_id=<?php echo $post['ID']?>" class = "preview">Preview</a></td>                        
+                            
                         </tr> 
                             <?php endforeach; ?>
                          
