@@ -276,7 +276,10 @@ header .menu-toggle
 	height:100%;
 	border:1px solid red;
 }
-
+.Ppost-info
+{
+	border:1px solid red;
+}
 
 /* CONTENT */
 
