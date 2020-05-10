@@ -274,6 +274,7 @@ header .menu-toggle
 {
 	height: 500px;
 	height:100%;
+	border:1px solid red;
 }
 
 
