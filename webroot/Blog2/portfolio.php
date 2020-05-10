@@ -46,7 +46,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">About Myself</a></h4>
 	  <i class = "far fa-user"> </i> 
 	  <p class = "posttext">
-	   I have an inquisitive mind that is entertained with a plethora of interests such as programming, reading, politics, weightlifting and video-gaming.  Since writing my first program in Java, I have been possessed with the idea of using software to solve practical problems. I have a strong conviction in the power of programming to develop the lives of people everywhere.
+	  Since writing my first program in Java, I have been possessed with the idea of using software to solve practical problems. I have a strong conviction in the power of programming to develop the lives of people everywhere.
 	  </p>
 	  <!-- <i class = "far fa-user"></i> -->
 	  &nbsp;
@@ -71,6 +71,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 		<div class = "post-info">
 	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">Education & Qualifiations</a></h4>
 	  <i class = "far fa-user"> </i>
+	  <i class="fas fa-brain"></i>
 	  <p class = "posttext">I am currently studying Computer Science with Management at the Queen Mary University of London. I had the pleasure of completing my A-levels from Karachi Grammar School in 2018 and my GCSEs from Bahria College Karachi in 2016.</p>
 	  &nbsp;
 	  <i class = "far fa-calendar">April 3, 2020</i>	  
@@ -85,6 +86,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 	  <p class = "posttext">
 	  Below you can find links that will redirect you to my CV and an article I co-authored for a renowned medical journal:
 		<a href = "CV.pdf">CV</a>
+		<hr>
 		<a href = "https://www.cureus.com/articles/12863-knowledge-attitudes-and-practices-among-nurses-in-pakistan-towards-diabetic-foot?utm_medium=email&utm_source=transaction">Knowledge, Attitudes, and Practices Among Nurses in Pakistan Towards Diabetic Foot</a>
 	 </p>
 	  &nbsp;
@@ -124,7 +126,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">Hobbies & Interests</a></h4>
 	  <i class = "far fa-user"> </i>
 	  <p class = "posttext">
-	  In my spare time, I am a weightlifting and gaming enthusiast. Squash,DC comics,fiction books and first person shooter games are a few of the things I am an avid fan of.
+	  In my spare time, I am a weightlifting and driving enthusiast. Squash, DC comics, fiction books and first person shooter games are also a few of the things I am an avid fan of.
 	  </p>
 	  &nbsp;
 	  <i class = "far fa-calendar">April 3, 2020</i>	  
@@ -178,7 +180,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 
 				<div class = "footer-section about">
 					<h1 class = "logo-text"><span>Hamza</span>Man</h1>
-					<p>Enter filler content for footer here</p>
+					<p></p>
 					<div class = "contact">
 						<span><i class ="fas fa-phone"></i></span> &nbsp; 123-456-789</span>
 						<span><i class = "fas fa-envelope"></i> &nbsp; info@Mhpolanto.com</span>
