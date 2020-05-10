@@ -21,7 +21,7 @@ function executeQuery($sql,$data)
 function selectAll($table, $conditions = [])
 {
     global $conn;
-    $sql = "SELECT * FROM $table";
+    $sql = "SELECT * FROM $table ORDER BY created_at DESC";
     if(empty($conditions))
     {
         $stmt = $conn->prepare($sql);
