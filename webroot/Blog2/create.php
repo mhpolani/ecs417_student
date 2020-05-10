@@ -63,7 +63,7 @@
                    </div>
                    <div>
                         <label>Body</label>
-                        <textarea  name = "body" class = "body"> <?php echo $body ?></textarea>
+                        <textarea id = "body" name = "body" class = "body"> <?php echo $body ?></textarea>
                         <div id = "body_error" class = "value_error"></div>
                     </div> 
                     <div>
