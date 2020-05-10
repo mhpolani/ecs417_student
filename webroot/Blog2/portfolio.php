@@ -42,11 +42,11 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 				
 <div class = "post">
 		<img src = "Images/guy.png" alt = " " class = "Pslider-image">
-		<div class = "post-info">
+		<div class = "Ppost-info">
 	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">About Myself</a></h4>
 	  <i class = "far fa-user"></i> 
 	  <p class = "posttext">
-	  Since writing my first program in Java, I have been possessed with the idea of using software to solve practical problems. I have a strong conviction in the power of programming to develop the lives of people everywhere.
+	  Since writing my first program in Java, I have been possessed with the idea of using software to solve practical problems. I have a strong conviction in the power of programming to develop the lives of people everywhere. Keenly interested in data analytics and tech auditing, I aspire to either be a data scientist or delve into FinTech.
 	  </p>
 	  <!-- <i class = "far fa-user"></i> -->
 	  &nbsp;
@@ -56,7 +56,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 
 <div class = "post">
 		<img src = "Images/qual.jpeg" alt = " " class = "Pslider-image">
-		<div class = "post-info">
+		<div class = "Ppost-info">
 	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">Skills & Achievements</a></h4>
 	  <i class = "far fa-user"> </i>
 	  <p class = "posttext">
@@ -68,7 +68,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 </div> 
 <div class = "post">
 		<img src = "Images/kgs.png" alt = " " class = "Pslider-image">
-		<div class = "post-info">
+		<div class = "Ppost-info">
 	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">Education & Qualifiations</a></h4>
 	  <i class="fas fa-brain"></i>
 	  <p class = "posttext">I am currently studying Computer Science with Management at the Queen Mary University of London. I had the pleasure of completing my A-levels from Karachi Grammar School in 2018 and my GCSEs from Bahria College Karachi in 2016.</p>
@@ -79,12 +79,12 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 
 <div class = "post">
 		<img src = "Images/links.png" alt = " " class = "Pslider-image">
-		<div class = "post-info">
+		<div class = "Ppost-info">
 	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">Portfolio & Links</a></h4>
 	  <i class="fas fa-pen-fancy"></i>
 	  <p class = "posttext">
 	  Below you can find a link that will redirect you to an article I co-authored for a renowned medical journal while this you can look at my CV <a href = "CV.pdf"> here </a>.
-		<a href = "https://www.cureus.com/articles/12863-knowledge-attitudes-and-practices-among-nurses-in-pakistan-towards-diabetic-foot?utm_medium=email&utm_source=transaction">Knowledge, Attitudes, and Practices Among Nurses in Pakistan Towards Diabetic Foot</a>
+		               <a href = "https://www.cureus.com/articles/12863-knowledge-attitudes-and-practices-among-nurses-in-pakistan-towards-diabetic-foot?utm_medium=email&utm_source=transaction">Knowledge, Attitudes, and Practices Among Nurses in Pakistan Towards Diabetic Foot</a>
 	 </p>
 	  &nbsp;
 	  <i class = "far fa-calendar">April 3, 2020</i>	  
@@ -93,7 +93,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 
 <div class = "post">
 		<img src = "Images/blog.png" alt = " " class = "Pslider-image">
-		<div class = "post-info">
+		<div class = "Ppost-info">
 	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">The tales of HamzaMan</a></h4>
 	  <i class="fas fa-book"></i>
 	  <p class = "posttext">
@@ -106,7 +106,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 		
 <div class = "post">
 		<img src = "Images/contact.jpeg" alt = " " class = "Pslider-image">
-		<div class = "post-info">
+		<div class = "Ppost-info">
 	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">Contact me!</a></h4>
 	  <i class="fas fa-address-book"></i>
 	  <p class = "posttext">
@@ -119,7 +119,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 		 
 <div class = "post">
 		<img src = "Images/ac.png" alt = " " class = "Pslider-image">
-		<div class = "post-info">
+		<div class = "Ppost-info">
 	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">Hobbies & Interests</a></h4>
 	  <i class="fas fa-dumbbell"></i>
 	  <p class = "posttext">
