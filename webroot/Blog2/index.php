@@ -45,9 +45,9 @@ $posts = getPublishedPosts() //fetching only ORDERED published posts for use in 
 		<img src = "Images/donut.png" alt = " " class = "slider-image">
 		<div class = "post-info">
 	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>"><?php echo $post['title']; ?></a></h4>
-	  <i class = "far fa-user"> </i>
+	  <i class = "far fa-user">Hamza Polani</i>
 	  &nbsp;
-	  <i class = "far fa-calendar">April 3, 2020</i>	  
+	  <i class = "far fa-calendar"><?php echo $post['created_at'];?> </i>
 		</div>
 </div> 
 

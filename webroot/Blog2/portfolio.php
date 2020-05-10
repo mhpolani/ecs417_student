@@ -41,34 +41,51 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 		
 				
 <div class = "post">
-		<img src = "Images/donut.png" alt = " " class = "slider-image">
+		<img src = "Images/guy.png" alt = " " class = "slider-image">
 		<div class = "post-info">
 	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">About Myself</a></h4>
-	  <i class = "far fa-user"> </i>
+	  <p>
+	  I am currently studying Computer Science with Management at the Queen Mary University of London. I have an inquisitive mind that is entertained with a plethora of interests such as programming, reading, politics, weightlifting and video-gaming.  Since writing my first program in Java, I have been possessed with the idea of using software to solve practical problems. I have a strong conviction in the power of programming to develop the lives of people everywhere.
+	  </p>
+	  <!-- <i class = "far fa-user"></i> -->
 	  &nbsp;
 	  <i class = "far fa-calendar">April 3, 2020</i>	  
 		</div>
 </div> 
 
 <div class = "post">
-		<img src = "Images/daft.png" alt = " " class = "slider-image">
+		<img src = "Images/ac.png" alt = " " class = "slider-image">
 		<div class = "post-info">
 	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">Skills and Achievements</a></h4>
 	  <i class = "far fa-user"> </i>
+	  <p>LOREM EPSUM </p>
 	  &nbsp;
 	  <i class = "far fa-calendar">April 3, 2020</i>	  
 		</div>
 </div> 
 <div class = "post">
-		<img src = "Images/wooh.png" alt = " " class = "slider-image">
+		<img src = "Images/kgs.png" alt = " " class = "slider-image">
 		<div class = "post-info">
 	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">Education and Qualifiations</a></h4>
 	  <i class = "far fa-user"> </i>
+	  <p> good scene </p>
 	  &nbsp;
 	  <i class = "far fa-calendar">April 3, 2020</i>	  
 		</div>
 </div> 
 
+<div class = "post">
+		<img src = "Images/kgs.png" alt = " " class = "slider-image">
+		<div class = "post-info">
+	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">The tales of Hamza</a></h4>
+	  <i class = "far fa-user"> </i>
+	  <p>
+	  My personal blog.
+	  </p>
+	  &nbsp;
+	  <i class = "far fa-calendar">April 3, 2020</i>	  
+		</div>
+</div> 
         
          
       </div>
