@@ -60,7 +60,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">Skills & Achievements</a></h4>
 	  <i class = "far fa-user"> </i>
 	  <p class = "posttext">
-		Over the span of the last ten years, I have attained several awards in the fields of sports, debating
+		Over the span of the last ten years, I have attained several awards in the fields of sports, debating and volunteering. Alongside this, I have consistently managed to hold student government positions. I can program in Java and Python, along with having a grasp on HTML, CSS, JS and PHP. I speak English and Urdu.
 	  </p>
 	  &nbsp;
 	  <i class = "far fa-calendar">April 3, 2020</i>	  
