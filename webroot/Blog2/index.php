@@ -47,7 +47,7 @@ $posts = getPublishedPosts() //fetching only ORDERED published posts for use in 
 	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>"><?php echo $post['title']; ?></a></h4>
 	  <i class = "far fa-user">Hamza Polani</i>
 	  &nbsp;
-	  <i class = "far fa-calendar"> <?php echo date('D-M-Y', strtotime($post['created_at']));?> </i>
+	  <i class = "far fa-calendar"> <?php echo date('F j, Y', strtotime($post['created_at'])); ?></i>
 		</div>
 </div> 
 
