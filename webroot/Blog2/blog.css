@@ -189,7 +189,7 @@ header .menu-toggle
 	border:darkblue;
 	background: lightpink; 
 }
-/*Post Slider*/
+/*Post slider*/
 .post-slider
 {
 	
@@ -252,6 +252,16 @@ header .menu-toggle
 	border-top-right-radius: 5px;
 	box-shadow: 1rem 1rem 1rem -1rem #a0a0a033;
 }
+
+/*Post slider for portfolio*/
+
+.post-slider .portfolio-title 
+{
+	text-align:center;
+	margin: 30px auto;
+	font-family: 'Raleway', sans-serif;
+}
+
 
 /* CONTENT */
 
@@ -594,4 +604,5 @@ header .menu-toggle
 	{
 	margin-left:.8em;
 	}		
+
 }

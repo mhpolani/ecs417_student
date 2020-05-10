@@ -30,7 +30,51 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 
 	  <!-- Page Wrapper -->
 	  <div class = "page-wrapper">
+
+			<div class = "post-slider">
+
+			<h1 class = "portfolio-title">Hamza Polani</h1>
+			<i class = "fas fa-chevron-left prev"></i>
+			<i class = "fas fa-chevron-right next"></i>
+			
+			<div class = "post-wrapper">
 		
+				
+<div class = "post">
+		<img src = "Images/donut.png" alt = " " class = "slider-image">
+		<div class = "post-info">
+	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">About Myself</a></h4>
+	  <i class = "far fa-user"> </i>
+	  &nbsp;
+	  <i class = "far fa-calendar">April 3, 2020</i>	  
+		</div>
+</div> 
+
+<div class = "post">
+		<img src = "Images/daft.png" alt = " " class = "slider-image">
+		<div class = "post-info">
+	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">Skills and Achievements</a></h4>
+	  <i class = "far fa-user"> </i>
+	  &nbsp;
+	  <i class = "far fa-calendar">April 3, 2020</i>	  
+		</div>
+</div> 
+<div class = "post">
+		<img src = "Images/wooh.png" alt = " " class = "slider-image">
+		<div class = "post-info">
+	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">Education and Qualifiations</a></h4>
+	  <i class = "far fa-user"> </i>
+	  &nbsp;
+	  <i class = "far fa-calendar">April 3, 2020</i>	  
+		</div>
+</div> 
+
+        
+         
+      </div>
+      
+		</div>
+
 	  
 		  
 		  <!-- Content -->
