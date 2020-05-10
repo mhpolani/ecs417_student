@@ -58,7 +58,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 		<div class = "post-info">
 	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">Skills and Achievements</a></h4>
 	  <i class = "far fa-user"> </i>
-	  <p>LOREM EPSUM </p>
+	  <p>I am currently studying Computer Science with Management at the Queen Mary University of London. I have an inquisitive mind that is entertained with a plethora of interests such as programming, reading, politics, weightlifting and video-gaming.  Since writing my first program in Java, I have been possessed with the idea of using software to solve practical problems. I have a strong conviction in the power of programming to develop the lives of people everywhere. </p>
 	  &nbsp;
 	  <i class = "far fa-calendar">April 3, 2020</i>	  
 		</div>
@@ -68,7 +68,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 		<div class = "post-info">
 	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">Education and Qualifiations</a></h4>
 	  <i class = "far fa-user"> </i>
-	  <p> good scene </p>
+	  <p>I am currently studying Computer Science with Management at the Queen Mary University of London. I have an inquisitive mind that is entertained with a plethora of interests such as programming, reading, politics, weightlifting and video-gaming.  Since writing my first program in Java, I have been possessed with the idea of using software to solve practical problems. I have a strong conviction in the power of programming to develop the lives of people everywhere.</p>
 	  &nbsp;
 	  <i class = "far fa-calendar">April 3, 2020</i>	  
 		</div>
