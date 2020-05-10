@@ -1,4 +1,4 @@
- <?php include('posts.php'); //included to get functionality of db.php for reuable functions
+<?php include('posts.php'); //included to get functionality of db.php for reuable functions
 
 if (isset($_GET['ID']))
 {
@@ -33,7 +33,7 @@ $posts = selectAll('POSTS', ['published' => 1]);
 				<!-- Main Content -->
 			  <div class="main-content single">
 			<h1 class="post-title">
-			<?php echo $post['title']; ?> 
+			<?php echo $post['title']; ?> (FOR PREVIEWING PURPOSES ONLY)
 			</h1>
 			<div class="class post-content">
 					<p>
