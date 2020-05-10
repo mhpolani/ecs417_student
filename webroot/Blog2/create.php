@@ -55,7 +55,7 @@
             </div>    
             <?php endif; ?>       
 
-               <form name = "myForm" action="create.php" method = "post" enctype = "multipart/form-data" >  <!-- image upload protocol -->
+               <form name = "myForm" action="create.php" method = "post" enctype = "multipart/form-data" onsubmit = "return check()">  <!-- image upload protocol -->
                    <div>
                        <label>Title</label>
                        <input id = "title" type="text" name = "title" value = "<?php echo $title ?>" class = "text-input">
