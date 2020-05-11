@@ -278,12 +278,13 @@ header .menu-toggle
 }
 .posttext
 {
-	height: 500px;
+	height:500px;
 	height:100%;
 }
 .Ppost-info
 {
 	height : 500px;	
+	height:100%;
 }
 
 /* CONTENT */

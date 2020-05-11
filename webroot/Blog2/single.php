@@ -44,7 +44,7 @@ $posts = selectAll('POSTS', ['published' => 1]);
 			  </div>			  
 			  <!-- End of Main COntent -->
 			  <!-- SideBar -->
-			  <div class = "sidebar single">
+			  <!-- <div class = "sidebar single">
 
 				  <div class="section trending">
 					  <h2 class="section-title">Popular</h2>	
@@ -62,7 +62,7 @@ $posts = selectAll('POSTS', ['published' => 1]);
 
 				  </div>
 
-				  <!-- <div class = "section topics">
+				  <div class = "section topics">
 					  <h2 class = "section-title">Topics</h2>
 					  <ul>
 						  <li><a href = "#">About Me</a></li>
@@ -73,9 +73,9 @@ $posts = selectAll('POSTS', ['published' => 1]);
 						  <li><a href = "#">Contact</a></li>
 						  <li><a href = "#">Blog</a></li>
 					  </ul>
-				  </div> -->
+				  </div>
 				  
-			  </div>
+			  </div> -->
 			  	<!-- End of SideBar -->
 		  </div>
 		  <!-- End of Content -->

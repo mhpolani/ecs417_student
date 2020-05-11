@@ -135,7 +135,8 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 				<p class = "aboutme"  >
 			 
 			  <!-- End of Main COntent -->
-			  <div class = "sidebar">
+			 
+			  <!-- <div class = "sidebar">
 				  <div class = "section search">
 					  <h2 class = "section-title">Search</h2>
 					  <form action = "index.html" method = "post">
@@ -154,7 +155,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 						  <li><a href = "#">Blog</a></li>
 					  </ul>
 				  </div>
-			  </div>
+			  </div> -->
 
 		  </div>
 		  <!-- End of Content -->
