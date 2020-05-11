@@ -1,5 +1,5 @@
-html, body, header ul, .content .sidebar .section.topics ul
-
+		
+        html, body, title, header ul, .content .sidebar .section.topics ul, .post, .main-content, .post-clearfloat, .sidebar, .footer, .footer-content, .footer-section.about, .logo-text, .contact, .socials, .footer-list, .footer-section.contact-form, .footer-bottom, .page-wrapper, .post-slider, .slider-title, .post-wrapper, .post-info, .recent-post-title, .content.clearfloats
 {
     margin:0;
     padding: 0;
