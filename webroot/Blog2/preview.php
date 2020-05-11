@@ -59,7 +59,7 @@ $posts = selectAll('POSTS', ['published' => 1]);
 			  </div>			  
 			  <!-- End of Main COntent -->
 			  <!-- SideBar -->
-			  <div class = "sidebar preview">
+			  <!-- <div class = "sidebar preview">
 
 				  <div class="section trending">
 					  <h2 class="section-title">Popular</h2>	
@@ -72,7 +72,7 @@ $posts = selectAll('POSTS', ['published' => 1]);
 						  <h4><?php echo $p['title'] ?></h4>
 						  </a>
 					  </div>			
-					  <?php endforeach;?>
+					  <?php endforeach;?> -->
 					
 
 				  </div>
