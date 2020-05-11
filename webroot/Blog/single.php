@@ -1,4 +1,4 @@
-<?php include('posts.php'); //included to get functionality of db.php for reuable functions
+<?php include('posts.php'); //included to get functionality of db.php for reusable functions
 
 if (isset($_GET['ID']))
 {
@@ -8,6 +8,7 @@ if (isset($_GET['ID']))
 $posts = selectAll('POSTS', ['published' => 1]);
 
 include('comment.php');
+
 ?>
 <!DOCTYPE html>
  <html lang = "en">
