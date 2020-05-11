@@ -30,7 +30,7 @@ $posts = getPublishedPosts() //fetching only ORDERED published posts for use in 
   	<title>Blog</title>
   </head>
   <body>
-  <?php include('header.php'); ?>
+  <!-- <?php include('header.php'); ?> -->
   <?php include('messages.php'); ?>	
 
 
