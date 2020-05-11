@@ -41,7 +41,7 @@ $posts = getPublishedPosts() //fetching only ORDERED published posts for use in 
 			<div class = "post-wrapper">
 		<?php foreach ($posts as $post): ?>
 				
-<div class = "post">
+<div id = "blogPosts" class = "post">
 		<img src = "Images/donut.png" alt = " " class = "slider-image">
 		<div class = "post-info">
 	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>"><?php echo $post['title']; ?></a></h4>

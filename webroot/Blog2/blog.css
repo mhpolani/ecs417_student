@@ -262,6 +262,12 @@ header .menu-toggle
 	box-shadow: 1rem 1rem 1rem -1rem #a0a0a033;
 }
 
+#blogPosts
+{
+	height: 500px;
+	height:100%;
+}
+
 /*Post slider for portfolio*/
 
 .post-slider .portfolio-title 
@@ -274,7 +280,6 @@ header .menu-toggle
 {
 	height: 500px;
 	height:100%;
-	
 }
 .Ppost-info
 {
