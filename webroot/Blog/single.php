@@ -5,7 +5,7 @@ if (isset($_GET['ID']))
 	$post = selectOne('POSTS',['ID' => $_GET['ID']]); //fetch post clicked from index and display fetched post on single.php
 }
 
-$posts = selectAll('POSTS', ['published' => 1]);
+// $posts = selectAll('POSTS', ['published' => 1]);
 
 include('comment.php');
 
