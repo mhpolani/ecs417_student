@@ -1,6 +1,6 @@
 <?php 
 include('restrict.php');
-include('db.php');
+include_once('db.php');
 include('validatePost.php');
 $table = 'POSTS';
 $posts = selectAll($table);   //makes all the posts available to view on postsindex

@@ -1,4 +1,4 @@
-<?php include('db.php'); //included to get functionality of db.php for reusable functions
+<?php include_once('posts.php'); //included to get functionality of db.php for reusable functions
 
 if (isset($_GET['ID']))
 {
