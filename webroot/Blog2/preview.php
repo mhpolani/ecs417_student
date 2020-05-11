@@ -14,12 +14,20 @@ $posts = selectAll('POSTS', ['published' => 1]);
   <head>
   	<meta charset = "UTF-8">
   	<meta charset = "viewport" content = "width-device-width,initial-scale=1.0">
-  	<meta http-equiv="X-UA-Compatible" content = "ie-edge">
+      <meta http-equiv="X-UA-Compatible" content = "ie-edge">
+      
   	<!-- Font Awespme -->
-  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css"/>
-    <!-- 5- Google fonts -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css"/>
+      
+    <!--  Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Candal|Lora&display=swap" rel="stylesheet">
-  	<link rel = "stylesheet" href = "blog.css" type = "text/css">
+            
+    <!-- Custom styling -->
+      <link rel = "stylesheet" href = "blog.css" type = "text/css">
+      
+      <!-- Reset Styling -->
+      <link rel="stylesheet" type="text/css" href="reset.css">
+      
   	<title><?php echo $post['title']; ?> | HamzaMan</title>
   </head>
   <body>

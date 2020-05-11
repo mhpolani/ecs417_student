@@ -18,8 +18,11 @@
 	<!-- Custom Styling -->
       <link rel = "stylesheet" href = "blog.css" type = "text/css">
       
-    <!-- Custom Styling -->
-  	<link rel = "stylesheet" href = "admin.css" type = "text/css">
+    <!-- Custom Styling2 -->
+      <link rel = "stylesheet" href = "admin.css" type = "text/css">
+      
+      <!-- Reset Styling -->
+	  <link rel="stylesheet" type="text/css" href="reset.css">
       
      <title>Admin Section - Manage Posts</title>
   </head>

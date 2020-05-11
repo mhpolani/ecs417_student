@@ -22,8 +22,10 @@ $posts = getPublishedPosts() //fetching only ORDERED published posts for use in 
 	
 	<!-- Custom Styling -->
 	  <link rel = "stylesheet" href = "blog.css" type = "text/css">
+	  
 	  <!-- Reset Styling -->
 	  <link rel="stylesheet" type="text/css" href="reset.css">
+
   	<title>Blog</title>
   </head>
   <body>
