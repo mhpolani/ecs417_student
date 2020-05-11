@@ -1,8 +1,8 @@
-<?php include('posts.php'); //included to get functionality of db.php for reuable functions
+<?php include('posts.php'); //included to get functionality of db.php for reusable functions
 
 if (isset($_GET['ID']))
 {
-	$post = selectOne('POSTS',['ID' => $_GET['ID']]); //fetch post clicked from index and display fetched post on single.php
+	$post = selectOne('POSTS',['ID' => $_GET['ID']]); //fetch post clicked from index and display fetched post on preview.php
 }
 
 $posts = selectAll('POSTS', ['published' => 1]);
@@ -40,6 +40,17 @@ $posts = selectAll('POSTS', ['published' => 1]);
 					<?php echo ($post['body']) ?>
 					</p>
 			</div>
+
+            <div class="admin-content">
+                <div class="button-group">
+                    <a href="create.php" class="btn btn-big">Add Post</a>
+                    <a href="postsindex.php" class = "btn btn-big">Manage Posts</a>
+                    <?php if($post['published']):?>
+                                <td><a href="edit.php?published=0&p_id=<?php echo $post['ID']?>" class = "unpublish">Unpublish</a></td>
+                            <?php else: ?>
+                                <td><a href="edit.php?published=1&p_id=<?php echo $post['ID']?>" class = "publish">Publish</a></td>
+                            <?php endif; ?>    
+                </div>            
 
 			  </div>			  
 			  <!-- End of Main COntent -->
@@ -91,7 +102,7 @@ $posts = selectAll('POSTS', ['published' => 1]);
 					<p>Enter filler content here</p>
 					<div class = "contact">
 						<span><i class ="fas fa-phone"></i></span> &nbsp; 123-456-789</span>
-						<span><i class = "fas fa-envelope"></i> &nbsp; info@Mhpolanto.com</span>
+						<span><i class = "fas fa-envelope"></i> &nbsp; info@mhpolanto.com</span>
 					</div>
 					<div class = "socials">
 						<a href = "#"><i class = "fab fa-facebook"></i></a>
@@ -103,19 +114,21 @@ $posts = selectAll('POSTS', ['published' => 1]);
 				</div>
 				
 				<div class = "footer-section links">
-					<h2>Quick Links</h2>
+                    
+                <h2>Quick Links</h2>
 					<br>
-					<ul>
-						<a href = "#"><li>Events</li></a>
-						<a href = "#"><li>Events</li></a>
-						<a href = "#"><li>Events</li></a>
-						<a href = "#"><li>Events</li></a>
-						<a href = "#"><li>Events</li></a>
-						<a href = "#"><li>Events</li></a>
-						<a href = "#"><li>Events</li></a>
-					
+					<ul>						
+                      <li><a href = "#">About Me</a></li>
+					  <li><a href = "#">Skills and Achievements</a></li>
+	     			  <li><a href = "#">Education and Qualifications</a></li>
+					  <li><a href = "#">Experience</a></li>
+					  <li><a href = "#">Portfolio</a></li>
+					  <li><a href = "#">Contact</a></li>
+                      <li><a href = "#">Blog</a></li>	
+                    </ul>
 				</div>
-				<div class = "footer-section contact-form">
+                
+                <div class = "footer-section contact-form">
 					<h2>Contact us</h2>
 					<br>
 					<form action = "index.php" method = "post">
