@@ -1,5 +1,5 @@
  <?php include('posts.php'); //included to get functionality of db.php for reuable functions
-
+include('comment.php');
 if (isset($_GET['ID']))
 {
 	$post = selectOne('POSTS',['ID' => $_GET['ID']]); //fetch post clicked from index and display fetched post on single.php
@@ -51,9 +51,9 @@ $posts = selectAll('POSTS', ['published' => 1]);
 			  </div>			  
 			  <!-- End of Main COntent -->
 			  <!-- SideBar -->
-			  <!-- <div class = "sidebar single">
+			    <div class = "sidebar single"> 
 
-				  <div class="section trending">
+				  <!-- <div class="section trending">
 					  <h2 class="section-title">Popular</h2>	
 
 						<?php foreach($posts as $p): ?>
@@ -80,9 +80,18 @@ $posts = selectAll('POSTS', ['published' => 1]);
 						  <li><a href = "#">Contact</a></li>
 						  <li><a href = "#">Blog</a></li>
 					  </ul>
-				  </div>
+				  </div> -->
 				  
-			  </div> -->
+				  <form action = "single.php" method = "post">						
+						<textarea rows = "4" name = "message" class = "text-input contact-input" placeholder = "Your message...."></textarea>
+						<button type="submit" name = "add-comment" class="btn btn-big contact-btn">
+							<i class="fas fa-envelope"></i>
+							Add Comment
+						</button>
+
+						</form>
+
+			  </div> 
 			  	<!-- End of SideBar -->
 		  </div>
 		  <!-- End of Content -->
@@ -124,9 +133,8 @@ $posts = selectAll('POSTS', ['published' => 1]);
 				<div class = "footer-section contact-form">
 					<h2>Contact us</h2>
 					<br>
-					<form action = "index.php" method = "post">
-						<input type = "email" name = "email" class = "text-input contact-input" placeholder = "Your email address...">
-						<textarea rows = "4" name = "message" class = "text-input contact-input" placeholder = "Your message...."></textarea>
+					<form action = "index.php" method = "post">						
+						<textarea rows = "4" name = "comment" placeholder = "Your comment...."></textarea>
 						<button type="submit" class="btn btn-big contact-btn">
 							<i class="fas fa-envelope"></i>
 							Send

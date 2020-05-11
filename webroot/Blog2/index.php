@@ -50,7 +50,7 @@ $posts = getPublishedPosts() //fetching only ORDERED published posts for use in 
 		<img src = "Images/donut.png" alt = " " class = "slider-image">
 		<div class = "post-info">
 	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>"><?php echo $post['title']; ?></a></h4>
-	  <i class = "far fa-user">Hamza Polani</i>
+	  <i class = "far fa-user"> Hamza Polani</i>
 	  &nbsp;
 	  <i class = "far fa-calendar"> <?php echo date('F j, Y H:i', strtotime($post['created_at'])) . ' UTC'; ?></i>
 		</div>
@@ -103,7 +103,7 @@ $posts = getPublishedPosts() //fetching only ORDERED published posts for use in 
 				  </div> 
 
 				   <div class = "section topics">
-					  <h2 class = "section-title">Topics</h2>
+					  <h2 class = "section-title">Months</h2>
 					  <ul>
 						
 					  <?php foreach($months as $key => $month): ?>
