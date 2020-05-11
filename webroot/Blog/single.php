@@ -7,7 +7,7 @@ if (isset($_GET['ID']))
 
 // $posts = selectAll('POSTS', ['published' => 1]);
 
-include('comment.php');
+// include('comment.php');
 
 ?>
 <!DOCTYPE html>
@@ -62,7 +62,7 @@ include('comment.php');
 			  </div>			  
 			  <!-- End of Main COntent -->
 			  <!-- SideBar -->
-			    <div class = "sidebar single"> 
+			    <!-- <div class = "sidebar single"> 
 
 				   <div class="section trending">
 					  <h2 class="section-title">Popular</h2>	
@@ -75,7 +75,7 @@ include('comment.php');
 						  <h4><?php echo $p['title'] ?></h4>
 						  </a>
 					  </div>			
-					  <?php endforeach;?>					
+					  <?php endforeach;?>					 -->
 
 				  </div>   
 

@@ -19,6 +19,6 @@
     //     $title = $_POST['title'];
     //     $body = $_POST['body'];
     // }
-}
+// }
 
 ?>
