@@ -46,9 +46,9 @@ $posts = selectAll('POSTS', ['published' => 1]);
                     <a href="create.php" class="btn btn-big">Add Post</a>
                     <a href="postsindex.php" class = "btn btn-big">Manage Posts</a>
                     <?php if($post['published']):?>
-                                <td><a href="edit.php?published=0&p_id=<?php echo $post['ID']?>" class = "unpublish">Unpublish</a></td>
+                                <a class = "btn btn-big" href="edit.php?published=0&p_id=<?php echo $post['ID']?>" class = "unpublish">Unpublish</a>
                             <?php else: ?>
-                                <td><a href="edit.php?published=1&p_id=<?php echo $post['ID']?>" class = "publish">Publish</a></td>
+                                <a  class = "btn btn-big" href="edit.php?published=1&p_id=<?php echo $post['ID']?>" class = "publish">Publish</a>
                             <?php endif; ?>    
                 </div>            
 
