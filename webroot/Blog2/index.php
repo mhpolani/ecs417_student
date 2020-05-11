@@ -140,7 +140,7 @@ $posts = getPublishedPosts() //fetching only ORDERED published posts for use in 
 				<div class = "footer-section links">
 					<h2>Quick Links</h2>
 					<br>
-					<ul>
+					<ul class = "footer-list">
 					  <li><a href = "#">About Me</a></li>
 					  <li><a href = "#">Skills and Achievements</a></li>
 	     			  <li><a href = "#">Education and Qualifications</a></li>

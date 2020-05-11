@@ -585,6 +585,7 @@ header .menu-toggle
 {
 	float: right;
 	width:100px;
+	border: 1px solid red;
 }
 
 

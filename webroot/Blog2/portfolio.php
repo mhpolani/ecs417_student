@@ -49,8 +49,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 	  Since writing my first program in Java, I have been possessed with the idea of using software to solve practical problems. I have a strong conviction in the power of programming to develop the lives of people everywhere. Keenly interested in data analytics and tech auditing, I aspire to either be a data scientist or delve into FinTech.
 	  </p>
 	  <!-- <i class = "far fa-user"></i> -->
-	  &nbsp;
-	  <i class = "far fa-calendar">April 3, 2020</i>	  
+	  	  
 		</div>
 </div> 
 
@@ -62,8 +61,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 	  <p class = "posttext">
 		Over the span of the last ten years, I have attained several awards in the fields of sports, debating and volunteering. Alongside this, I have consistently managed to hold student government positions. I can program in Java and Python, along with having a grasp on HTML, CSS, JS and PHP. I speak English and Urdu.
 	  </p>
-	  &nbsp;
-	  <i class = "far fa-calendar">April 3, 2020</i>	  
+	  	  
 		</div>
 </div> 
 <div class = "post">
@@ -72,8 +70,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">Education & Qualifiations</a></h4>
 	  <i class="fas fa-brain"></i> 
 	  <p class = "posttext">I am currently studying Computer Science with Management at the Queen Mary University of London. I had the pleasure of completing my A-levels from Karachi Grammar School in 2018 and my GCSEs from Bahria College Karachi in 2016.</p>
-	  &nbsp;
-	  <i class = "far fa-calendar">April 3, 2020</i>	  
+	  	  
 		</div>
 </div> 
 
@@ -86,8 +83,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 	  Below you can find a link that will redirect you to an article I co-authored for a renowned medical journal while this you can look at my CV <a href = "CV.pdf"> here </a>.
 		               <a href = "https://www.cureus.com/articles/12863-knowledge-attitudes-and-practices-among-nurses-in-pakistan-towards-diabetic-foot?utm_medium=email&utm_source=transaction">Knowledge, Attitudes, and Practices Among Nurses in Pakistan Towards Diabetic Foot</a>
 	 </p>
-	  &nbsp;
-	  <i class = "far fa-calendar">April 3, 2020</i>	  
+	  	  
 		</div>
 </div> 
 
@@ -99,8 +95,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 	  <p class = "posttext">
 	  My personal blog. Includes articles and essays I have written since I was a young child. 
 	  </p>
-	  &nbsp;
-	  <i class = "far fa-calendar">April 3, 2020</i>	  
+	  	  
 		</div>
 </div> 
 		
@@ -112,8 +107,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 	  <p class = "posttext">
 	  You can contact me through any of my social media pages that can be found on the footer of this page. Alternatively, you can fill out the contact form on this website and one of my team members will get back to you via email.
 	  </p>
-	  &nbsp;
-	  <i class = "far fa-calendar">April 3, 2020</i>	  
+	  	  
 		</div>
 </div> 
 		 
@@ -125,8 +119,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 	  <p class = "posttext">
 	  In my spare time, I am a weightlifting and driving enthusiast. Squash, DC comics, fiction books and first person shooter games are also a few of the things I am an avid fan of.
 	  </p>
-	  &nbsp;
-	  <i class = "far fa-calendar">April 3, 2020</i>	  
+	  	  
 		</div>
 </div> 
 
@@ -152,7 +145,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 
 				  <div class = "section topics">
 					  <h2 class = "section-title">Topics</h2>
-					  <ul class = "footer-list">						
+					  <ul>						
 						  <li><a href = "#">About Me</a></li>
 						  <li><a href = "#">Skills and Achievements</a></li>
 						  <li><a href = "#">Education and Qualifications</a></li>						
@@ -192,7 +185,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 				<div class = "footer-section links">
 					<h2>Quick Links</h2>
 					<br>
-					<ul>
+					<ul class = "footer-list">
 						<a href = "#"><li>About Me</li></a>
 						<a href = "#"><li>Skills and Achievements</li></a>
 						<a href = "#"><li>Education and Qualifications</li></a>
