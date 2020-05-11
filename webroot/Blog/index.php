@@ -4,7 +4,11 @@ include('db.php');
 
 $months = selectAll('MONTHS');
 $posts = array();
-$posts = getPublishedPosts() //fetching only ORDERED published posts for use in displaying them publicly
+ //fetching only ORDERED published posts for use in displaying them publicly
+global $conn;
+$sql = "SELECT * FROM POSTS WHERE published=? ORDER BY created_at DESC";
+$stmt = executeQuery($sql, ['published' => 1]);
+$posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 ?>
 
 <!DOCTYPE html>
