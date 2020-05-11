@@ -93,7 +93,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">The tales of HamzaMan</a></h4>
 	  <i class="fas fa-book"></i> 
 	  <p class = "posttext">
-	  My personal blog. Includes articles and essays I have written since I was a young child. 
+	  My personal blog. The Tales of HamzaMan includes articles and essays I have written since I was a young child. These cover a wide spectrum of topics, including but not limited to, politics, religion, the environment and random thoughts.
 	  </p>
 	  	  
 		</div>
