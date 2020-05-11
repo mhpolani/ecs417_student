@@ -2,6 +2,7 @@
 
 include('db.php');
 
+$months = selectAll('MONTHS');
 $posts = array();
 $posts = getPublishedPosts() //fetching only ORDERED published posts for use in displaying them publicly
 ?>
@@ -94,28 +95,36 @@ $posts = getPublishedPosts() //fetching only ORDERED published posts for use in 
 			  </div>			  
 			  <!-- End of Main COntent -->
 			  <div class = "sidebar">
-				  <!-- <div class = "section search">
+				  <div class = "section search">
 					  <h2 class = "section-title">Search</h2>
 					  <form action = "index.html" method = "post">
 						  <input type = "text" name = "search-term" class = "text-input" placeholder = "Search....">						   
 					  </form>
-				  </div> -->
+				  </div> 
 
-				  <!-- <div class = "section topics">
+				   <div class = "section topics">
 					  <h2 class = "section-title">Topics</h2>
 					  <ul>
-						  <li><a href = "#">About Me</a></li>
+						
+					  <?php foreach($months as $key => $month): ?>
+						<li><a href = "#"><?php echo $month['name']; ?></a></li>
+					  <?php endforeach; ?>
+					
+					
+					
+					
+					  <!-- <li><a href = "#">About Me</a></li>
 						  <li><a href = "#">Skills and Achievements</a></li>
 						  <li><a href = "#">Education and Qualifications</a></li>
 						  <li><a href = "#">Experience</a></li>
 						  <li><a href = "#">Portfolio</a></li>
 						  <li><a href = "#">Contact</a></li>
-						  <li><a href = "#">Blog</a></li>
+						  <li><a href = "#">Blog</a></li> -->
 					  </ul>
-				  </div> -->
+				  </div>
 			  </div>
 
-		  </div>
+		  </div> 
 		  <!-- End of Content -->
 		</div>
 	  <!-- End of page Wrapper -->
