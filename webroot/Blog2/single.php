@@ -1,5 +1,5 @@
  <?php include('posts.php'); //included to get functionality of db.php for reuable functions
-include('comment.php');
+
 if (isset($_GET['ID']))
 {
 	$post = selectOne('POSTS',['ID' => $_GET['ID']]); //fetch post clicked from index and display fetched post on single.php
@@ -7,7 +7,7 @@ if (isset($_GET['ID']))
 
 $posts = selectAll('POSTS', ['published' => 1]);
 
-
+include('comment.php');
 ?>
 <!DOCTYPE html>
  <html lang = "en">
@@ -53,7 +53,7 @@ $posts = selectAll('POSTS', ['published' => 1]);
 			  <!-- SideBar -->
 			    <div class = "sidebar single"> 
 
-				  <!-- <div class="section trending">
+				   <div class="section trending">
 					  <h2 class="section-title">Popular</h2>	
 
 						<?php foreach($posts as $p): ?>
@@ -65,9 +65,10 @@ $posts = selectAll('POSTS', ['published' => 1]);
 						  </a>
 					  </div>			
 					  <?php endforeach;?>					
-				  </div>
 
-				  <div class = "section topics">
+				  </div>   
+
+				  <!-- <div class = "section topics">
 					  <h2 class = "section-title">Topics</h2>
 					  <ul>
 						  <li><a href = "#">About Me</a></li>
