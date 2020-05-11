@@ -47,7 +47,7 @@ $posts = getPublishedPosts() //fetching only ORDERED published posts for use in 
 	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>"><?php echo $post['title']; ?></a></h4>
 	  <i class = "far fa-user">Hamza Polani</i>
 	  &nbsp;
-	  <i class = "far fa-calendar"> <?php echo date('F j, Y H:i:s', strtotime($post['created_at'])); ?></i>
+	  <i class = "far fa-calendar"> <?php echo date('F j, Y H:i', strtotime($post['created_at'])); ?></i>
 		</div>
 </div> 
 
@@ -74,9 +74,9 @@ $posts = getPublishedPosts() //fetching only ORDERED published posts for use in 
 					  <img src = "Images/image.png" alt = "" class = "post-image">
 					  <div class = "post-preview">
 						  <h2><a href = "single.php?ID=<?php echo $post['ID']; ?>"><?php echo $post['title']; ?></a></h2>
-						  <i class="fas fa-user-ninja">Hamza Polani</i>
+						  <i class="fas fa-user-ninja"> Hamza Polani</i>
 						  &nbsp;						  
-						  <i class="far fa-calendar-alt"><?php echo date('F j, Y', strtotime($post['created_at'])); ?></i>
+						  <i class="far fa-calendar-alt"> <?php echo date('F j, Y H:i', strtotime($post['created_at'])); ?></i>
 						  <p class = "preview-text">
 							<?php echo substr($post['body'], 0, 150) . '....' ?>
 						  </p>
@@ -90,14 +90,14 @@ $posts = getPublishedPosts() //fetching only ORDERED published posts for use in 
 			  </div>			  
 			  <!-- End of Main COntent -->
 			  <div class = "sidebar">
-				  <div class = "section search">
+				  <!-- <div class = "section search">
 					  <h2 class = "section-title">Search</h2>
 					  <form action = "index.html" method = "post">
 						  <input type = "text" name = "search-term" class = "text-input" placeholder = "Search....">						   
 					  </form>
-				  </div>
+				  </div> -->
 
-				  <div class = "section topics">
+				  <!-- <div class = "section topics">
 					  <h2 class = "section-title">Topics</h2>
 					  <ul>
 						  <li><a href = "#">About Me</a></li>
@@ -108,7 +108,7 @@ $posts = getPublishedPosts() //fetching only ORDERED published posts for use in 
 						  <li><a href = "#">Contact</a></li>
 						  <li><a href = "#">Blog</a></li>
 					  </ul>
-				  </div>
+				  </div> -->
 			  </div>
 
 		  </div>
