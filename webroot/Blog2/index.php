@@ -81,7 +81,7 @@ $posts = getPublishedPosts() //fetching only ORDERED published posts for use in 
 						  <h2><a href = "single.php?ID=<?php echo $post['ID']; ?>"><?php echo $post['title']; ?></a></h2>
 						  <i class="fas fa-user-ninja"> Hamza Polani</i>
 						  &nbsp;						  
-						  <i class="far fa-calendar-alt"> <?php echo date('F j, Y H:i', strtotime($post['created_at'])); ?></i>
+						  <i class="far fa-calendar-alt"> <?php echo date('F j, Y H:i', strtotime($post['created_at'])) . ' UTC'; ?></i>
 						  <p class = "preview-text">
 							<?php echo substr($post['body'], 0, 150) . '....' ?>
 						  </p>

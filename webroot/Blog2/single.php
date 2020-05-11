@@ -64,9 +64,7 @@ $posts = selectAll('POSTS', ['published' => 1]);
 						  <h4><?php echo $p['title'] ?></h4>
 						  </a>
 					  </div>			
-					  <?php endforeach;?>
-					
-
+					  <?php endforeach;?>					
 				  </div>
 
 				  <div class = "section topics">
@@ -82,15 +80,15 @@ $posts = selectAll('POSTS', ['published' => 1]);
 					  </ul>
 				  </div> -->
 				  
+				  <div>
 				  <form action = "single.php" method = "post">						
-						<textarea rows = "4" name = "message" class = "text-input contact-input" placeholder = "Your message...."></textarea>
+						<textarea rows = "4" name = "message" class = "text-input contact-input" placeholder = "Your comment...."></textarea>
 						<button type="submit" name = "add-comment" class="btn btn-big contact-btn">
 							<i class="fas fa-envelope"></i>
 							Add Comment
 						</button>
-
-						</form>
-
+					</form>
+					<div>
 			  </div> 
 			  	<!-- End of SideBar -->
 		  </div>
@@ -133,11 +131,12 @@ $posts = selectAll('POSTS', ['published' => 1]);
 				<div class = "footer-section contact-form">
 					<h2>Contact us</h2>
 					<br>
-					<form action = "single.php" method = "post">						
-						<textarea rows = "4" name = "comment" placeholder = "Your comment...."></textarea>
+					<form action = "index.php" method = "post">
+						<input type = "email" name = "email" class = "text-input contact-input" placeholder = "Your email address...">
+						<textarea rows = "4" name = "message" class = "text-input contact-input" placeholder = "Your message...."></textarea>
 						<button type="submit" class="btn btn-big contact-btn">
 							<i class="fas fa-envelope"></i>
-							Add Comment
+							Send
 						</button>
 
 						</form>
