@@ -33,19 +33,19 @@ $posts = selectAll('POSTS', ['published' => 1]);
                 <!-- Main Content -->
                 
                 <div class="Pbutton-group">
-                    <a href="create.php" class="btn btn-big">Add Post</a>
+                    <a href="create.php" class="btn btn-big">Edit Post</a>
                     <a href="postsindex.php" class = "btn btn-big">Manage Posts</a>
                     <?php if($post['published']):?>
-                                <a class = "btn btn-big" href="edit.php?published=0&p_id=<?php echo $post['ID']?>" class = "unpublish">Unpublish</a>
+                                <a class = "btn btn-big" href="edit.php?published=0&p_id=<?php echo $post['ID']?>" class = "unpublish">Unpublish</a>  <!-- changes the state of the published field -->                                                
                             <?php else: ?>
-                                <a  class = "btn btn-big" href="edit.php?published=1&p_id=<?php echo $post['ID']?>" class = "publish">Publish</a>
+                                <a  class = "btn btn-big" href="edit.php?published=1&p_id=<?php echo $post['ID']?>" class = "publish">Publish</a>    <!-- i.e lets the user preview the entry and then post it -->                                                
                             <?php endif; ?>    
                  </div>            
 
 
 			  <div class="main-content preview">
 			<h1 class="post-title">
-			<?php echo $post['title']; ?> (FOR PREVIEWING PURPOSES ONLY)
+			<?php echo $post['title']; ?> (FOR PREVIEWING PURPOSES ONLY. If you wish to go back and edit the post please note that the title and body are not saved. Please copy both of these to )
 			</h1>
 			<div class="class post-content">
 					<p>
