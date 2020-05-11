@@ -568,10 +568,17 @@ header .menu-toggle
 }
 
 /* Explicit styling for preview.php */
-.main-content.preview
+/* .main-content.preview
 {
-	border: 1px solid red;
-	width: 700px;
+} */
+
+.Pbutton-group
+{
+	float:right;
+}
+.sidebar .preview
+{
+	float: right;
 }
 
 

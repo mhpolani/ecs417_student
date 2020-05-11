@@ -42,7 +42,7 @@ $posts = selectAll('POSTS', ['published' => 1]);
 			</div>
 
             <div class="admin-content">
-                <div class="button-group">
+                <div class="Pbutton-group">
                     <a href="create.php" class="btn btn-big">Add Post</a>
                     <a href="postsindex.php" class = "btn btn-big">Manage Posts</a>
                     <?php if($post['published']):?>
@@ -55,7 +55,7 @@ $posts = selectAll('POSTS', ['published' => 1]);
 			  </div>			  
 			  <!-- End of Main COntent -->
 			  <!-- SideBar -->
-			  <div class = "sidebar single">
+			  <div class = "sidebar preview">
 
 				  <div class="section trending">
 					  <h2 class="section-title">Popular</h2>	
