@@ -31,7 +31,7 @@ $posts = selectAll('POSTS', ['published' => 1]);
 		  <div class="content clearfloats">
 
 				<!-- Main Content -->
-			  <div class="main-content single">
+			  <div class="main-content preview">
 			<h1 class="post-title">
 			<?php echo $post['title']; ?> (FOR PREVIEWING PURPOSES ONLY)
 			</h1>
@@ -73,18 +73,7 @@ $posts = selectAll('POSTS', ['published' => 1]);
 
 				  </div>
 
-				  <div class = "section topics">
-					  <h2 class = "section-title">Topics</h2>
-					  <ul>
-						  <li><a href = "#">About Me</a></li>
-						  <li><a href = "#">Skills and Achievements</a></li>
-						  <li><a href = "#">Education and Qualifications</a></li>
-						  <li><a href = "#">Experience</a></li>
-						  <li><a href = "#">Portfolio</a></li>
-						  <li><a href = "#">Contact</a></li>
-						  <li><a href = "#">Blog</a></li>
-					  </ul>
-				  </div>
+				  
 			  </div>
 			  	<!-- End of SideBar -->
 		  </div>

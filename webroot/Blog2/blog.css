@@ -481,7 +481,7 @@ header .menu-toggle
 }
 .footer
 {
-	background:#ae74c9;
+	background: rgb(228, 132, 6);
 	color: #d3d3d3;
 	height: 400px;
 	position: relative;
@@ -565,6 +565,12 @@ header .menu-toggle
 	float: right;
 	font-size: 1.1em;
 	font-family: 'Candal', sans-serif;
+}
+
+/* Explicit styling for preview.php */
+.main-content.preview
+{
+	border: 1px solid red;
 }
 
 
