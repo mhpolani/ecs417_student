@@ -59,7 +59,9 @@
 
                    <div>
                         <label>Body</label>
-                        <textarea name = "body" value = "<?php echo $body ?>" class = "body"></textarea>
+                        <textarea name = "body" value = "<?php echo $body ?>" class = "body">
+                        <?php echo $body ?>
+                      </textarea>
                     </div> 
                                              
                     <div>

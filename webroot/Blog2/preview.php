@@ -45,7 +45,7 @@ $posts = selectAll('POSTS', ['published' => 1]);
 
 			  <div class="main-content preview">
 			<h1 class="post-title">
-			<?php echo $post['title']; ?> (FOR PREVIEWING PURPOSES ONLY. If you wish to go back and edit the post please note that the title and body are not saved. Please copy both of these to )
+			<?php echo $post['title']; ?> (FOR PREVIEWING PURPOSES ONLY. If you wish to edit the post please copy the body of the post as it is unsaved and will be lost.)
 			</h1>
 			<div class="class post-content">
 					<p>
