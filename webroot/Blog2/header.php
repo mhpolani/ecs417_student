@@ -6,7 +6,7 @@
   		<ul class = "nav">
   			<li><a href = "index.php" class = "navbar">Home</a></li>
   			<li><a href = "#" class = "navbar">About</a></li>
-  			<li><a href = "#" class = "navbar">Services</a></li>
+  			
 			
 			<?php if(isset($_SESSION['ID'])): ?>
 			
