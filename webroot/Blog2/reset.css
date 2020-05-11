@@ -1,0 +1,8 @@
+html, body, header ul, .content .sidebar .section.topics ul
+
+{
+    margin:0;
+    padding: 0;
+    border: 0;
+    font-size: 100%
+}
