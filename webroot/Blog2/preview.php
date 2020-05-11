@@ -33,7 +33,7 @@ $posts = selectAll('POSTS', ['published' => 1]);
                 <!-- Main Content -->
                 
                 <div class="Pbutton-group">
-                    <a href="create.php" class="btn btn-big">Edit Post</a>
+                    <a href="edit.php?ID=<?php echo $post['ID']?>" class="btn btn-big">Edit Post</a>
                     <a href="postsindex.php" class = "btn btn-big">Manage Posts</a>
                     <?php if($post['published']):?>
                                 <a class = "btn btn-big" href="edit.php?published=0&p_id=<?php echo $post['ID']?>" class = "unpublish">Unpublish</a>  <!-- changes the state of the published field -->                                                
