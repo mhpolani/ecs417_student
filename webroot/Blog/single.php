@@ -79,7 +79,7 @@ if (isset($_GET['ID']))
 
 				  </div>   
 
-				  <div class = "section topics">
+				  <!-- <div class = "section topics">
 					  <h2 class = "section-title">Topics</h2>
 					  <ul>
 						  <li><a href = "#">About Me</a></li>
@@ -90,7 +90,7 @@ if (isset($_GET['ID']))
 						  <li><a href = "#">Contact</a></li>
 						  <li><a href = "#">Blog</a></li>
 					  </ul>
-				  </div>
+				  </div> -->
 				  
 			
 			  </div> 
