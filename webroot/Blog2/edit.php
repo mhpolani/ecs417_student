@@ -36,6 +36,7 @@
 
             <!-- Admin Content -->
             <div class="admin-content">
+
                 <div class="button-group">
                     <a href="create.php" class="btn btn-big">Add Post</a>
                     <a href="index.php" class = "btn btn-big">Manage Posts</a>
@@ -47,31 +48,35 @@
                 <h2 class="page-title">Edit Post</h2>
                 <?php include('messages.php'); ?>
 
-               <form action="edit.php" method = "post" enctype = "multipart/form-data">
+               <form action="edit.php" method = "post">
+               
                <input type="hidden" name = "ID" value = "<?php echo $ID ?>" > <!-- sends id to update to posts.php -->
-                <div>
+               
+               <div>
                        <label>Title</label>
                        <input type="text" name = "title" value = "<?php echo $title ?>" class = "text-input">
                    </div>
+
                    <div>
                         <label>Body</label>
                         <textarea name = "body" value = "<?php echo $body ?>" class = "body"></textarea>
                     </div> 
-                    <div>
-                    <label>Image</label>
-                    <input type = "file" name = "image" class = "text-input">                    
-                    </div>                    
+                                             
                     <div>
                     <label>
                         <input type="checkbox" name = "published">
                           Publish
                     </label>
                     </div>
+
                     <div> 
                         <button type = "submit" name = "edit-post" class = "btn btn-big">Update Post</button>
                     </div>
+
                </form>
+
             </div>
+            
       </div>
             <!-- End of Admin Content -->
 		  

@@ -55,31 +55,31 @@
             </div>    
             <?php endif; ?>       
 
-               <form name = "myForm" action="create.php" method = "post" enctype = "multipart/form-data" onsubmit = "return check()">  <!-- image upload protocol -->
-                   <div>
+               <form name = "myForm" action="create.php" method = "post" onsubmit = "return check()">  
+                 
+                  <div>
                        <label>Title</label>
                        <input id = "title" type="text" name = "title" value = "<?php echo $title ?>" class = "text-input">
                        <div id = "title_error" class = "value_error"></div>
                    </div>
+                 
                    <div>
                         <label>Body</label>
                         <textarea id = "body" name = "body" class = "body"><?php echo $body?></textarea>
                         <div id = "body_error" class = "value_error"></div>
                     </div> 
-                    <div>
-                    <label>Image</label>
-                    <input type = "file" name = "image" class = "text-input">                    
-                    </div>
-                    
+                                     
                     <div>
                     <label>
                         <input type="checkbox" name = "published">
                           Publish
                     </label>
                     </div>
+
                     <div> 
                         <button id = "leggo" type = "submit" name ="add-post" class = "btn btn-big">Post</button>
                     </div>
+
                     <div> 
                         <button onclick = "checkFunction()" name ="clear-post" class = "btn btn-big">Clear</button>
                     </div>

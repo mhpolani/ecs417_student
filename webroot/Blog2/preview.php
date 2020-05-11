@@ -30,7 +30,19 @@ $posts = selectAll('POSTS', ['published' => 1]);
 		  <!-- Content -->
 		  <div class="content clearfloats">
 
-				<!-- Main Content -->
+                <!-- Main Content -->
+                
+                <div class="Pbutton-group">
+                    <a href="create.php" class="btn btn-big">Add Post</a>
+                    <a href="postsindex.php" class = "btn btn-big">Manage Posts</a>
+                    <?php if($post['published']):?>
+                                <a class = "btn btn-big" href="edit.php?published=0&p_id=<?php echo $post['ID']?>" class = "unpublish">Unpublish</a>
+                            <?php else: ?>
+                                <a  class = "btn btn-big" href="edit.php?published=1&p_id=<?php echo $post['ID']?>" class = "publish">Publish</a>
+                            <?php endif; ?>    
+                 </div>            
+
+
 			  <div class="main-content preview">
 			<h1 class="post-title">
 			<?php echo $post['title']; ?> (FOR PREVIEWING PURPOSES ONLY)
@@ -42,16 +54,8 @@ $posts = selectAll('POSTS', ['published' => 1]);
 			</div>
 
             <div class="admin-content">
-                <div class="Pbutton-group">
-                    <a href="create.php" class="btn btn-big">Add Post</a>
-                    <a href="postsindex.php" class = "btn btn-big">Manage Posts</a>
-                    <?php if($post['published']):?>
-                                <a class = "btn btn-big" href="edit.php?published=0&p_id=<?php echo $post['ID']?>" class = "unpublish">Unpublish</a>
-                            <?php else: ?>
-                                <a  class = "btn btn-big" href="edit.php?published=1&p_id=<?php echo $post['ID']?>" class = "publish">Publish</a>
-                            <?php endif; ?>    
-                </div>            
 
+                
 			  </div>			  
 			  <!-- End of Main COntent -->
 			  <!-- SideBar -->
