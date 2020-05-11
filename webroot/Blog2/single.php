@@ -68,7 +68,7 @@ include('comment.php');
 
 				  </div>   
 
-				  <!-- <div class = "section topics">
+				  <div class = "section topics">
 					  <h2 class = "section-title">Topics</h2>
 					  <ul>
 						  <li><a href = "#">About Me</a></li>
@@ -79,7 +79,7 @@ include('comment.php');
 						  <li><a href = "#">Contact</a></li>
 						  <li><a href = "#">Blog</a></li>
 					  </ul>
-				  </div> -->
+				  </div>
 				  
 				  <div>
 				  <form action = "single.php" method = "post">						
