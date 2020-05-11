@@ -566,6 +566,11 @@ header .menu-toggle
 	font-size: 1.1em;
 	font-family: 'Candal', sans-serif;
 }
+.footer-list
+{
+	text-decoration: none;
+	list-style-type: none;
+}
 
 /* Explicit styling for preview.php */
 /* .main-content.preview
@@ -579,6 +584,7 @@ header .menu-toggle
 .sidebar .preview
 {
 	float: right;
+	width:200px;
 }
 
 

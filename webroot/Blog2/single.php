@@ -105,15 +105,13 @@ $posts = selectAll('POSTS', ['published' => 1]);
 				<div class = "footer-section links">
 					<h2>Quick Links</h2>
 					<br>
-					<ul>
-						<a href = "#"><li>Events</li></a>
-						<a href = "#"><li>Events</li></a>
-						<a href = "#"><li>Events</li></a>
-						<a href = "#"><li>Events</li></a>
-						<a href = "#"><li>Events</li></a>
-						<a href = "#"><li>Events</li></a>
-						<a href = "#"><li>Events</li></a>
-					
+					<ul class = "footer-list">
+					<li><a href = "#">About Me</a></li>
+						  <li><a href = "#">Skills and Achievements</a></li>
+						  <li><a href = "#">Education and Qualifications</a></li>						
+						  <li><a href = "#">Portfolio</a></li>
+						  <li><a href = "#">Contact</a></li>
+						  <li><a href = "#">Blog</a></li>					
 				</div>
 				<div class = "footer-section contact-form">
 					<h2>Contact us</h2>

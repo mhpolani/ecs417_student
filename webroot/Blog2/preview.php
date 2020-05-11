@@ -106,11 +106,10 @@ $posts = selectAll('POSTS', ['published' => 1]);
                     
                 <h2>Quick Links</h2>
 					<br>
-					<ul>						
+					<ul class = "footer-list">						
                       <li><a href = "#">About Me</a></li>
 					  <li><a href = "#">Skills and Achievements</a></li>
 	     			  <li><a href = "#">Education and Qualifications</a></li>
-					  <li><a href = "#">Experience</a></li>
 					  <li><a href = "#">Portfolio</a></li>
 					  <li><a href = "#">Contact</a></li>
                       <li><a href = "#">Blog</a></li>	
