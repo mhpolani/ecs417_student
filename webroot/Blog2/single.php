@@ -133,11 +133,11 @@ $posts = selectAll('POSTS', ['published' => 1]);
 				<div class = "footer-section contact-form">
 					<h2>Contact us</h2>
 					<br>
-					<form action = "index.php" method = "post">						
+					<form action = "single.php" method = "post">						
 						<textarea rows = "4" name = "comment" placeholder = "Your comment...."></textarea>
 						<button type="submit" class="btn btn-big contact-btn">
 							<i class="fas fa-envelope"></i>
-							Send
+							Add Comment
 						</button>
 
 						</form>
