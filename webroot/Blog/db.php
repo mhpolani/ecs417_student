@@ -143,14 +143,14 @@ function delete($table, $id)
     return $stmt->affected_rows;  //will return a negative value if query fails 
 }
 
-function getPublishedPosts()
-{
-    global $conn;
-    $sql = "SELECT * FROM POSTS WHERE published=? ORDER BY created_at DESC";
-    $stmt = executeQuery($sql, ['published' => 1]);
-    $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
-    return $records;   
-}
+// function getPublishedPosts()
+// {
+//     global $conn;
+//     $sql = "SELECT * FROM POSTS WHERE published=? ORDER BY created_at DESC";
+//     $stmt = executeQuery($sql, ['published' => 1]);
+//     $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+//     return $records;   
+// }
 
 //The selectAll function returns all the records in the database, provided that the conditions, if passed, are met.
 //All the records in the table represent an array that in turn holds arrays, each of which represents a record.
