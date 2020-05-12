@@ -1,7 +1,7 @@
 <?php
 include('db.php');
 
-if (isset($_POST['add-comment']))   //vvvv delicate
+if (isset($_POST['add-comment']))  
 {    
        
     dd($_POST);
