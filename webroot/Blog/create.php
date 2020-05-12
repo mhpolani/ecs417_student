@@ -107,8 +107,7 @@
             
           if(confirm("Are you sure you want to clear all of the post? All unsaved changes will be lost."))
           {
-            document.getElementById("title").innerHTML = "";
-            document.getElementById("body").innerHTML = "";
+            document.getElementById("myForm").reset();
           }
           else
           {
