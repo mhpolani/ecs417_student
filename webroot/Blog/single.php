@@ -15,7 +15,8 @@ if (isset($_POST['add-comment']))
 	$_POST['USER_ID'] = $_SESSION['ID'];
 	$comment_id = $_POST['USER_ID'];
 	$comment_body = $_POST['body'];
-	dd($_POST);
+	$id = create('COMMENTS', $_POST);
+	dd($id);
 	// $_SESSION['message'] = "Comment added successfully.";
 	// $_SESSION['type'] = "success";	
 	// global $conn;
