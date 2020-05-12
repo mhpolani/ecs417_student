@@ -45,8 +45,7 @@ if (isset($_GET['published']) && isset($_GET['p_id']))
 
 if (isset($_POST['add-post']))   //vvvv delicate
 {    
-    // $errors = validatePost($_POST);  // no errors shown using PHP so that JS functionality is enabled
-    dd($_POST);
+    // $errors = validatePost($_POST);  // no errors shown using PHP so that JS functionality is enabled    
     // if(count($errors) == 0)
     // {
     unset($_POST['add-post']);
@@ -56,8 +55,7 @@ if (isset($_POST['add-post']))   //vvvv delicate
     $post_id = create($table,$_POST);
     $_SESSION['message'] = "Post created successfully.";
     $_SESSION['type'] = "success";
-    header('location: postsindex.php');
-    
+    header('location: postsindex.php');    
     // else
     // {
     //     $title = $_POST['title'];
@@ -68,9 +66,7 @@ if (isset($_POST['add-post']))   //vvvv delicate
 
 if (isset($_POST['edit-post']))  //update code. Also very important to toggle publish functionality
 {
-    
-    $errors = validatePost($_POST);     
-    
+    $errors = validatePost($_POST);        
     if(count($errors) == 0)
     {
     $ID = $_POST['ID'];
