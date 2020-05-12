@@ -57,7 +57,7 @@ if (isset($_POST['add-post']))   //vvvv delicate
     $_SESSION['message'] = "Post created successfully.";
     $_SESSION['type'] = "success";
     header('location: postsindex.php');
-    }
+    
     // else
     // {
     //     $title = $_POST['title'];
