@@ -5,12 +5,6 @@ if (isset($_GET['ID']))
 	$post = selectOne('POSTS',['ID' => $_GET['ID']]); //fetch post clicked from index and display fetched post on single.php
 }
 $_POST['postid'] = $post['ID'];
-	
-// $posts = selectAll('POSTS', ['published' => 1]);
-
-// include('comment.php');
-// global $noOfComments;
-// $noOfComments = 0;
 if (isset($_POST['add-comment']))  
 {    
     unset($_POST['add-comment']); 
@@ -19,53 +13,10 @@ if (isset($_POST['add-comment']))
 	$_SESSION['message'] = "Comment added successfully.";
 	$_SESSION['type'] = "success";	
 	header("index.php"); 
+}
 // 	$noOfComments++;
 	
-	// $stmt = $conn->prepare($sql);
-	// $stmt->execute();
-	// $id = $stmt->insert_id;  
-	
-	// $result = $conn->prepare("INSERT INTO 'COMMENTS' ( userid, BODY) VALUES ('$commenter_id' , '$comment_body')");
-	// if(result === FALSE)
-	// {
-	// 	echo mysql_error();
-	// 	die(mysql_error()); 		
-	// }
-	// $result->execute();
-	// $id = $result->insert_id;
-	// $_SESSION['message'] = "Comment added successfully.";
-	// $_SESSION['type'] = "success";	
-	// global $conn;
-	// $sql = "INSERT INTO COMMENTS (USER_ID,BODY) VALUES ('$commenter_id' , '$comment_body')";
-	// $stmt = $conn->prepare($sql);
-	// $values = array_values($_POST); //  The array_values() function returns an array containing all the values of an array
-    // $types = str_repeat('s',count($values));
-    // $stmt->bind_param($types, ...$values);
-	// $stmt->execute();
-	// $id = $stmt->insert_id;   //grab the id of the record generated in the last query
-	// dd($id);
-	// dd($_POST['USER_ID']);
-	// dd($_POST['body']);
 
-	// $id = create('COMMENTS',$_POST);
-	// dd($id);
-
-    
-	
-	
-    // $_POST['published'] = isset($_POST['published']) ? 1 : 0;    //Since the 'published' is of type tinyint(boolean) if the published button is clicked, value is set to 1
-    // $_POST['body'] = htmlentities($_POST['body']);
-    // $post_id = create($table,$_POST);
-    // $_SESSION['message'] = "Comment added successfully.";
-    // $_SESSION['type'] = "success";
-    // header('location: postsindex.php');
-    
-    // else
-    // {
-    //     $title = $_POST['title'];
-    //     $body = $_POST['body'];
-	// }		
-// }
 
 ?>
 <!DOCTYPE html>
@@ -225,4 +176,4 @@ if (isset($_POST['add-comment']))
 	<script src = "scripts.js"></script>
 
   </body>
-  </html>
+</html>
