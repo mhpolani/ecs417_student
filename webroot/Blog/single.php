@@ -106,7 +106,7 @@ if (isset($_POST['add-comment']))
 
 			<div>
 				  <form action = "single.php" method = "post">						
-						<textarea rows = "4" name = "message" class = "text-input contact-input" placeholder = "Your comment...."></textarea>
+						<textarea rows = "4" name = "BODY" class = "text-input contact-input" placeholder = "Your comment...."></textarea>
 						<button type="submit" name = "add-comment" class="btn btn-big contact-btn">
 							<i class="fas fa-envelope"></i>
 							Add Comment
