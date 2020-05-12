@@ -13,9 +13,11 @@ if (isset($_POST['add-comment']))
 {    
     unset($_POST['add-comment']); 
 	$_POST['userid'] = $_SESSION['ID'];
-	$commenter_id = $_POST['userid'];
-	$comment_body = $_POST['message'];
-	dd($_POST);
+	// $commenter_id = $_POST['userid'];
+	// $comment_body = $_POST['message'];
+	// dd($_POST);
+	$id = create('COMMENTS', $_POST);
+	dd($id);
 	// $stmt = $conn->prepare($sql);
 	// $stmt->execute();
 	// $id = $stmt->insert_id;  
