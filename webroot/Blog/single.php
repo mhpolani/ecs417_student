@@ -5,18 +5,19 @@ if (isset($_GET['ID']))
 	$post = selectOne('POSTS',['ID' => $_GET['ID']]); //fetch post clicked from index and display fetched post on single.php
 }
 $_POST['postid'] = $post['ID'];
-$_POST['userid'] = $_SESSION['ID'];
-if (isset($_POST['add-comment']))  
-{    
-	unset($_POST['add-comment']); 	
-	$id = create('COMMENTS', $_POST);
-	$_SESSION['message'] = "Comment added successfully.";
-	$_SESSION['type'] = "success";	
-	// dd($_POST);
-	dd($_POST['ID']);
+$_POST['userid'] = $_SESSION['ID']; 
+echo ($post['ID']);
+// if (isset($_POST['add-comment']))  
+// {    
+// 	unset($_POST['add-comment']); 	
+// 	$id = create('COMMENTS', $_POST);
+// 	$_SESSION['message'] = "Comment added successfully.";
+// 	$_SESSION['type'] = "success";	
+// 	// dd($_POST);
+// 	dd($_POST['ID']);
 	
-	// header("index.php"); 
-}
+// 	// header("index.php"); 
+// }
 // 	$noOfComments++;
 	
 
@@ -58,7 +59,6 @@ if (isset($_POST['add-comment']))
 			<div class="class post-content">
 					<p>
 					<?php echo ($post['body']) ?>
-					<?php echo ($post['ID']) ?>
 					</p>
 			</div>
 
