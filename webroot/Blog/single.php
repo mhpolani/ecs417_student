@@ -13,20 +13,18 @@ if (isset($_POST['add-comment']))
 {    
     unset($_POST['add-comment']); 
 	$_POST['USER_ID'] = $_SESSION['ID'];
-	$comment_id = $_POST['USER_ID'];
+	$commenter_id = $_POST['USER_ID'];
 	$comment_body = $_POST['body'];
-	$id = create('COMMENTS', $_POST);
-	dd($id);
+	
+	
 	// $_SESSION['message'] = "Comment added successfully.";
 	// $_SESSION['type'] = "success";	
-	// global $conn;
-	// $sql = "INSERT INTO COMMENTS (USER_ID, body) VALUES ('$comment_id' , '$comment_body')";
-    // $stmt = $conn->prepare($sql);
-	// $stmt->execute();
-    // $id = $stmt->insert_id;   //grab the id of the record generated in the last query
-	// dd($id);
-	// dd($comment_id);
-	// dd($comment_body);
+	global $conn;
+	$sql = "INSERT INTO COMMENTS (USER_ID, body) VALUES ('$commenter_id' , '$comment_body')";
+    $stmt = $conn->prepare($sql);
+	$stmt->execute();
+	$id = $stmt->insert_id;   //grab the id of the record generated in the last query
+	dd($id);
 	
     // $_POST['published'] = isset($_POST['published']) ? 1 : 0;    //Since the 'published' is of type tinyint(boolean) if the published button is clicked, value is set to 1
     // $_POST['body'] = htmlentities($_POST['body']);
