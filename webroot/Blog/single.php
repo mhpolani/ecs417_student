@@ -5,12 +5,11 @@ if (isset($_GET['ID']))
 	$post = selectOne('POSTS',['ID' => $_GET['ID']]); //fetch post clicked from index and display fetched post on single.php
 }
 $post = selectOne('POSTS',['ID' => $_GET['ID']]);
-
+$_POST['postid'] = $post['ID'];
+$_POST['userid'] = $_SESSION['ID'];
 if (isset($_POST['add-comment']))  
 {    
-	unset($_POST['add-comment']); 
-	$_POST['postid'] = $post['ID'];
-	$_POST['userid'] = $_SESSION['ID'];
+	unset($_POST['add-comment']); 	
 	$id = create('COMMENTS', $_POST);
 	$_SESSION['message'] = "Comment added successfully.";
 	$_SESSION['type'] = "success";	
