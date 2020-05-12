@@ -35,7 +35,7 @@ if (isset($_POST['add-comment']))
 	// $stmt->execute();
 	// $id = $stmt->insert_id;  
 	
-	$result = $connection->prepare("INSERT INTO 'COMMENTS' ('USER_ID','BODY') VALUES ('$commenter_id' , '$comment_body')");
+	$result = $conn->prepare("INSERT INTO 'COMMENTS' ('USER_ID','BODY') VALUES ('$commenter_id' , '$comment_body')");
 	$result->execute();
 	$id = $result->insert_id;
 	dd($id);
