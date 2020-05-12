@@ -46,23 +46,23 @@ if (isset($_GET['published']) && isset($_GET['p_id']))
 if (isset($_POST['add-post']))   //vvvv delicate
 {    
     // $errors = validatePost($_POST);  // no errors shown using PHP so that JS functionality is enabled
-
-    if(count($errors) == 0)
-    {
-    unset($_POST['add-post']);
-    $_POST['user_id'] = $_SESSION['ID'];
-    $_POST['published'] = isset($_POST['published']) ? 1 : 0;    //Since the 'published' is of type tinyint(boolean) if the published button is clicked, value is set to 1
-    $_POST['body'] = htmlentities($_POST['body']);
-    $post_id = create($table,$_POST);
-    $_SESSION['message'] = "Post created successfully.";
-    $_SESSION['type'] = "success";
-    header('location: postsindex.php');
-    }
-    else
-    {
-        $title = $_POST['title'];
-        $body['body'] = htmlentities($_POST['body']);        
-    }
+    dd($_POST);
+    // if(count($errors) == 0)
+    // {
+    // unset($_POST['add-post']);
+    // $_POST['user_id'] = $_SESSION['ID'];
+    // $_POST['published'] = isset($_POST['published']) ? 1 : 0;    //Since the 'published' is of type tinyint(boolean) if the published button is clicked, value is set to 1
+    // $_POST['body'] = htmlentities($_POST['body']);
+    // $post_id = create($table,$_POST);
+    // $_SESSION['message'] = "Post created successfully.";
+    // $_SESSION['type'] = "success";
+    // header('location: postsindex.php');
+    // }
+    // else
+    // {
+    //     $title = $_POST['title'];
+    //     $body['body'] = htmlentities($_POST['body']);        
+    // }
 }
 
 

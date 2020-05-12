@@ -72,7 +72,7 @@ $months = selectAll('MONTHS');
                         <div id = "body_error" class = "value_error"></div>
                     </div>
                     <div>
-                        <label>Month</label>
+                        <label>Month of Release</label>
                         <select name = "month" class = "text-input">
                         <?php foreach($months as $key => $month): ?>
                             <option value = "<?php echo $month['name'] ?>"><?php echo $month['name'] ?></option>
