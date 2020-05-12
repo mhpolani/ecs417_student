@@ -12,22 +12,25 @@ if (isset($_GET['ID']))
 if (isset($_POST['add-comment']))  
 {    
     unset($_POST['add-comment']); 
-	$_POST['USER_ID'] = $_SESSION['ID'];
-	$commenter_id = $_POST['USER_ID'];
+	$_POST['userid'] = $_SESSION['ID'];
+	$commenter_id = $_POST['userid'];
 	$comment_body = $_POST['body'];
 	global $conn;    
+	dd($_POST);
+	dd($commenter_id);
+	dd($comment_body);
 	// $stmt = $conn->prepare($sql);
 	// $stmt->execute();
 	// $id = $stmt->insert_id;  
 	
-	$result = $conn->prepare("INSERT INTO 'COMMENTS' ( userid, BODY) VALUES ('$commenter_id' , '$comment_body')");
+	// $result = $conn->prepare("INSERT INTO 'COMMENTS' ( userid, BODY) VALUES ('$commenter_id' , '$comment_body')");
 	// if(result === FALSE)
 	// {
 	// 	echo mysql_error();
 	// 	die(mysql_error()); 		
 	// }
-	$result->execute();
-	$id = $result->insert_id;
+	// $result->execute();
+	// $id = $result->insert_id;
 	// $_SESSION['message'] = "Comment added successfully.";
 	// $_SESSION['type'] = "success";	
 	// global $conn;
@@ -42,8 +45,8 @@ if (isset($_POST['add-comment']))
 	// dd($_POST['USER_ID']);
 	// dd($_POST['body']);
 
-	$id = create('COMMENTS',$_POST);
-	dd($id);
+	// $id = create('COMMENTS',$_POST);
+	// dd($id);
 
     
 	
