@@ -13,8 +13,8 @@ if (isset($_POST['add-comment']))
 	$_SESSION['message'] = "Comment added successfully.";
 	$_SESSION['type'] = "success";	
 	// dd($_POST);
-	dd($post['ID']);
-	dd($post);
+	dd($post['title']);
+	
 	// header("index.php"); 
 }
 // 	$noOfComments++;
