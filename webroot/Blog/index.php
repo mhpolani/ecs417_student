@@ -43,8 +43,7 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 		  <!-- Post Slider -->
 		<div class = "post-slider">
 
-			<!-- <h1 class = "slider-title">What's Trending?</h1> -->
-			<h1 class = "slider-title">Fuck off?</h1>
+			<h1 class = "slider-title">What's Trending?</h1>			
 			<i class = "fas fa-chevron-left prev"></i>
 			<i class = "fas fa-chevron-right next"></i>
 			
