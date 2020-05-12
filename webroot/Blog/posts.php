@@ -8,7 +8,7 @@ $title = "";
 $body = "";
 $ID = "";
 $published = "";
-
+$months = selectAll('MONTHS');
 $errors = array();
 
 if(isset($_GET['ID']))  //when the edit button is clicked

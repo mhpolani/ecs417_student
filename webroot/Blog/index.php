@@ -112,11 +112,7 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 						
 					  <?php foreach($months as $key => $month): ?>
 						<li><a href = "#"><?php echo $month['name']; ?></a></li>
-					  <?php endforeach; ?>
-					
-					
-					
-					
+					  <?php endforeach; ?>														
 					  <!-- <li><a href = "#">About Me</a></li>
 						  <li><a href = "#">Skills and Achievements</a></li>
 						  <li><a href = "#">Education and Qualifications</a></li>

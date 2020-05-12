@@ -1,5 +1,5 @@
 <?php include('posts.php');
- 
+$months = selectAll('MONTHS');
 ?>
 <!DOCTYPE html>
  <html lang = "en">
@@ -70,8 +70,14 @@
                         <label>Body</label>
                         <textarea id = "body" name = "body" class = "body"></textarea>
                         <div id = "body_error" class = "value_error"></div>
-                    </div> 
-                                     
+                    </div>
+                    <div>
+                        <label>Month</label>
+                        <select name = "month" class = "text-input">
+                        <?php foreach($months as $key => $month): ?>
+                            <option value = "<?php echo $topic['name'] ?>"><?php echo $topic['name'] ?></option>
+					    <?php endforeach; ?>
+                    </div>
                     <div>
                     <label>
                         <input type="checkbox" name = "published">
@@ -110,9 +116,7 @@
             document.getElementById("myForm").reset();
           }
           else
-          {
-            // document.getElementById("title").innerHTML = "<?php echo $title ?>";
-            // document.getElementById("body").innerHTML = "<?php echo $body ?>";
+          {            
           }
         }
 
@@ -167,3 +171,5 @@
   </body>
   </html>
 
+  // document.getElementById("title").innerHTML = "<?php echo $title ?>";
+    // document.getElementById("body").innerHTML = "<?php echo $body ?>";

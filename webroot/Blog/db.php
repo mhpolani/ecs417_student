@@ -152,5 +152,14 @@ function delete($table, $id)
 //     return $records;   
 // }
 
+function getPostsByMonthId($month_id)
+{
+    global $conn;
+    $sql = "SELECT p.*, u.username FROM POSTS AS p JOIN USERS AS u ON p.user_id = u.ID WHERE p.published=? AND id =?";
+    $stmt = executeQuery($sql, ['published' => 1, 'month_id' => $month_id]);
+    $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+    return $records;   
+}
+
 //The selectAll function returns all the records in the database, provided that the conditions, if passed, are met.
 //All the records in the table represent an array that in turn holds arrays, each of which represents a record.
