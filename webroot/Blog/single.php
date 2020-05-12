@@ -20,7 +20,7 @@ if (isset($_POST['add-comment']))
 	// $_SESSION['message'] = "Comment added successfully.";
 	// $_SESSION['type'] = "success";	
 	global $conn;
-	$sql = "INSERT INTO COMMENTS ('USER_ID','BODY') VALUES ('$commenter_id' , '$comment_body')";
+	$sql = "INSERT INTO COMMENTS (USER_ID,BODY) VALUES ('$commenter_id' , '$comment_body')";
     $stmt = $conn->prepare($sql);
 	$stmt->execute();
 	$id = $stmt->insert_id;   //grab the id of the record generated in the last query
