@@ -7,7 +7,7 @@ if (isset($_GET['ID']))
 
 // $posts = selectAll('POSTS', ['published' => 1]);
 
-// include('comment.php');
+include('comment.php');
 
 ?>
 <!DOCTYPE html>
