@@ -4,20 +4,26 @@ if (isset($_GET['ID']))
 {
 	$post = selectOne('POSTS',['ID' => $_GET['ID']]); //fetch post clicked from index and display fetched post on single.php
 }
-
+// $_POST['postid'] = $post['ID'];
+	dd($_POST);
 // $posts = selectAll('POSTS', ['published' => 1]);
 
 // include('comment.php');
+// global $noOfComments;
+// $noOfComments = 0;
+// if (isset($_POST['add-comment']))  
+// {    
+//     unset($_POST['add-comment']); 
+// 	$_POST['userid'] = $_SESSION['ID'];
+// 	// $commenter_id = $_POST['userid'];
+// 	// $comment_body = $_POST['message'];
 
-if (isset($_POST['add-comment']))  
-{    
-    unset($_POST['add-comment']); 
-	$_POST['userid'] = $_SESSION['ID'];
-	// $commenter_id = $_POST['userid'];
-	// $comment_body = $_POST['message'];
-	// dd($_POST);
-	$id = create('COMMENTS', $_POST);
-	dd($id);
+// 	$id = create('COMMENTS', $_POST);
+// 	$_SESSION['message'] = "Comment added successfully.";
+// 	$_SESSION['type'] = "success";	
+// 	header("index.php"); 
+// 	$noOfComments++;
+	
 	// $stmt = $conn->prepare($sql);
 	// $stmt->execute();
 	// $id = $stmt->insert_id;  
@@ -62,7 +68,7 @@ if (isset($_POST['add-comment']))
     //     $title = $_POST['title'];
     //     $body = $_POST['body'];
 	// }		
-}
+// }
 
 ?>
 <!DOCTYPE html>
@@ -107,6 +113,7 @@ if (isset($_POST['add-comment']))
 			<div>
 				  <form action = "single.php" method = "post">						
 						<textarea rows = "4" name = "BODY" class = "text-input contact-input" placeholder = "Your comment...."></textarea>
+						<input type="hidden" name="postid" value = "$post['ID']">
 						<button type="submit" name = "add-comment" class="btn btn-big contact-btn">
 							<i class="fas fa-envelope"></i>
 							Add Comment
