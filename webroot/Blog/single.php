@@ -15,27 +15,17 @@ if (isset($_POST['add-comment']))
 	$_POST['USER_ID'] = $_SESSION['ID'];
 	$commenter_id = $_POST['USER_ID'];
 	$comment_body = $_POST['body'];
-	global $conn;
-    $sql = "INSERT INTO COMMENTS SET ";
-    
-    $i = 0;
-    foreach($_POST as $key => $value)        
-    {
-        if ($i === 0)
-        {
-            $sql = $sql . " $key=?";
-        }
-        else
-        {
-            $sql = $sql . ", $key=?";                
-        }
-        $i++;
-	}
+	global $conn;    
 	// $stmt = $conn->prepare($sql);
 	// $stmt->execute();
 	// $id = $stmt->insert_id;  
 	
 	$result = $conn->prepare("INSERT INTO 'COMMENTS' ('USER_ID','BODY') VALUES ('$commenter_id' , '$comment_body')");
+	if(result === FALSE)
+	{
+		echo mysql_error();
+		die(mysql_error()); 		
+	}
 	$result->execute();
 	$id = $result->insert_id;
 	dd($id);
