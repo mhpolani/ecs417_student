@@ -75,7 +75,7 @@ $months = selectAll('MONTHS');
                         <label>Month</label>
                         <select name = "month" class = "text-input">
                         <?php foreach($months as $key => $month): ?>
-                            <option value = "<?php echo $topic['name'] ?>"><?php echo $topic['name'] ?></option>
+                            <option value = "<?php echo $month['name'] ?>"><?php echo $month['name'] ?></option>
 					    <?php endforeach; ?>
                     </div>
                     <div>
