@@ -102,20 +102,20 @@
 	<script src = "scripts.js"></script>
 
     <script>
-    // function checkFunction() 
-    //     {
+    function checkFunction() 
+        {
             
-    //       if(confirm("Are you sure you want to clear all of the post? All unsaved changes will be lost."))
-    //       {
-    //         document.getElementById("title").innerHTML = "";
-    //         document.getElementById("body2").innerHTML = "";
-    //       }
-    //       else
-    //       {
-    //         document.getElementById("title").innerHTML = "<?php echo $title ?>";
-    //         document.getElementById("body2").innerHTML = "<?php echo $body ?>";
-    //       }
-    //     }
+          if(confirm("Are you sure you want to clear all of the post? All unsaved changes will be lost."))
+          {
+            document.getElementById("title").innerHTML = "";
+            document.getElementById("body").innerHTML = "";
+          }
+          else
+          {
+            document.getElementById("title").innerHTML = "<?php echo $title ?>";
+            document.getElementById("body").innerHTML = "<?php echo $body ?>";
+          }
+        }
 
     var title = document.forms["myForm"]["title"];
     var body = document.forms["myForm"]["body"];
