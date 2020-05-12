@@ -61,7 +61,7 @@ if (isset($_POST['add-post']))   //vvvv delicate
     else
     {
         $title = $_POST['title'];
-        $body = $_POST['body'];
+        $body['body'] = htmlentities($_POST['body']);        
     }
 }
 
