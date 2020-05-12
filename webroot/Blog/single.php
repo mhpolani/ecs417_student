@@ -1,5 +1,5 @@
 <?php include_once('posts.php'); //included to get functionality of db.php for reusable functions
-
+global $conn;    
 if (isset($_GET['ID']))
 {
 	$post = selectOne('POSTS',['ID' => $_GET['ID']]); //fetch post clicked from index and display fetched post on single.php
@@ -14,8 +14,7 @@ if (isset($_POST['add-comment']))
     unset($_POST['add-comment']); 
 	$_POST['userid'] = $_SESSION['ID'];
 	$commenter_id = $_POST['userid'];
-	$comment_body = $_POST['body'];
-	global $conn;    
+	$comment_body = $_POST['message'];
 	dd($_POST);
 	dd($commenter_id);
 	dd($comment_body);
