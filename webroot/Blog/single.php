@@ -20,11 +20,14 @@ if (isset($_POST['add-comment']))
 	// $_SESSION['message'] = "Comment added successfully.";
 	// $_SESSION['type'] = "success";	
 	global $conn;
-	$sql = "INSERT INTO COMMENTS (USER_ID, body) VALUES ('$commenter_id' , '$comment_body')";
+	$sql = "INSERT INTO COMMENTS ('USER_ID','BODY') VALUES ('$commenter_id' , '$comment_body')";
     $stmt = $conn->prepare($sql);
 	$stmt->execute();
 	$id = $stmt->insert_id;   //grab the id of the record generated in the last query
 	dd($id);
+	dd($_POST['USER_ID']);
+	dd($_POST['body']);
+	
 	
     // $_POST['published'] = isset($_POST['published']) ? 1 : 0;    //Since the 'published' is of type tinyint(boolean) if the published button is clicked, value is set to 1
     // $_POST['body'] = htmlentities($_POST['body']);
