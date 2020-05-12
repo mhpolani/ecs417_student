@@ -19,11 +19,7 @@ if (isset($_POST['add-comment']))
 	// $_SESSION['type'] = "success";	
 	global $conn;
 	$sql = "INSERT INTO COMMENTS (USER_ID, body) VALUES ('$comment_id' , '$comment_body')";
-	global $conn;
     $stmt = $conn->prepare($sql);
-    $values = array_values($_POST); //  The array_values() function returns an array containing all the values of an array
-    $types = str_repeat('s',count($values));
-    $stmt->bind_param($types, ...$values);
 	$stmt->execute();
     $id = $stmt->insert_id;   //grab the id of the record generated in the last query
 	dd($id);
