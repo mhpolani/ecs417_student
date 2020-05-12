@@ -4,7 +4,7 @@ if (isset($_GET['ID']))
 {
 	$post = selectOne('POSTS',['ID' => $_GET['ID']]); //fetch post clicked from index and display fetched post on single.php
 }
-// $_POST['postid'] = $post['ID'];
+$_POST['postid'] = $post['ID'];
 	dd($_POST);
 // $posts = selectAll('POSTS', ['published' => 1]);
 
@@ -113,7 +113,7 @@ if (isset($_GET['ID']))
 			<div>
 				  <form action = "single.php" method = "post">						
 						<textarea rows = "4" name = "BODY" class = "text-input contact-input" placeholder = "Your comment...."></textarea>
-						<input type="hidden" name="postid" value = "$post['ID']">
+						<input type="hidden" name="postid">
 						<button type="submit" name = "add-comment" class="btn btn-big contact-btn">
 							<i class="fas fa-envelope"></i>
 							Add Comment
