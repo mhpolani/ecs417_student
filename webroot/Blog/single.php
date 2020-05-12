@@ -6,13 +6,12 @@ if (isset($_GET['ID']))
 }
 $_POST['postid'] = $post['ID'];
 $_POST['userid'] = $_SESSION['ID']; 
-
+$pleasework = $post['ID'];
 if (isset($_POST['add-comment']))  
 {    
-	unset($_POST['add-comment']); 	
-	$_POST['postid'] = $post['ID'];
-	dd($_POST);
-	dd($post['ID']);
+	unset($_POST['add-comment']); 		
+	$_POST['userid'] = $_SESSION['ID']; 
+	$_POST['postid'] = $pleasework;
 	// $id = create('COMMENTS', $_POST);
 	// $_SESSION['message'] = "Comment added successfully.";
 	// $_SESSION['type'] = "success";	

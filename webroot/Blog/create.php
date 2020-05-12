@@ -111,8 +111,8 @@
           }
           else
           {
-            document.getElementById("title").innerHTML = "<?php echo $title ?>";
-            document.getElementById("body").innerHTML = "<?php echo $body ?>";
+            // document.getElementById("title").innerHTML = "<?php echo $title ?>";
+            // document.getElementById("body").innerHTML = "<?php echo $body ?>";
           }
         }
 
@@ -120,8 +120,8 @@
     var body = document.forms["myForm"]["body"];
     var titleError = document.getElementById("title_error");
     var bodyError = document.getElementById("body_error");
-    title.addEventListener("click", Verify, true);
-    body.addEventListener("click", Verify, true);
+    // title.addEventListener("click", Verify, true);
+    // body.addEventListener("click", Verify, true);
     
     function check()
     {
