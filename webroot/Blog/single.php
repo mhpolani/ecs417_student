@@ -4,6 +4,7 @@ if (isset($_GET['ID']))
 {
 	$post = selectOne('POSTS',['ID' => $_GET['ID']]); //fetch post clicked from index and display fetched post on single.php
 }
+$post = selectOne('POSTS',['ID' => $_GET['ID']]);
 
 if (isset($_POST['add-comment']))  
 {    
