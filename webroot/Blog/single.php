@@ -1,10 +1,9 @@
 <?php include_once('posts.php'); //included to get functionality of db.php for reusable functions
 global $conn;    
-if (isset($_GET['ID']))
+if (isset($_POST['ID']))
 {
 	$post = selectOne('POSTS',['ID' => $_GET['ID']]); //fetch post clicked from index and display fetched post on single.php
 }
-$post = selectOne('POSTS',['ID' => $_GET['ID']]);
 $_POST['postid'] = $post['ID'];
 $_POST['userid'] = $_SESSION['ID'];
 if (isset($_POST['add-comment']))  
@@ -14,6 +13,7 @@ if (isset($_POST['add-comment']))
 	$_SESSION['message'] = "Comment added successfully.";
 	$_SESSION['type'] = "success";	
 	// dd($_POST);
+	dd($post['ID']);
 	dd($post);
 	// header("index.php"); 
 }
