@@ -20,15 +20,14 @@ if (isset($_POST['add-comment']))
 	// $stmt->execute();
 	// $id = $stmt->insert_id;  
 	
-	$result = $conn->prepare("INSERT INTO 'COMMENTS' ('USER_ID','BODY') VALUES ('$commenter_id' , '$comment_body')");
-	if(result === FALSE)
-	{
-		echo mysql_error();
-		die(mysql_error()); 		
-	}
+	$result = $conn->prepare("INSERT INTO 'COMMENTS' ( userid, BODY) VALUES ('$commenter_id' , '$comment_body')");
+	// if(result === FALSE)
+	// {
+	// 	echo mysql_error();
+	// 	die(mysql_error()); 		
+	// }
 	$result->execute();
 	$id = $result->insert_id;
-	dd($id);
 	// $_SESSION['message'] = "Comment added successfully.";
 	// $_SESSION['type'] = "success";	
 	// global $conn;
