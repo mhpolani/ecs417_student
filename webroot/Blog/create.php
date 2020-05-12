@@ -62,13 +62,13 @@
                  
                   <div>
                        <label>Title</label>
-                       <input id = "title" type="text" name = "title" value = "<?php echo $title ?>" class = "text-input">
+                       <input id = "title" type="text" name = "title" value = "" class = "text-input">
                        <div id = "title_error" class = "value_error"></div>
                    </div>
                  
                    <div>
                         <label>Body</label>
-                        <textarea id = "body" name = "body" class = "body"><?php echo $body?></textarea>
+                        <textarea id = "body" name = "body" class = "body"></textarea>
                         <div id = "body_error" class = "value_error"></div>
                     </div> 
                                      
