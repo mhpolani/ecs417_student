@@ -6,8 +6,7 @@ if (isset($_GET['ID']))
 }
 $_POST['postid'] = $post['ID'];
 $_POST['userid'] = $_SESSION['ID']; 
-echo ($_POST);
-
+dd($_POST);
 
 if (isset($_POST['add-comment']))  
 {    
