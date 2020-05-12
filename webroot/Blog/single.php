@@ -10,8 +10,9 @@ $_POST['userid'] = $_SESSION['ID'];
 if (isset($_POST['add-comment']))  
 {    
 	unset($_POST['add-comment']); 	
+	$_POST['postid'] = $post['ID'];
 	dd($_POST);
-
+	dd($post['ID']);
 	// $id = create('COMMENTS', $_POST);
 	// $_SESSION['message'] = "Comment added successfully.";
 	// $_SESSION['type'] = "success";	
