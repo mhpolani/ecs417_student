@@ -19,7 +19,7 @@ if (isset($_POST['add-comment']))
     $sql = "INSERT INTO COMMENTS SET ";
     
     $i = 0;
-    foreach($$_POST as $key => $value)        
+    foreach($_POST as $key => $value)        
     {
         if ($i === 0)
         {
@@ -31,11 +31,14 @@ if (isset($_POST['add-comment']))
         }
         $i++;
 	}
-	$stmt = $conn->prepare($sql);
-	$stmt->execute();
-	$id = $stmt->insert_id;  
-	dd($id);
+	// $stmt = $conn->prepare($sql);
+	// $stmt->execute();
+	// $id = $stmt->insert_id;  
 	
+	$result = $connection->prepare("INSERT INTO 'COMMENTS' ('USER_ID','BODY') VALUES ('$commenter_id', '$comment_body') ";
+	$result->execute();
+	$id = $result->insert_id;
+	dd($id);
 	// $_SESSION['message'] = "Comment added successfully.";
 	// $_SESSION['type'] = "success";	
 	// global $conn;
