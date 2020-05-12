@@ -15,7 +15,6 @@ if (isset($_POST['add-comment']))
 	$_POST['userid'] = $_SESSION['ID'];
 	$commenter_id = $_POST['userid'];
 	$comment_body = $_POST['message'];
-	dd($_POST);
 	dd($commenter_id);
 	dd($comment_body);
 	// $stmt = $conn->prepare($sql);
