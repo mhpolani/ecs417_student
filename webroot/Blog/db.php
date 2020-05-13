@@ -161,5 +161,13 @@ function getPostsByMonth($month_id)
     return $records;   
 }
 
+function searchPosts($term)  //functionality for searchbar and ultimately months
+{
+    global $conn;
+    $sql = "SELECT p.*, u.username FROM POSTS AS p JOIN USERS AS u ON p.user_id = u.ID WHERE p.published=? AND p.title LIKE %? OR p.body LIKE %?";
+    $stmt = executeQuery($sql, ['published' => 1, 'title' => $term, 'body' => $term]);
+    $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+    return $records;   
+}
 //The selectAll function returns all the records in the database, provided that the conditions, if passed, are met.
 //All the records in the table represent an array that in turn holds arrays, each of which represents a record.

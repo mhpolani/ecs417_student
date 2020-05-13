@@ -5,6 +5,10 @@ global $conn;
 $months = selectAll('MONTHS');
 $posts = array();
 
+if (isset($post['search-term']))
+{	
+	dd($_POST);
+}
 if (isset($_GET['id']))
 {
 	$post = getPostsByMonth($_GET['id']);
