@@ -58,9 +58,9 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 		  <!-- Post Slider -->
 		<div class = "post-slider">
 
-			<h1 class = "slider-title">What's Trending?</h1>						
-			<i class="fas fa-caret-square-left"></i>
-			<i class="fas fa-caret-square-right"></i>
+			<h1 class = "slider-title">What's Trending?</h1>			
+			<i class = "fas fa-chevron-left prev"></i>
+			<i class = "fas fa-chevron-right next"></i>
 			
 			<div class = "post-wrapper">
 		<?php foreach ($posts as $post): ?>
