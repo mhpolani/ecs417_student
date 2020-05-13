@@ -85,7 +85,7 @@ header *
 	display: inline-block;
 }
 
-.DD-content a
+.DD-content 
 {
 	display: none;
 	position: absolute;
@@ -94,12 +94,21 @@ header *
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
 }
+
+.DD-content a
+{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
 .DD-content a:hover
 {
 	background-color: black;
 }
 
-.DDbtn:hover .DD-content 
+.DD:hover .DD-content 
 {
    display: block;
 }
