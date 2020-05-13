@@ -9,7 +9,7 @@ $postsTitle = 'Recent Posts';
 if (isset($_GET['month']))
 {
 	$posts = getPostsByMonth($_GET['month']);	
-	$postsTitle = "You searched for '" . $_GET['month'] . "'";
+	$postsTitle = "You searched for posts in the month of '" . $_GET['month'] . "'";
 	// dd($_GET['month']);
 	// dd($_POST);
 }
@@ -127,7 +127,25 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 						
 					  <?php foreach($records as $key => $record): ?>
 						<li><a href = "<?php echo 'index.php?' . 'month=' . $record['month']?>"><?php echo $record['month']; ?></a></li>
-					  <?php endforeach; ?>														
+					  <?php endforeach; ?>					
+					  <div class="months-list">
+						<button class="dropbtn">Months</button>
+						<div class="dropdown-content">
+							<a href="<?php echo 'index.php?' . 'month=' . $record['month']?>"><?php echo $record['month']; ?></a>
+							<a href="<?php echo 'index.php?' . 'month=' . $record['month']?>"><?php echo $record['month']; ?></a>
+							<a href="<?php echo 'index.php?' . 'month=' . $record['month']?>"><?php echo $record['month']; ?></a>
+							<a href="<?php echo 'index.php?' . 'month=' . $record['month']?>"><?php echo $record['month']; ?></a>
+							<a href="<?php echo 'index.php?' . 'month=' . $record['month']?>"><?php echo $record['month']; ?></a>
+							<a href="<?php echo 'index.php?' . 'month=' . $record['month']?>"><?php echo $record['month']; ?></a>
+							<a href="<?php echo 'index.php?' . 'month=' . $record['month']?>"><?php echo $record['month']; ?></a>
+							<a href="<?php echo 'index.php?' . 'month=' . $record['month']?>"><?php echo $record['month']; ?></a>
+							<a href="<?php echo 'index.php?' . 'month=' . $record['month']?>"><?php echo $record['month']; ?></a>
+							<a href="<?php echo 'index.php?' . 'month=' . $record['month']?>"><?php echo $record['month']; ?></a>
+							<a href="<?php echo 'index.php?' . 'month=' . $record['month']?>"><?php echo $record['month']; ?></a>
+							<a href="<?php echo 'index.php?' . 'month=' . $record['month']?>"><?php echo $record['month']; ?></a>
+						</div>
+						</div>									
+						
 					  <!-- <li><a href = "#">About Me</a></li>
 						  <li><a href = "#">Skills and Achievements</a></li>
 						  <li><a href = "#">Education and Qualifications</a></li>
