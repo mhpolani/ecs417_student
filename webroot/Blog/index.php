@@ -6,7 +6,12 @@ $months = selectAll('MONTHS');
 $posts = array();
 $postsTitle = 'Recent Posts';
 
-if (isset($_POST['search-term']))
+if (isset($_GET['id']))
+{
+	$posts = getPostsByMonth($_GET['id']);	
+	$postsTitle = "You searched for '" . $_GET['name'] . "'";
+}
+else if (isset($_POST['search-term']))
 {	
 	$postsTitle = "You searched for '" . $_POST['search-term'] . "'";
 	$posts = searchPosts($_POST['search-term']);
@@ -119,7 +124,7 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 					  <ul>
 						
 					  <?php foreach($months as $key => $month): ?>
-						<li><a href = "<?php echo 'index.php?id=' . $month['id'] ?>"><?php echo $month['name']; ?></a></li>
+						<li><a href = "<?php echo 'index.php?id=' . $month['id'] . '&name=' . $month['name']?>"><?php echo $month['name']; ?></a></li>
 					  <?php endforeach; ?>														
 					  <!-- <li><a href = "#">About Me</a></li>
 						  <li><a href = "#">Skills and Achievements</a></li>
