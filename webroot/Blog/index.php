@@ -149,9 +149,9 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 	  <!-- End of page Wrapper -->
 
 	  <!-- Footer -->
-		   <div class = "footer">  <!--x -->
+		   <!-- <div class = "footer"> 
 
-			<div class = "footer-content">  <!-- y -->
+			<div class = "footer-content">  
 
 				<div class = "footer-section about">
 					<h1 class = "logo-text"><span>Hamza</span>Man</h1>
@@ -198,13 +198,13 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 					</form>
 				</div>
 			
-			</div>			 <!-- y -->
+			</div>			 
 
 			  <div class = "footer-bottom">
 				&copy; PolaniTex.com | Designed by Hamza Polani	
 			  </div>
 
-		  </div>  <!--x -->
+		  </div>   -->
 	  <!-- End of footer -->
 	<!-- JQuery -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>  
