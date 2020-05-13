@@ -122,14 +122,14 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 				  </div> 
 
 				   <div class = "section topics">					  
-				<?php foreach($records as $key => $record): ?>
-				  <div class="dropdown">
+				   <div class="dropdown">
 						<button class="btn btn-big">Months</button>
+				<?php foreach($records as $key => $record): ?>				  
 						<div>
 							<a href="<?php echo 'index.php?' . 'month=' . $record['month']?>"><?php echo $record['month']; ?></a>													
-      					</div>
-					</div>
+      					</div>					
 				<?php endforeach; ?>
+				</div>
 				</div>		
 
 					  <!-- <li><a href = "#">About Me</a></li>
@@ -149,7 +149,7 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 	  <!-- End of page Wrapper -->
 
 	  <!-- Footer -->
-		   <!-- <div class = "footer"> 
+		   <div class = "footer"> 
 
 			<div class = "footer-content">  
 
@@ -204,7 +204,7 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 				&copy; PolaniTex.com | Designed by Hamza Polani	
 			  </div>
 
-		  </div>   -->
+		  </div>  
 	  <!-- End of footer -->
 	<!-- JQuery -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>  
