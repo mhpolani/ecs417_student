@@ -73,10 +73,35 @@ header *
 	line-height: 1.3rem;
 }
 
-.DDbtn
+.DDbtn:hover
 {
 	color:white;
 	background: #f7fa33;
+}
+
+.DD
+{
+	position: relative;
+	display: inline-block;
+}
+
+.DD-content a
+{
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+.DD-content a:hover
+{
+	background-color: black;
+}
+
+.DD:hover .DD-content 
+{
+   display: block;
 }
 header .logo
 {

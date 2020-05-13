@@ -122,10 +122,10 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 				  </div> 
 
 				   <div class = "section topics">					  
-				   <div class="dropdown">
+				   <div class="DD">
 						<button class="DDbtn">Months</button>
 				<?php foreach($records as $key => $record): ?>				  
-						<div>
+						<div class = "DD-content">
 							<a href="<?php echo 'index.php?' . 'month=' . $record['month']?>"><?php echo $record['month']; ?></a>													
       					</div>					
 				<?php endforeach; ?>
