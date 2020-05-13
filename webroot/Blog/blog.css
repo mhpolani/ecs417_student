@@ -638,6 +638,8 @@ header .menu-toggle
 {
 	border:1px solid red;
 	align-content: center;
+	align-items: center;
+
 }
 
 /* Explicit styling for preview.php */
