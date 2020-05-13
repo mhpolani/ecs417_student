@@ -152,7 +152,7 @@ function delete($table, $id)
 //     return $records;   
 // }
 
-function getPostsByMonth($monthname)
+function getPostsByMonth($month)
 {
     global $conn;
     $sql = "SELECT
@@ -160,7 +160,7 @@ function getPostsByMonth($monthname)
       FROM POSTS AS p JOIN USERS AS u
        ON p.user_id = u.ID WHERE p.published=?
         AND month =?";
-    $stmt = executeQuery($sql, ['published' => 1, 'month' => $monthname]);
+    $stmt = executeQuery($sql, ['published' => 1, 'month' => $month]);
     $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
     return $records;   
 }
