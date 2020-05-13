@@ -7,11 +7,7 @@ $posts = array();
 
 if (isset($_POST['search-term']))
 {	
-	dd($_POST);
-}
-if (isset($_GET['id']))
-{
-	$post = getPostsByMonth($_GET['id']);
+	$posts = searchPosts($_POST['search-term']);
 }
 else
 {	
