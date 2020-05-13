@@ -1,3 +1,5 @@
+<!-- This file contains the code that connects my application to the sql database -->
+
 <?php
 /*
 $servername = "localhost";

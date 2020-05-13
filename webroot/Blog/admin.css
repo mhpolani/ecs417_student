@@ -1,10 +1,13 @@
+/* This file overwrites the styling features for the admin only pages */
+
+
 .admin-wrapper
 {
     height:calc(100% - 66px);
     display:flex;
 }
     
-.admin-wrapper .left-sidebar
+.admin-wrapper .left-sidebar  /*  this contains manage the posts button and link */
 {
     flex: 2;
     height: 100%;

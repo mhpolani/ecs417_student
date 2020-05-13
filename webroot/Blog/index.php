@@ -58,9 +58,9 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 		  <!-- Post Slider -->
 		<div class = "post-slider">
 
-			<h1 class = "slider-title">What's Trending?</h1>			
-			<i class = "fas fa-chevron-left prev"></i>
-			<i class = "fas fa-chevron-right next"></i>
+			<h1 class = "slider-title">What's Trending?</h1>						
+			<i class="fas fa-caret-square-left"></i>
+			<i class="fas fa-caret-square-right"></i>
 			
 			<div class = "post-wrapper">
 		<?php foreach ($posts as $post): ?>
@@ -69,7 +69,7 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 		<img src = "Images/donut.png" alt = " " class = "slider-image">
 		<div class = "post-info">
 	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>"><?php echo $post['title']; ?></a></h4>
-	  <i class = "far fa-user"> Hamza Polani</i>
+	  <i class="fas fa-user-edit"> Hamza Polani</i>
 	  &nbsp;
 	  <i class = "far fa-calendar"> <?php echo date('F j, Y H:i', strtotime($post['created_at'])) . ' UTC'; ?></i>
 		</div>

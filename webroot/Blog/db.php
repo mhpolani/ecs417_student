@@ -1,3 +1,5 @@
+<!-- This file contains reusable functions such as selectAll, create, delete (SQL CRUD) that are used in many parts of my program -->
+
 <?php
 session_start();
 require('connect.php');

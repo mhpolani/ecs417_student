@@ -10,8 +10,8 @@
 			<?php if(isset($_SESSION['ID'])): ?>
 			
 			<li>
-				<a href = "#">
-					<i class="fas fa-user-tie"></i>
+				<a href = "#">					
+					<i class="fas fa-user-secret"></i>
 					<?php echo $_SESSION['username']; ?>
 					<i class="fas fa-angle-double-down" style = "font-size:.8em"></i>
 				</a>
