@@ -8,9 +8,9 @@ $postsTitle = 'Recent Posts';
 
 if (isset($_GET['month']))
 {
-	// $posts = getPostsByMonth($_GET['month']);	
-	// $postsTitle = "You searched for '" . $_GET['month'] . "'";
-	dd($_GET['month']);
+	$posts = getPostsByMonth($_GET['month']);	
+	$postsTitle = "You searched for '" . $_GET['month'] . "'";
+	// dd($_GET['month']);
 	// dd($_POST);
 }
 else if (isset($_POST['search-term']))
