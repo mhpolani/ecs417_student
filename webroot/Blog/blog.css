@@ -60,6 +60,24 @@ header *
 	line-height: 1.3rem;
 }
 
+.DDbtn
+{
+	padding: .5rem 1rem;
+	background: #fcff52;
+	color: black;
+	border: 1px solid transparent;
+	border-radius: .25rem;
+	font-size: 1.1em;
+	font-family:'Candal',sans-serif;
+	padding: .7rem 1.3rem;
+	line-height: 1.3rem;
+}
+
+.DDbtn
+{
+	color:white;
+	background: #f7fa33;
+}
 header .logo
 {
 	float:left;
