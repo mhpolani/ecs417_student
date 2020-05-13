@@ -121,31 +121,17 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 					  </form>
 				  </div> 
 
-				   <div class = "section topics">
-					  <h2 class = "section-title">Months</h2>
-					  <ul>
-						
-					  <?php foreach($records as $key => $record): ?>
-						<li><a href = "<?php echo 'index.php?' . 'month=' . $record['month']?>"><?php echo $record['month']; ?></a></li>
-					  <?php endforeach; ?>					
-					  <div class="months-list">
-						<button class="dropbtn">Months</button>
-						<div class="dropdown-content">
-							<a href="<?php echo 'index.php?' . 'month=' . $record['month']?>"><?php echo $record['month']; ?></a>
-							<a href="<?php echo 'index.php?' . 'month=' . $record['month']?>"><?php echo $record['month']; ?></a>
-							<a href="<?php echo 'index.php?' . 'month=' . $record['month']?>"><?php echo $record['month']; ?></a>
-							<a href="<?php echo 'index.php?' . 'month=' . $record['month']?>"><?php echo $record['month']; ?></a>
-							<a href="<?php echo 'index.php?' . 'month=' . $record['month']?>"><?php echo $record['month']; ?></a>
-							<a href="<?php echo 'index.php?' . 'month=' . $record['month']?>"><?php echo $record['month']; ?></a>
-							<a href="<?php echo 'index.php?' . 'month=' . $record['month']?>"><?php echo $record['month']; ?></a>
-							<a href="<?php echo 'index.php?' . 'month=' . $record['month']?>"><?php echo $record['month']; ?></a>
-							<a href="<?php echo 'index.php?' . 'month=' . $record['month']?>"><?php echo $record['month']; ?></a>
-							<a href="<?php echo 'index.php?' . 'month=' . $record['month']?>"><?php echo $record['month']; ?></a>
-							<a href="<?php echo 'index.php?' . 'month=' . $record['month']?>"><?php echo $record['month']; ?></a>
-							<a href="<?php echo 'index.php?' . 'month=' . $record['month']?>"><?php echo $record['month']; ?></a>
-						</div>
-						</div>									
-						
+				   <div class = "section topics">					  
+				<?php foreach($records as $key => $record): ?>
+				  <div class="dropdown">
+						<button class="btn btn-big">Months</button>
+						<div>
+							<a href="<?php echo 'index.php?' . 'month=' . $record['month']?>"><?php echo $record['month']; ?></a>													
+      					</div>
+					</div>
+				<?php endforeach; ?>
+				</div>		
+
 					  <!-- <li><a href = "#">About Me</a></li>
 						  <li><a href = "#">Skills and Achievements</a></li>
 						  <li><a href = "#">Education and Qualifications</a></li>
@@ -153,8 +139,8 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 						  <li><a href = "#">Portfolio</a></li>
 						  <li><a href = "#">Contact</a></li>
 						  <li><a href = "#">Blog</a></li> -->
-					  </ul>
-				  </div>
+					  
+				  
 			  </div>
 
 		  </div> 
@@ -231,3 +217,7 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 
   </body>
   </html>
+
+
+
+  
