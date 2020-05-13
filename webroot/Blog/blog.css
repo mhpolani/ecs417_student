@@ -634,6 +634,12 @@ header .menu-toggle
 	list-style-type: none;
 }
 
+.footer-bottom
+{
+	border:1px solid red;
+	align-content: center;
+}
+
 /* Explicit styling for preview.php */
 /* .main-content.preview
 {

@@ -55,6 +55,8 @@ th,td
     text-align: left;
     border-bottom: 1px solid #dfc2c2;
 }
+
+/* Posts index page buttons styling */
 .edit
 {
     color:green;
@@ -70,10 +72,41 @@ th,td
     color:blue;
 }
 
-.edit:hover, .delete:hover, .publish:hover
+.unpublish
+{
+    color:blue;    
+}
+
+.preview
+{
+    color: gray;
+}
+
+.edit:hover
 {
     text-decoration: underline;
 }
+
+.delete:hover
+{
+    text-decoration: underline;
+}
+
+.publish:hover
+{
+    text-decoration: underline;
+}
+
+.preview:hover
+{
+    text-decoration: underline;
+}
+
+.unpublish:hover
+{
+    text-decoration: underline;
+}
+/* End of posts index page buttons styling */
 
 form div
 {

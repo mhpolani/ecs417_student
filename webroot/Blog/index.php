@@ -9,7 +9,7 @@ $postsTitle = 'Recent Posts';
 if (isset($_GET['month']))
 {
 	$posts = getPostsByMonth($_GET['month']);	
-	$postsTitle = "You searched for posts in the month of '" . $_GET['month'] . "'";
+	$postsTitle = "You searched for posts released in the month of '" . $_GET['month'] . "'";
 	// dd($_GET['month']);
 	// dd($_POST);
 }
