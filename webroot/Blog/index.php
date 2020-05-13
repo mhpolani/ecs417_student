@@ -1,14 +1,20 @@
 <?php 
 
 include_once('db.php');
-
+global $conn;
 $months = selectAll('MONTHS');
 $posts = array();
- //fetching only ORDERED published posts for use in displaying them publicly
-global $conn;
-$sql = "SELECT * FROM POSTS WHERE published=? ORDER BY created_at DESC";
+
+if (isset($_GET['id']))
+{
+	$post = getPostsByMonth($_GET['id']);
+}
+else
+{	
+$sql = "SELECT * FROM POSTS WHERE published=? ORDER BY created_at DESC";  //fetching only ORDERED published posts for use in displaying them publicly
 $stmt = executeQuery($sql, ['published' => 1]);
 $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+}
 ?>
 
 <!DOCTYPE html>
@@ -101,7 +107,7 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 			  <div class = "sidebar">
 				  <div class = "section search">
 					  <h2 class = "section-title">Search</h2>
-					  <form action = "index.html" method = "post">
+					  <form action = "index.php" method = "post">
 						  <input type = "text" name = "search-term" class = "text-input" placeholder = "Search....">						   
 					  </form>
 				  </div> 
@@ -111,7 +117,7 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 					  <ul>
 						
 					  <?php foreach($months as $key => $month): ?>
-						<li><a href = "#"><?php echo $month['name']; ?></a></li>
+						<li><a href = "<?php echo 'index.php?id=' . $month['id'] ?>"><?php echo $month['name']; ?></a></li>
 					  <?php endforeach; ?>														
 					  <!-- <li><a href = "#">About Me</a></li>
 						  <li><a href = "#">Skills and Achievements</a></li>
