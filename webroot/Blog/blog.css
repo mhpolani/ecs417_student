@@ -105,7 +105,7 @@ header *
 
 .DD-content a:hover
 {
-	background-color: black;
+	background-color: blue;
 }
 
 .DD:hover .DD-content 
@@ -442,7 +442,7 @@ header .menu-toggle
 }
 .content .sidebar .section.topics
 {
-	border:1px solid red;
+	
 }
 .content .sidebar .section.topics ul  /*formatting for list*/
 {
