@@ -166,7 +166,7 @@ function searchPosts($term)  //functionality for searchbar and ultimately months
     $match = '%' . $term . '%';
     global $conn;
     // $sql = "SELECT p.*, u.username FROM POSTS AS p JOIN USERS AS u ON p.user_id = u.ID WHERE p.published=? AND p.title LIKE ? OR p.body LIKE ?";
-    $sql = "SELECT FROM POSTS where POSTS.published=? AND POSTS.title LIKE ? OR POSTS.body LIKE ?";
+    $sql = "SELECT FROM POSTS where published=? AND title LIKE ? OR body LIKE ?";
     $stmt = executeQuery($sql, ['published' => 1, 'title' => $match, 'body' => $match]);
     $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
     return $records;   
