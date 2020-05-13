@@ -4,9 +4,11 @@ include_once('db.php');
 global $conn;
 $months = selectAll('MONTHS');
 $posts = array();
+$postsTitle = 'Recent Posts';
 
 if (isset($_POST['search-term']))
 {	
+	$postsTitle = "You searched for '" . $_POST['search-term'] . "'";
 	$posts = searchPosts($_POST['search-term']);
 }
 else
@@ -81,7 +83,7 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 
 				<!-- Main Content -->
 			  <div class="main-content">
-				  <h1 class = "recent-post-title">Recent Posts</h1>
+				  <h1 class = "recent-post-title"><?php echo $postsTitle ?></h1>
 
 					<?php foreach($posts as $post): ?>
 					
