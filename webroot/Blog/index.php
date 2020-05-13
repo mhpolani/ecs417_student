@@ -6,9 +6,9 @@ $months = selectAll('MONTHS');
 $posts = array();
 $postsTitle = 'Recent Posts';
 
-if (isset($_GET['id']))
+if (isset($_GET['month_id']))
 {
-	$posts = getPostsByMonth($_GET['id']);	
+	$posts = getPostsByMonth($_GET['month_id']);	
 	$postsTitle = "You searched for '" . $_GET['name'] . "'";
 }
 else if (isset($_POST['search-term']))
