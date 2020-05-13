@@ -99,7 +99,7 @@ header *
 	background-color: black;
 }
 
-.DD:hover .DD-content 
+.DDbtn:hover .DD-content 
 {
    display: block;
 }
