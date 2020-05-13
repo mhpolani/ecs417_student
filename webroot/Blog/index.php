@@ -2,7 +2,7 @@
 
 include_once('db.php');
 global $conn;
-$months = selectAll('POSTS');
+$records = selectAll('POSTS');
 $posts = array();
 $postsTitle = 'Recent Posts';
 
@@ -125,8 +125,8 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 					  <h2 class = "section-title">Months</h2>
 					  <ul>
 						
-					  <?php foreach($months as $key => $month): ?>
-						<li><a href = "<?php echo 'index.php?' . 'month=' . $month['month']?>"><?php echo $month['month']; ?></a></li>
+					  <?php foreach($records as $key => $record): ?>
+						<li><a href = "<?php echo 'index.php?' . 'month=' . $record['month']?>"><?php echo $record['month']; ?></a></li>
 					  <?php endforeach; ?>														
 					  <!-- <li><a href = "#">About Me</a></li>
 						  <li><a href = "#">Skills and Achievements</a></li>
