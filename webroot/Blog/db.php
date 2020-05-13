@@ -159,8 +159,8 @@ function getPostsByMonth($monthid)
      p.*, u.username
       FROM POSTS AS p JOIN USERS AS u
        ON p.user_id = u.ID WHERE p.published=?
-        AND month_id =?";
-    $stmt = executeQuery($sql, ['published' => 1, 'month_id' => $monthid]);
+        AND month =?";
+    $stmt = executeQuery($sql, ['published' => 1, 'month' => $monthid]);
     $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
     return $records;   
 }
