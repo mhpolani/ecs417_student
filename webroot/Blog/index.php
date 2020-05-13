@@ -5,7 +5,7 @@ global $conn;
 $months = selectAll('MONTHS');
 $posts = array();
 
-if (isset($post['search-term']))
+if (isset($_POST['search-term']))
 {	
 	dd($_POST);
 }
