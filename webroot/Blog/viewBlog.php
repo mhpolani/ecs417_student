@@ -155,7 +155,7 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 			<div class = "footer-content">  
 
 				<div class = "footer-section about">
-					<h1 class = "logo-text"><span>Hamza</span>Man</h1>
+					<h1 class = "logo-text" href = "index.php"><span>Hamza</span>Man</h1>
 					<p></p>
 					<div class = "contact">
 						<span><i class="fas fa-mobile-alt"></i> &nbsp; +44 1234 56789</span>
@@ -174,12 +174,12 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 					<h2>Links</h2>
 					<br>
 					<ul class = "footer-list">
-					  <li><a href = "#">About Me</a></li>
-					  <li><a href = "#">Skills and Achievements</a></li>
-	     			  <li><a href = "#">Education and Qualifications</a></li>					  
-					  <li><a href = "#">Portfolio</a></li>
-					  <li><a href = "#">Contact</a></li>
-					  <li><a href = "#">Blog</a></li>	
+					  <li><a href = "index.php">About Me</a></li>
+					  <li><a href = "index.php">Skills and Achievements</a></li>
+	     			  <li><a href = "index.php">Education and Qualifications</a></li>					  
+					  <li><a href = "index.php">Portfolio</a></li>
+					  <li><a href = "index.php">Contact</a></li>
+					  <li><a href = "viewBlog.php">Blog</a></li>	
 					</ul>					
 				</div>
 
