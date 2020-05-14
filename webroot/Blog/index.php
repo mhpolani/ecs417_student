@@ -157,16 +157,16 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 
 				<div class = "footer-section about">
 					<h1 class = "logo-text"><span>Hamza</span>Man</h1>
-					<p>Enter filler content for footer here</p>
+					<p></p>
 					<div class = "contact">
-						<span><i class ="fas fa-phone"></i></span> &nbsp; 123-456-789</span>
-						<span><i class = "fas fa-envelope"></i> &nbsp; info@Mhpolanto.com</span>
+						<span><i class="fas fa-mobile-alt"></i> &nbsp; +44 1234 56789</span>
+						<span><i class="fas fa-paper-plane"></i> info@mhpolanto.com</span>  
 					</div>
 					<div class = "socials">
-						<a href = "#"><i class = "fab fa-facebook"></i></a>
-						<a href = "#"><i class = "fab fa-youtube"></i></a>
-						<a href = "#"><i class = "fab fa-instagram"></i></a>
-						<a href = "#"><i class = "fab fa-twitter"></i></a>						
+						<a href = "#"><i class="fab fa-facebook-square"></i></a>						
+						<a href = "#"><i class="fab fa-linkedin"></i></a>
+						<a href = "#"><i class="fab fa-instagram-square"></i></a>
+						<a href = "#"><i class="fab fa-whatsapp-square"></i></a>						
 					</div>
 				
 				</div>
