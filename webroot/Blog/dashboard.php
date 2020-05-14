@@ -7,8 +7,6 @@
  <html lang = "en">
   <head>
   	<meta charset = "UTF-8">
-  	<meta charset = "viewport" content = "width-device-width,initial-scale=1.0">
-  	<meta http-equiv="X-UA-Compatible" content = "ie-edge">
   	
   	<!-- Font Awesome -->
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css"/>
@@ -34,6 +32,12 @@
       
 	  <!-- Admin Page Wrapper -->
 	  <div class = "admin-wrapper">
+
+    <div class="left-sidebar">
+                <ul>
+                    <li><a href="postsindex.php">Manage Posts</a></li>  
+                </ul>
+            </div>
 	                       
             <!-- Admin Content -->
             <div class="admin-content">

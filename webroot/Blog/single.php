@@ -160,7 +160,7 @@ if (isset($_POST['add-comment']))
 							Send
 						</button>
 
-						</form>
+		 				</form>
 				</div>
 			
 			</div>			 

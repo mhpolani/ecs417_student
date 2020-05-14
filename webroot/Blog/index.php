@@ -8,15 +8,12 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 <!DOCTYPE html>
  <html lang = "en">
   <head>
-  	<meta charset = "UTF-8">
-  	<meta charset = "viewport" content = "width-device-width,initial-scale=1.0">
-  	<meta http-equiv="X-UA-Compatible" content = "ie-edge">
-  	
+	  <meta charset = "UTF-8">
+	    	
   	<!-- Font Awesome -->
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css"/>
 
-    <!--  Google fonts -->
-    
+    <!--  Google fonts -->    
 	<link href="https://fonts.googleapis.com/css2?family=Candal&family=Raleway&display=swap" rel="stylesheet">
 	
 	<!-- Custom Styling -->
