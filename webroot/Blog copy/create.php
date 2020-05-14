@@ -1,5 +1,3 @@
-<!-- This file adds a new blog post to the sql table -->
-
 <?php include('posts.php');
 $months = selectAll('MONTHS');
 ?>
@@ -30,7 +28,7 @@ $months = selectAll('MONTHS');
   </head>
   <body>
   	
-      <?php include('header.php'); ?>
+      <?php include('adminHeader.php'); ?>
       
 	  <!-- Admin Page Wrapper -->
 	  <div class = "admin-wrapper">

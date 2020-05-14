@@ -28,7 +28,7 @@
   </head>
   <body>
   	
-      <?php include('header.php'); ?>
+      <?php include('adminHeader.php'); ?>
       
 	  <!-- Admin Page Wrapper -->
 	  <div class = "admin-wrapper">
@@ -46,7 +46,7 @@
 
                 <div class="button-group">
                     <a href="create.php" class="btn btn-big">Add Post</a>
-                    <a href="postsindex.php" class = "btn btn-big">Manage Posts</a>
+                    <a href="index.php" class = "btn btn-big">Manage Posts</a>
                 </div>            
             
 

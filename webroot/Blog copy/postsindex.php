@@ -28,7 +28,7 @@
   </head>
   <body>
 
-  <?php include("header.php"); ?>
+  <?php include("adminHeader.php"); ?>
       
 	  <!-- Admin Page Wrapper -->
 	  <div class = "admin-wrapper">
