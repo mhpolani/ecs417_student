@@ -33,14 +33,20 @@
 	  <!-- Admin Page Wrapper -->
 	  <div class = "admin-wrapper">
 
-      <?php include("adminSidebar.php"); ?>
+      
+      <div class="left-sidebar">
+                <ul>
+                    <li><a href="postsindex.php">Manage Posts</a></li>  
+                </ul>
+            </div>
+      
 	
        
             <!-- Admin Content -->
             <div class="admin-content">
                 <div class="button-group">
                     <a href="create.php" class="btn btn-big">Add Post</a>
-                    <a href="index.php" class = "btn btn-big">Manage Posts</a>
+                    <a href="postsindex.php" class = "btn btn-big">Manage Posts</a>
                 </div>            
             
 
