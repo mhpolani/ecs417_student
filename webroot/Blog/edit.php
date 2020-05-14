@@ -33,8 +33,12 @@
 	  <!-- Admin Page Wrapper -->
 	  <div class = "admin-wrapper">
 	
-      <?php include('adminSidebar.php'); ?>
-            
+       
+      <div class="left-sidebar">
+                <ul>
+                    <li><a href="postsindex.php">Manage Posts</a></li>  
+                </ul>
+            </div>
             
 
             <!-- Admin Content -->
