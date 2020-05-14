@@ -124,13 +124,43 @@ $months = selectAll('MONTHS');
           }
         }
 
-    var title = document.forms["myForm"]["title"];
-    var body = document.forms["myForm"]["body"];
-    var titleError = document.getElementById("title_error");
-    var bodyError = document.getElementById("body_error");
+    // var title = document.forms["myForm"]["title"];
+    // var body = document.forms["myForm"]["body"];
+    // var titleError = document.getElementById("title_error");
+    // var bodyError = document.getElementById("body_error");
+
+    const titleError = document.getElementById("title_error");
+    const bodyError = document.getElementById("body_error");
+    const title = document.getElementById('title');
+    const body = document.getElementById('body');
+    const form = document.getElementById('myForm');
+    form.addEventListener('submit', (e) =>
+    {
+    	if(title.value === '' || title.value = null)
+    	{
+    	e.preventDefault()
+    	title.style.border = "1px solid red";
+        titleError.textContent = "Title is required!";
+        title.focus();
+    	}
+    	if(body.value === '' || body.value = null)
+    	{
+    	e.preventDefault()
+    	  body.style.border = "1px solid red";
+          bodyError.textContent = "Body is required!";
+          body.focus();
+    	}
+    })
+    
+    
+    
     // title.addEventListener("click", Verify, true);
     // body.addEventListener("click", Verify, true);
     
+
+    document.getElementById("myForm").addEventListener("click", function(event){
+  event.preventDefault()
+});
     function check()
     {
         if (title.value == "")
@@ -175,5 +205,4 @@ $months = selectAll('MONTHS');
   </body>
   </html>
 
-  // document.getElementById("title").innerHTML = "<?php echo $title ?>";
-    // document.getElementById("body").innerHTML = "<?php echo $body ?>";
+  
