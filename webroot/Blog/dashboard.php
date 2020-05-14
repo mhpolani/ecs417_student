@@ -1,5 +1,7 @@
+<!-- This file is meant -->
+
 <?php include('posts.php'); 
- adminOnly();
+ 
 ?>
 <!DOCTYPE html>
  <html lang = "en">
@@ -28,7 +30,7 @@
   </head>
   <body>
   	
-      <?php include('adminHeader.php'); ?>
+      <?php include('header.php'); ?>
       
 	  <!-- Admin Page Wrapper -->
 	  <div class = "admin-wrapper">

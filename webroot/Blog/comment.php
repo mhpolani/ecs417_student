@@ -1,10 +1,13 @@
+<!-- This file is meant to add functionality for the add comment button on single.php -->
+
+
 <?php
 include('db.php');
 
 if (isset($_POST['add-comment']))  
 {    
        
-    dd($_POST);
+    // dd($_POST);
     // unset($_POST['add-post']);
     // $_POST['user_id'] = $_SESSION['ID'];
     // $_POST['published'] = isset($_POST['published']) ? 1 : 0;    //Since the 'published' is of type tinyint(boolean) if the published button is clicked, value is set to 1
