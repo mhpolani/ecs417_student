@@ -129,25 +129,24 @@ $months = selectAll('MONTHS');
     const title = document.getElementById('title');
     const body = document.getElementById('body');
     const form = document.getElementById('myForm');
-    document.getElementById('add-post').addEventListener('click', function Func(event));
     
-    function Func(event)
+    form.addEventListener('submit', (e) =>
     {
-    	if(title.value == '' || title.value = null)
+    	if (title.value === '' || title.value = null)
     	{
-    	event.preventDefault()
+    	e.preventDefault()
     	title.style.border = "1px solid red";
         titleError.textContent = "Title is required!";
         title.focus();
     	}
     	if(body.value == '' || body.value = null)
     	{
-    	event.preventDefault()
+    	e.preventDefault()
      	body.style.border = "1px solid red";
         bodyError.textContent = "Body is required!";
         body.focus();
     	}
-    };
+    });
     
     
     
