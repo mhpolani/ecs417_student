@@ -33,7 +33,6 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 			<h1 class = "portfolio-title">Muhammad Hamza Polani</h1>
 			<i class = "fas fa-chevron-left prev"></i>
 			<i class = "fas fa-chevron-right next"></i>
-			
 			<div class = "post-wrapper">
 		
 				
