@@ -1,6 +1,6 @@
 <?php
 
-function usersOnly($redirect = 'index.php')
+function usersOnly($redirect = 'viewBlog.php')
 {
     if (empty($_SESSION['ID']))
     {
@@ -11,7 +11,7 @@ function usersOnly($redirect = 'index.php')
     }
 }
 
-function adminOnly($redirect = 'index.php')
+function adminOnly($redirect = 'viewBlog.php')
 {
     if (empty($_SESSION['ID']) || (empty($_SESSION['admin'])))   // has to be logged in and has to be admin
     {
@@ -22,7 +22,7 @@ function adminOnly($redirect = 'index.php')
     }
 }
 
-function guestsOnly($redirect = 'index.php')
+function guestsOnly($redirect = 'viewBlog.php')
 {
     if (empty($_SESSION['ID']))
     {

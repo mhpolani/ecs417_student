@@ -1,10 +1,10 @@
 <header>
-      <a href = "index.php" class = "logo">
+      <a href = "viewBlog.php" class = "logo">
   			<h1 class = "logo-text"><span>Hamza</span>Man</h1>
         </a>
   		<i class = "fa fa-bars menu-toggle"></i>
   		<ul class = "nav">
-  			<li><a href = "index.php" class = "navbar">Home</a></li>
+  			<li><a href = "viewBlog.php" class = "navbar">Home</a></li>
   			<li><a href = "#" class = "navbar">About</a></li>
 			
 			<?php if(isset($_SESSION['ID'])): ?>

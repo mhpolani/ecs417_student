@@ -199,7 +199,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 				<div class = "footer-section contact-form">
 					<h2>Contact me</h2>
 					<br>
-					<form action = "index.php" method = "post">
+					<form action = "viewBlog.php" method = "post">
 						<input type = "email" name = "email" class = "text-input contact-input" placeholder = "Your email address...">
 						<textarea rows = "4" name = "message" class = "text-input contact-input" placeholder = "Your message...."></textarea>
 						<button type="submit" class="btn btn-big contact-btn">

@@ -115,7 +115,7 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 			  <div class = "sidebar">
 				  <div class = "section search">
 					  <h2 class = "section-title">Search</h2>
-					  <form action = "index.php" method = "post">
+					  <form action = "viewBlog.php" method = "post">
 						  <input type = "text" name = "search-term" class = "text-input" placeholder = "Search....">						   
 					  </form>
 				  </div> 
@@ -126,7 +126,7 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 							<div class = "DD-content">
 
 				<?php foreach($records as $key => $record): ?>				  
-							<a href="<?php echo 'index.php?' . 'month=' . $record['month']?>"><?php echo $record['month']; ?></a>													      					
+							<a href="<?php echo 'viewBlog.php?' . 'month=' . $record['month']?>"><?php echo $record['month']; ?></a>													      					
 				<?php endforeach; ?>
 
 				</div>				
@@ -186,7 +186,7 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 				<div class = "footer-section contact-form">
 					<h2>Contact me!</h2>
 					<br>
-					<form action = "index.php" method = "post">
+					<form action = "viewBlog.php" method = "post">
 						<input type = "email" name = "email" class = "text-input contact-input" placeholder = "Your email address...">
 						<textarea rows = "4" name = "message" class = "text-input contact-input" placeholder = "Your message...."></textarea>
 						<button type="submit" class="btn btn-big contact-btn">

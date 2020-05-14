@@ -31,7 +31,7 @@ if (isset($_POST['register-btn']) || isset($_POST['admin-form']))   //code to pr
         } 
         else 
         {
-            header('location: index.php');
+            header('location: viewBlog.php');
         }
         // require_once('index.php');
         exit();       
@@ -66,7 +66,7 @@ if (isset($_POST['register-btn']) || isset($_POST['admin-form']))   //code to pr
                 } 
                 else 
                 {
-                     header('location: index.php');
+                     header('location: viewBlog.php');
                 }
                 exit();       
             }

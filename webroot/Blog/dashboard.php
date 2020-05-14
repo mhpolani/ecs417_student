@@ -35,7 +35,7 @@
 	  <!-- Admin Page Wrapper -->
 	  <div class = "admin-wrapper">
 	
-      <?php include('adminSidebar.php'); ?>
+      
             
             
 
