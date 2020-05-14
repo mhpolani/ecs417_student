@@ -1,3 +1,4 @@
+<!-- This file exists for the purpose of adding form validation to login.php and register.php -->
 <?php
 
 function validateUser($user)
@@ -14,11 +15,7 @@ function validateUser($user)
     if (empty($user['password']))    
     {
         array_push($errors, 'Password is required');
-    }
-    // if (empty($user['passwordConfirmation'] !== $user['password']))    
-    // {
-    //     array_push($errors, 'Passwords do not match');
-    // }
+    }    
     return $errors;
 }
 

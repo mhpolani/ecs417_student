@@ -7,7 +7,8 @@ $username = '';
 $email = '';
 $password = '';
 $passwordConfirmation = '';
-if (isset($_POST['register-btn']) || isset($_POST['admin-form']))
+
+if (isset($_POST['register-btn']) || isset($_POST['admin-form']))   //code to provide functionality for the register button on register.php
 {
     $errors = validateUser($_POST);
     if(count($errors) === 0)
@@ -44,7 +45,7 @@ if (isset($_POST['register-btn']) || isset($_POST['admin-form']))
     }
 }
 
-    if (isset($_POST['login-btn']))    //code for login button action
+    if (isset($_POST['login-btn']))    //code to provide functionality for the login button on login.php
     {
         $errors = validateLogin($_POST);  //displays error prompts if there are any errors
         
@@ -74,8 +75,11 @@ if (isset($_POST['register-btn']) || isset($_POST['admin-form']))
                 array_push($errors, 'Wrong credentials.');
             }
         }
+        else  //prevents wipeout of all data if there is an error
+        {
         $username = $_POST['username'];
         $password = $_POST['password'];
+        }
     }
 
 
