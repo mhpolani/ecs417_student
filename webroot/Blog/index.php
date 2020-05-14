@@ -165,14 +165,14 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 					<div class = "socials">
 						<a href = "#"><i class="fab fa-facebook-square"></i></a>						
 						<a href = "#"><i class="fab fa-linkedin"></i></a>
-						<a href = "#"><i class="fab fa-instagram-square"></i></a>
+						<a href = "#"><i class="fab fa-instagram"></i></a>
 						<a href = "#"><i class="fab fa-whatsapp-square"></i></a>						
 					</div>
 				
 				</div>
 				
 				<div class = "footer-section links">
-					<h2>Quick Links</h2>
+					<h2>Links</h2>
 					<br>
 					<ul class = "footer-list">
 					  <li><a href = "#">About Me</a></li>
@@ -181,11 +181,11 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 					  <li><a href = "#">Portfolio</a></li>
 					  <li><a href = "#">Contact</a></li>
 					  <li><a href = "#">Blog</a></li>	
-					</ul>
-					
+					</ul>					
 				</div>
+
 				<div class = "footer-section contact-form">
-					<h2>Contact me</h2>
+					<h2>Contact me!</h2>
 					<br>
 					<form action = "index.php" method = "post">
 						<input type = "email" name = "email" class = "text-input contact-input" placeholder = "Your email address...">
@@ -195,19 +195,18 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 							Send
 						</button>
 
-						</form>
-
-					</form>
+						</form>					
 				</div>
 			
 			</div>			 
 
 			  <div class = "footer-bottom">
-				&copy; PolaniTex.com | Designed by Hamza Polani	
+				&copy; PolaniTechStyle.com | Designed by Muhammad Hamza Polani	
 			  </div>
 
 		  </div>  
 	  <!-- End of footer -->
+
 	<!-- JQuery -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>  
 
@@ -218,6 +217,7 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 	<script src = "scripts.js"></script>
 
   </body>
+  
   </html>
 
 

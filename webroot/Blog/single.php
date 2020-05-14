@@ -120,39 +120,42 @@ if (isset($_POST['add-comment']))
 	  <!-- End of page Wrapper -->
 
 	  <!-- Footer -->
-		   <div class = "footer">  <!--x -->
+		    <div class = "footer"> 
 
-			<div class = "footer-content">  <!-- y -->
+			<div class = "footer-content">  
 
 				<div class = "footer-section about">
 					<h1 class = "logo-text"><span>Hamza</span>Man</h1>
-					<p>Enter filler content here</p>
+					<p></p>
 					<div class = "contact">
-						<span><i class ="fas fa-phone"></i></span> &nbsp; 123-456-789</span>
-						<span><i class = "fas fa-envelope"></i> &nbsp; info@Mhpolanto.com</span>
+						<span><i class="fas fa-mobile-alt"></i> &nbsp; +44 1234 56789</span>
+						<span><i class="fas fa-paper-plane"></i> info@mhpolanto.com</span>  
 					</div>
 					<div class = "socials">
-						<a href = "#"><i class = "fab fa-facebook"></i></a>
-						<a href = "#"><i class = "fab fa-youtube"></i></a>
-						<a href = "#"><i class = "fab fa-instagram"></i></a>
-						<a href = "#"><i class = "fab fa-twitter"></i></a>						
+						<a href = "#"><i class="fab fa-facebook-square"></i></a>						
+						<a href = "#"><i class="fab fa-linkedin"></i></a>
+						<a href = "#"><i class="fab fa-instagram"></i></a>
+						<a href = "#"><i class="fab fa-whatsapp-square"></i></a>						
 					</div>
 				
 				</div>
 				
+				
 				<div class = "footer-section links">
-					<h2>Quick Links</h2>
+					<h2>Links</h2>
 					<br>
 					<ul class = "footer-list">
-					<li><a href = "#">About Me</a></li>
-						  <li><a href = "#">Skills and Achievements</a></li>
-						  <li><a href = "#">Education and Qualifications</a></li>						
-						  <li><a href = "#">Portfolio</a></li>
-						  <li><a href = "#">Contact</a></li>
-						  <li><a href = "#">Blog</a></li>					
+					  <li><a href = "#">About Me</a></li>
+					  <li><a href = "#">Skills and Achievements</a></li>
+	     			  <li><a href = "#">Education and Qualifications</a></li>					  
+					  <li><a href = "#">Portfolio</a></li>
+					  <li><a href = "#">Contact</a></li>
+					  <li><a href = "#">Blog</a></li>	
+					</ul>					
 				</div>
+
 				<div class = "footer-section contact-form">
-					<h2>Contact us</h2>
+					<h2>Contact me!</h2>
 					<br>
 					<form action = "index.php" method = "post">
 						<input type = "email" name = "email" class = "text-input contact-input" placeholder = "Your email address...">
@@ -163,18 +166,17 @@ if (isset($_POST['add-comment']))
 						</button>
 
 						</form>
-
-					</form>
 				</div>
 			
-			</div>			 <!-- y -->
+			</div>			 
 
 			  <div class = "footer-bottom">
-				&copy; PolaniTex.com | Designed by Hamza Polani	
+				&copy; PolaniTechStyle.com | Designed by Muhammad Hamza Polani	
 			  </div>
 
-		  </div>  <!--x -->
+		  </div>  
 	  <!-- End of footer -->
+
 	<!-- JQuery -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>  
 
@@ -185,4 +187,5 @@ if (isset($_POST['add-comment']))
 	<script src = "scripts.js"></script>
 
   </body>
+  
 </html>
