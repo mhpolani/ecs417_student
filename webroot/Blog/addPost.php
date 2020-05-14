@@ -134,7 +134,8 @@ $months = selectAll('MONTHS');
     const title = document.getElementById('title');
     const body = document.getElementById('body');
     const form = document.getElementById('myForm');
-    form.addEventListener('submit', (e) =>
+    const button = document.getElementById('add-post');
+    buttton.addEventListener('submit', (e) =>
     {
     	if(title.value === '' || title.value = null)
     	{
