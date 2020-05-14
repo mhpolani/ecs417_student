@@ -41,7 +41,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 		<img src = "Images/guy.png" alt = " " class = "Pslider-image">
 		<div class = "Ppost-info">
 	  <h4><a href = "" >About Myself</a></h4>
-	  <i class = "far fa-user"></i> &nbsp;
+	  <i class="fas fa-user-secret"></i>&nbsp;
 	  <p class = "posttext">
 	  Since writing my first program in Java, I have been possessed with the idea of using software to solve practical problems. I have a strong conviction in the power of programming to develop the lives of people everywhere. Keenly interested in data analytics and tech auditing, I aspire to either be a data scientist or delve into FinTech.
 	  </p>
@@ -114,7 +114,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 	  <h4><a href = "" >Hobbies & Interests</a></h4>
 	  <i class="fas fa-dumbbell"></i> 
 	  <p class = "posttext">
-	  In my spare time, I am a weightlifting and driving enthusiast. Squash, DC comics, fiction books and first person shooter games are also a few of the things I am an avid fan of.                                                  
+	  In my spare time, I am a weightlifting and driving enthusiast. Squash, DC comics, fiction books and first person shooter games are also a few of the things I am an avid fan of.                                                      
 	  </p>
 	  	  
 		</div>
