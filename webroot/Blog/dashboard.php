@@ -34,11 +34,7 @@
       
 	  <!-- Admin Page Wrapper -->
 	  <div class = "admin-wrapper">
-	
-      
-            
-            
-
+	                       
             <!-- Admin Content -->
             <div class="admin-content">
                       

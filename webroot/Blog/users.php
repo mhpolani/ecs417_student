@@ -32,8 +32,7 @@ if (isset($_POST['register-btn']) || isset($_POST['admin-form']))   //code to pr
         else 
         {
             header('location: viewBlog.php');
-        }
-        // require_once('index.php');
+        }        
         exit();       
     }   
     else  //prevents wipeout of all data if there is an error

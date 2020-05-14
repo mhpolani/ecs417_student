@@ -20,12 +20,7 @@ if (isset($_POST['add-comment']))
 	// // dd($_POST);
 	// dd($_POST['ID']);
 }
-	
-// 	// header("index.php"); 
-// }
-// 	$noOfComments++;
-	
-
+		
 
 ?>
 <!DOCTYPE html>
