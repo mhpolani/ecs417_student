@@ -129,7 +129,9 @@ $months = selectAll('MONTHS');
     const title = document.getElementById('title');
     const body = document.getElementById('body');
     const form = document.getElementById('myForm');
-    document.getElementById('add-post').addEventListener('click', function(event)(
+    document.getElementById('add-post').addEventListener('click', function Func(event));
+    
+    function Func(event)
     {
     	if(title.value == '' || title.value = null)
     	{
@@ -145,7 +147,7 @@ $months = selectAll('MONTHS');
         bodyError.textContent = "Body is required!";
         body.focus();
     	}
-    });
+    };
     
     
     
