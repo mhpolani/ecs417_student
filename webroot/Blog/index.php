@@ -114,7 +114,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 	  <h4><a href = "" >Hobbies & Interests</a></h4>
 	  <i class="fas fa-dumbbell"></i> 
 	  <p class = "posttext">
-	  In my spare time, I am a weightlifting and driving enthusiast. Squash, DC comics, fiction books and first person shooter games are also a few of the things I am an avid fan of.
+	  In my spare time, I am a weightlifting and driving enthusiast. Squash, DC comics, fiction books and first person shooter games are also a few of the things I am an avid fan of.                                                  
 	  </p>
 	  	  
 		</div>
@@ -165,7 +165,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 			<div class = "footer-content">  <!-- y -->
 				
 				<div class = "footer-section about">
-					<h1 class = "logo-text"><span>Hamza</span>Man</h1>
+					<h1 class = "logo-text" href = "index.php"><span>Hamza</span>Man</h1>
 					<p></p>
 					<div class = "contact">
 						<span><i class="fas fa-mobile-alt"></i> &nbsp; +44 1234 56789</span>
