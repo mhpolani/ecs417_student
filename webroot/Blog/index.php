@@ -40,7 +40,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 <div class = "post">
 		<img src = "Images/guy.png" alt = " " class = "Pslider-image">
 		<div class = "Ppost-info">
-	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">About Myself</a></h4>
+	  <h4><a href = "" >About Myself</a></h4>
 	  <i class = "far fa-user"></i> &nbsp;
 	  <p class = "posttext">
 	  Since writing my first program in Java, I have been possessed with the idea of using software to solve practical problems. I have a strong conviction in the power of programming to develop the lives of people everywhere. Keenly interested in data analytics and tech auditing, I aspire to either be a data scientist or delve into FinTech.
@@ -53,8 +53,8 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 <div class = "post">
 		<img src = "Images/qual.jpeg" alt = " " class = "Pslider-image">
 		<div class = "Ppost-info">
-	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">Skills & Achievements</a></h4>
-	  <i class = "far fa-user"></i> 
+	  <h4><a href = "" >Skills & Achievements</a></h4>
+	  <i class="fas fa-trophy"></i>
 	  <p class = "posttext">
 		Over the span of the last ten years, I have attained several awards in the fields of sports, debating and volunteering. Alongside this, I have consistently managed to hold student government positions. I can program in Java and Python, along with having a grasp on HTML, CSS, JS and PHP. I speak English and Urdu.
 	  </p>
@@ -64,7 +64,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 <div class = "post">
 		<img src = "Images/kgs.png" alt = " " class = "Pslider-image">
 		<div class = "Ppost-info">
-	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">Education & Qualifiations</a></h4>
+	  <h4><a href = "" >Education & Qualifiations</a></h4>
 	  <i class="fas fa-brain"></i> 
 	  <p class = "posttext">I am currently studying Computer Science with Management at the Queen Mary University of London. I had the pleasure of completing my A-levels from Karachi Grammar School in 2018 and my GCSEs from Bahria College Karachi in 2016.</p>
 	  	  
@@ -74,7 +74,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 <div class = "post">
 		<img src = "Images/links.png" alt = " " class = "Pslider-image">
 		<div class = "Ppost-info">
-	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">Portfolio & Links</a></h4>
+	  <h4><a href = "" >Portfolio & Links</a></h4>
 	  <i class="fas fa-pen-fancy"></i> 
 	  <p class = "posttext">
 	  Below you can find a link that will redirect you to an article I co-authored for a renowned medical journal while this you can look at my CV <a href = "CV.pdf"> here </a>.
@@ -87,7 +87,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 <div class = "post">
 		<img src = "Images/blog.png" alt = " " class = "Pslider-image">
 		<div class = "Ppost-info">
-	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">The tales of HamzaMan</a></h4>
+	  <h4><a href = "" >The tales of HamzaMan</a></h4>
 	  <i class="fas fa-book"></i> 
 	  <p class = "posttext">
 	  My personal blog. The Tales of HamzaMan includes articles and essays I have written since I was a young child. These cover a wide spectrum of topics, including but not limited to, politics, religion, the environment and random thoughts.
@@ -99,7 +99,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 <div class = "post">
 		<img src = "Images/contact.jpeg" alt = " " class = "Pslider-image">
 		<div class = "Ppost-info">
-	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">Contact me!</a></h4>
+	  <h4><a href = "" >Contact me!</a></h4>
 	  <i class="fas fa-address-book"></i> 
 	  <p class = "posttext">
 	  You can contact me through any of my social media pages that can be found on the footer of this page. Alternatively, you can fill out the contact form on this website and one of my team members will get back to you via email.
@@ -111,7 +111,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 <div class = "post">
 		<img src = "Images/ac.png" alt = " " class = "Pslider-image">
 		<div class = "Ppost-info">
-	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>">Hobbies & Interests</a></h4>
+	  <h4><a href = "" >Hobbies & Interests</a></h4>
 	  <i class="fas fa-dumbbell"></i> 
 	  <p class = "posttext">
 	  In my spare time, I am a weightlifting and driving enthusiast. Squash, DC comics, fiction books and first person shooter games are also a few of the things I am an avid fan of.
@@ -160,41 +160,41 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 	  <!-- End of page Wrapper -->
 
 	  <!-- Footer -->
-		   <div class = "footer">  <!--x -->
+		   <div class = "footer"> 
 
 			<div class = "footer-content">  <!-- y -->
-
+				
 				<div class = "footer-section about">
 					<h1 class = "logo-text"><span>Hamza</span>Man</h1>
 					<p></p>
 					<div class = "contact">
-						<span><i class ="fas fa-phone"></i></span> &nbsp; 123-456-789</span>
-						<span><i class = "fas fa-envelope"></i> &nbsp; info@Mhpolanto.com</span>
+						<span><i class="fas fa-mobile-alt"></i> &nbsp; +44 1234 56789</span>
+						<span><i class="fas fa-paper-plane"></i> info@mhpolanto.com</span>  
 					</div>
 					<div class = "socials">
-						<a href = "#"><i class = "fab fa-facebook"></i></a>
-						<a href = "#"><i class = "fab fa-youtube"></i></a>
-						<a href = "#"><i class = "fab fa-instagram"></i></a>
-						<a href = "#"><i class = "fab fa-twitter"></i></a>						
+						<a href = "facebook.com"><i class="fab fa-facebook-square"></i></a>						
+						<a href = "linkedin.com"><i class="fab fa-linkedin"></i></a>
+						<a href = "instagram.com"><i class="fab fa-instagram"></i></a>
+						<a href = "whatsapp.com"><i class="fab fa-whatsapp-square"></i></a>						
 					</div>
 				
 				</div>
-				
+								
 				<div class = "footer-section links">
-					<h2>Quick Links</h2>
+					<h2>Links</h2>
 					<br>
 					<ul class = "footer-list">
-						<a href = "#"><li>About Me</li></a>
-						<a href = "#"><li>Skills and Achievements</li></a>
-						<a href = "#"><li>Education and Qualifications</li></a>
-						<a href = "#"><li>Experience</li></a>
-						<a href = "#"><li>Portfolio</li></a>
-						<a href = "#"><li>Contact</li></a>
-						<a href = "#"><li>Blog</li></a>
-					
+					  <li><a href = "index.php">About Me</a></li>
+					  <li><a href = "index.php">Skills and Achievements</a></li>
+	     			  <li><a href = "index.php">Education and Qualifications</a></li>					  
+					  <li><a href = "index.php">Portfolio</a></li>
+					  <li><a href = "index.php">Contact</a></li>
+					  <li><a href = "viewBlog.php">Blog</a></li>	
+					</ul>					
 				</div>
+
 				<div class = "footer-section contact-form">
-					<h2>Contact me</h2>
+					<h2>Contact me!</h2>
 					<br>
 					<form action = "viewBlog.php" method = "post">
 						<input type = "email" name = "email" class = "text-input contact-input" placeholder = "Your email address...">
@@ -209,13 +209,13 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 					</form>
 				</div>
 			
-			</div>			 <!-- y -->
+			</div>			
 
 			  <div class = "footer-bottom">
-				&copy; PolaniTex.com | Designed by Hamza Polani	
+				&copy; PolaniTechStyle.com | Designed by Muhammad Hamza Polani	
 			  </div>
 
-		  </div>  <!--x -->
+		  </div> 
 	  <!-- End of footer -->
 	<!-- JQuery -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>  
