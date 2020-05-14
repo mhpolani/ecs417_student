@@ -90,7 +90,7 @@ $months = selectAll('MONTHS');
                     </div>
 
                     <div> 
-                        <button id = "leggo" type = "submit" name ="add-post" class = "btn btn-big">Post</button>
+                        <button id = "add-post" type = "submit" name = "add-post" class = "btn btn-big">Post</button>
                     </div>
 
                     <div> 
@@ -124,34 +124,29 @@ $months = selectAll('MONTHS');
           }
         }
 
-    // var title = document.forms["myForm"]["title"];
-    // var body = document.forms["myForm"]["body"];
-    // var titleError = document.getElementById("title_error");
-    // var bodyError = document.getElementById("body_error");
-
     const titleError = document.getElementById("title_error");
     const bodyError = document.getElementById("body_error");
     const title = document.getElementById('title');
     const body = document.getElementById('body');
     const form = document.getElementById('myForm');
     const button = document.getElementById('add-post');
-    buttton.addEventListener('click', (e) =>
+    buttton.addEventListener('click', function(event)(
     {
-    	if(title.value === '' || title.value = null)
+    	if(title.value == '' || title.value = null)
     	{
-    	e.preventDefault()
+    	event.preventDefault()
     	title.style.border = "1px solid red";
         titleError.textContent = "Title is required!";
         title.focus();
     	}
-    	if(body.value === '' || body.value = null)
+    	if(body.value == '' || body.value = null)
     	{
-    	e.preventDefault()
-    	  body.style.border = "1px solid red";
-          bodyError.textContent = "Body is required!";
-          body.focus();
+    	event.preventDefault()
+     	body.style.border = "1px solid red";
+        bodyError.textContent = "Body is required!";
+        body.focus();
     	}
-    })
+    });
     
     
     
@@ -159,49 +154,48 @@ $months = selectAll('MONTHS');
     // body.addEventListener("click", Verify, true);
     
 
-    document.getElementById("myForm").addEventListener("click", function(event){
-  event.preventDefault()
-});
-    function check()
-    {
-        if (title.value == "")
-        {
-            title.style.border = "1px solid red";
-            titleError.textContent = "Title is required!";
-            title.focus();
-            return false;            
-        }
-        if (body.value == "")
-        {   
-            body.style.border = "1px solid red";
-            bodyError.textContent = "Body is required!";
-            body.focus();
-            return false;            
-        }
+    
+// });
+//     function check()
+//     {
+//         if (title.value == "")
+//         {
+//             title.style.border = "1px solid red";
+//             titleError.textContent = "Title is required!";
+//             title.focus();
+//             return false;            
+//         }
+//         if (body.value == "")
+//         {   
+//             body.style.border = "1px solid red";
+//             bodyError.textContent = "Body is required!";
+//             body.focus();
+//             return false;            
+//         }
         
-    }
+//     }
     
-    function titleVerify()
-    {
-        if(title.value != "")
-        {
-            title.style.border = "1px solid green";
-            titleError.innerHTML = "";
-            return true;
-        }
-    }
+//     function titleVerify()
+//     {
+//         if(title.value != "")
+//         {
+//             title.style.border = "1px solid green";
+//             titleError.innerHTML = "";
+//             return true;
+//         }
+//     }
 
-    function bodyVerify()
-    {
-        if(body.value != "")
-        {
-            body.style.border = "1px solid green";
-            bodyError.innerHTML = "";
-            return true;
-        }
-    }
+//     function bodyVerify()
+//     {
+//         if(body.value != "")
+//         {
+//             body.style.border = "1px solid green";
+//             bodyError.innerHTML = "";
+//             return true;
+//         }
+//     }
     
-        </script>
+//         </script>
 
   </body>
   </html>
