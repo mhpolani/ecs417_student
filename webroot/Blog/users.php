@@ -31,7 +31,7 @@ if (isset($_POST['register-btn']) || isset($_POST['admin-form']))   //code to pr
         } 
         else 
         {
-            header('location: viewBlog.php');
+            header('location: addPost.php');
         }        
         exit();       
     }   
