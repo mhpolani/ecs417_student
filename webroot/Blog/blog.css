@@ -296,8 +296,14 @@ header .menu-toggle
 {
 	height: 130px;
 	padding: 0px 5px;
-
 }
+
+.post-slider .post-wrapper .post .Ppost-info
+{
+	height: 150px;
+	padding: 0px 5px;	
+}
+
 .post-slider .post-wrapper .post .slider-image
 {
 	width:100%;
