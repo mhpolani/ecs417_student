@@ -62,7 +62,7 @@ $months = selectAll('MONTHS');
             </div>    
             <?php endif; ?>       
 
-               <form name = "myForm" id = "myForm" action="create.php" method = "post" onsubmit = "return check()">  
+               <form name = "myForm" id = "myForm" action="addPost.php" method = "post" onsubmit = "return check()">  
                  
                   <div>
                        <label>Title</label>
