@@ -62,7 +62,7 @@ $months = selectAll('MONTHS');
             </div>    
             <?php endif; ?>       
 
-               <form name = "myForm" id = "myForm" action="addPost.php" method = "post" onsubmit = "return check()">  
+               <form name = "myForm" id = "myForm" action="addPost.php" method = "post" >  
                  
                   <div>
                        <label>Title</label>
@@ -94,7 +94,7 @@ $months = selectAll('MONTHS');
                     </div>
 
                     <div> 
-                        <button onclick = "checkFunction()" name ="clear-post" class = "btn btn-big">Clear</button>
+                        <button onclick = "check()" name ="clear-post" class = "btn btn-big">Clear</button>
                     </div>
                     
                </form>
@@ -112,17 +112,6 @@ $months = selectAll('MONTHS');
 	<script src = "scripts.js"></script>
 
     <script>
-    function checkFunction() 
-        {
-            
-          if(confirm("Are you sure you want to clear all of the post? All unsaved changes will be lost."))
-          {
-            document.getElementById("myForm").reset();
-          }
-          else
-          {            
-          }
-        }
 
     const titleError = document.getElementById("title_error");
     const bodyError = document.getElementById("body_error");
@@ -147,6 +136,18 @@ $months = selectAll('MONTHS');
         body.focus();
     	}
     });
+    
+    function check() 
+    {
+            
+          if(confirm("Are you sure you want to clear all of the post? All unsaved changes will be lost."))
+          {
+            document.getElementById("myForm").reset();
+          }
+          else
+          {            
+          }
+    };
     
     
     
