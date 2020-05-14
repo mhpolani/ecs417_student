@@ -14,7 +14,7 @@ if (isset($_POST['register-btn']) || isset($_POST['admin-form']))
     {
         unset($_POST['register-btn'], $_POST['passwordConfirmation']);
         $_POST['admin'] = 0;
-        $_POST['password'] = password_hash($_POST['password'], PASSWORD_DEFAULT);
+        $_POST['password'] = password_hash($_POST['password'], PASSWORD_DEFAULT);   //encrypts the password the user sets in the sql database
         $user_id = create('USERS', $_POST);
         $user = selectOne('USERS', ['ID' => $user_id]);
         
@@ -44,9 +44,9 @@ if (isset($_POST['register-btn']) || isset($_POST['admin-form']))
     }
 }
 
-    if (isset($_POST['login-btn']))    //validate login
+    if (isset($_POST['login-btn']))    //code for login button action
     {
-        $errors = validateLogin($_POST);
+        $errors = validateLogin($_POST);  //displays error prompts if there are any errors
         
         if(count($errors) === 0)
         {

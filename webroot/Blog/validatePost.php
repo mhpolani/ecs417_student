@@ -1,3 +1,5 @@
+<!-- This file exists for the purpose of validating posts that a user adds -->
+
 <?php
 
 function validatePost($user)
@@ -10,13 +12,7 @@ function validatePost($user)
     if (empty($user['body']))    
     {
         array_push($errors, 'Body is required');
-    }
-    $existingPost = selectOne('POSTS', ['title' => $post['title']]);
-    if ($existingPost) 
-    {
-        array_push($errors, 'A post with the same title already exists!');
-    }
-    
+    }        
     return $errors;
 }
  

@@ -1,7 +1,7 @@
 <?php 
 include('restrict.php');
 include_once('db.php');
-include('validatePost.php');
+
 $table = 'POSTS';
 $posts = selectAll($table);   //makes all the posts available to view on postsindex
 $title = "";
@@ -44,10 +44,7 @@ if (isset($_GET['published']) && isset($_GET['p_id']))
 }
 
 if (isset($_POST['add-post']))   //vvvv delicate
-{    
-    // $errors = validatePost($_POST);  // no errors shown using PHP so that JS functionality is enabled    
-    // if(count($errors) == 0)
-    // {
+{        
     unset($_POST['add-post']);
     $_POST['user_id'] = $_SESSION['ID'];
     $_POST['published'] = isset($_POST['published']) ? 1 : 0;    //Since the 'published' is of type tinyint(boolean) if the published button is clicked, value is set to 1
@@ -55,20 +52,15 @@ if (isset($_POST['add-post']))   //vvvv delicate
     $post_id = create($table,$_POST);
     $_SESSION['message'] = "Post created successfully.";
     $_SESSION['type'] = "success";
-    header('location: postsindex.php');    
-    // else
-    // {
-    //     $title = $_POST['title'];
-    //     $body['body'] = htmlentities($_POST['body']);        
-    // }
+    header('location: postsindex.php');        
 }
 
 
 if (isset($_POST['edit-post']))  //update code. Also very important to toggle publish functionality
 {
-    $errors = validatePost($_POST);        
-    if(count($errors) == 0)
-    {
+       
+    
+    
     $ID = $_POST['ID'];
     unset($_POST['edit-post'], $_POST['ID']);
     $_POST['user_id'] = $_SESSION['ID'];
@@ -79,12 +71,7 @@ if (isset($_POST['edit-post']))  //update code. Also very important to toggle pu
     $_SESSION['type'] = "success";
     header('location: postsindex.php');  //redirects to manage posts page where user can edit,delete and preview posts    
     exit();
-    }
-    else
-    {
-        $title = $_POST['title'];
-        $body = $_POST['body'];
-    }
+    
 }
 if (isset($_POST['clear-post']))                       
 {
