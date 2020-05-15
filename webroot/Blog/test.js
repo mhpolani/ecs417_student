@@ -22,5 +22,15 @@
      	body.style.border = "1px solid red";
         bodyError.textContent = "Body is required!";
         body.focus();
-    	}
+        }
+        if (title.value != '') 
+        {
+            title.style.border = "1px solid green";
+            titleError.innerHTML = "";
+        }
+        if (body.value != '') 
+        {   
+            body.style.border = "1px solid green";
+            bodyError.innerHTML = "";
+        }
     })
