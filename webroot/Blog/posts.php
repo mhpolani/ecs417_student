@@ -73,10 +73,10 @@ if (isset($_POST['edit-post']))  //update code. Also very important to toggle pu
     exit();
     
 }
-if (isset($_POST['clear-post']))                       
-{
-    $title = $_POST['title'];
-    $body = $_POST['body'];
-    unset($_POST['clear-post']);
-}
+// if (isset($_POST['clear-post']))                       
+// {
+//     $title = $_POST['title'];
+//     $body = $_POST['body'];
+//     unset($_POST['clear-post']);
+// }
 
