@@ -106,40 +106,13 @@ $months = selectAll('MONTHS');
 	  <!-- End of page Wrapper -->
 	  
 	<!-- JQuery -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>  
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>   -->
 
 	<!-- Custom Script -->
-	<script src = "scripts.js"></script>
-
-    <script>
-
-    const titleError = document.getElementById("title_error");
-    const bodyError = document.getElementById("body_error");
-    const title = document.getElementById('title');
-    const body = document.getElementById('body');
-    const form = document.getElementById('myForm');
-    
-    form.addEventListener('submit', function prevent(event){
-        if (title.value === '') 
-    	{
-        window.alert("I was called");
-    	event.preventDefault();
-    	title.style.border = "1px solid red";
-        titleError.textContent = "Title is required!";
-        title.focus();
-        }
-        if(body.value == '')
-    	{
-        window.alert("I was called");
-    	event.preventDefault();
-     	body.style.border = "1px solid red";
-        bodyError.textContent = "Body is required!";
-        body.focus();
-    	}
-    }
+	<script src = "test.js"></script>
 
 
-    // form.addEventListener('submit', (e) =>
+    <!-- // form.addEventListener('submit', (e) =>
     // {
     //     window.alert("I was called");
     // 	if (title.value === '' || title.value = null)
@@ -216,9 +189,8 @@ $months = selectAll('MONTHS');
 //             bodyError.innerHTML = "";
 //             return true;
 //         }
-//     }
+//     } -->
     
-   </script>
 
   </body>
   </html>
