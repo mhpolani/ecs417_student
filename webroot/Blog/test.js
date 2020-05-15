@@ -42,6 +42,8 @@
             document.getElementById("myForm").reset();
           }
           else
-          {            
+          {   
+              document.getElementById('title').innerHTML(title.value);
+              document.getElementById('body').innerHTML(body.value);         
           }
     };
