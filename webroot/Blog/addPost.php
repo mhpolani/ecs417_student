@@ -121,6 +121,7 @@ $months = selectAll('MONTHS');
     
     form.addEventListener('submit', (e) =>
     {
+        window.alert("I was called");
     	if (title.value === '' || title.value = null)
     	{
     	e.preventDefault();
@@ -139,7 +140,7 @@ $months = selectAll('MONTHS');
 
     function check() 
     {
-            
+        window.alert("I was called too");
           if(confirm("Are you sure you want to clear all of the post? All unsaved changes will be lost."))
           {
             document.getElementById("myForm").reset();
@@ -149,7 +150,7 @@ $months = selectAll('MONTHS');
           }
     };
     
-    console.log("Test");
+    
     
     
     // title.addEventListener("click", Verify, true);
