@@ -34,16 +34,16 @@
         
     })
 
-    function check() 
-    {
-        window.alert("I was called too");
-          if(confirm("Are you sure you want to clear all of the post? All unsaved changes will be lost."))
-          {
-            document.getElementById("myForm").reset();
-          }
-          else
-          {   
-              document.getElementById('title').innerHTML(title.value);
-              document.getElementById('body').innerHTML(body.value);         
-          }
-    };
+    // function check() 
+    // {
+    //     window.alert("I was called too");
+    //       if(confirm("Are you sure you want to clear all of the post? All unsaved changes will be lost."))
+    //       {
+    //         document.getElementById("myForm").reset();
+    //       }
+    //       else
+    //       {   
+    //           document.getElementById('title').innerHTML(title.value);
+    //           document.getElementById('body').innerHTML(body.value);         
+    //       }
+    // };
