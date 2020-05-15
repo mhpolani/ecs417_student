@@ -119,26 +119,6 @@ $months = selectAll('MONTHS');
     const body = document.getElementById('body');
     const form = document.getElementById('myForm');
     
-    form.addEventListener('submit', function prevent(event){
-        if (title.value === '') 
-    	{
-        window.alert("I was called");
-    	event.preventDefault();
-    	title.style.border = "1px solid red";
-        titleError.textContent = "Title is required!";
-        title.focus();
-        }
-        if(body.value == '')
-    	{
-        window.alert("I was called");
-    	event.preventDefault();
-     	body.style.border = "1px solid red";
-        bodyError.textContent = "Body is required!";
-        body.focus();
-    	}
-    }
-
-
     // form.addEventListener('submit', (e) =>
     // {
     //     window.alert("I was called");
@@ -156,68 +136,37 @@ $months = selectAll('MONTHS');
     //     bodyError.textContent = "Body is required!";
     //     body.focus();
     // 	}
-    // });
+    // })
 
-    // function check() 
-    // {
-    //     window.alert("I was called too");
-    //       if(confirm("Are you sure you want to clear all of the post? All unsaved changes will be lost."))
-    //       {
-    //         document.getElementById("myForm").reset();
-    //       }
-    //       else
-    //       {            
-    //       }
-    // };
-    
-    
-    
-    
-    // title.addEventListener("click", Verify, true);
-    // body.addEventListener("click", Verify, true);
-    
+    form.addEventListener('submit', function prevent(event){
 
-    
-// });
-//     function check()
-//     {
-//         if (title.value == "")
-//         {
-//             title.style.border = "1px solid red";
-//             titleError.textContent = "Title is required!";
-//             title.focus();
-//             return false;            
-//         }
-//         if (body.value == "")
-//         {   
-//             body.style.border = "1px solid red";
-//             bodyError.textContent = "Body is required!";
-//             body.focus();
-//             return false;            
-//         }
-        
-//     }
-    
-//     function titleVerify()
-//     {
-//         if(title.value != "")
-//         {
-//             title.style.border = "1px solid green";
-//             titleError.innerHTML = "";
-//             return true;
-//         }
-//     }
+    {
+        window.alert("I was called");
+        if (title.value === '') 
+    	{
+    	event.preventDefault();
+    	title.style.border = "1px solid red";
+        titleError.textContent = "Title is required!";
+        title.focus();
+    	}
+    }
 
-//     function bodyVerify()
-//     {
-//         if(body.value != "")
-//         {
-//             body.style.border = "1px solid green";
-//             bodyError.innerHTML = "";
-//             return true;
-//         }
-//     }
-    
+    document.getElementById("myAnchor").addEventListener("click", function(event)
+    {
+        event.preventDefault()
+    });
+
+    function check() 
+    {
+        window.alert("I was called too");
+      if(confirm("Are you sure you want to clear all of the post? All unsaved changes will be lost."))
+      {
+          document.getElementById("myForm").reset();
+      }
+     else
+      {             
+      }
+    };    
    </script>
 
   </body>
