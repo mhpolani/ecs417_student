@@ -7,22 +7,6 @@
     const form = document.getElementById('myForm');
     
     form.addEventListener('submit', function prevent(event){
-        if (title.value === '') 
-    	{
-        window.alert("I was called");
-    	event.preventDefault();
-    	title.style.border = "1px solid red";
-        titleError.textContent = "Title is required!";
-        title.focus();
-        }
-        if(body.value == '')
-    	{
-        window.alert("I was called");
-    	event.preventDefault();
-     	body.style.border = "1px solid red";
-        bodyError.textContent = "Body is required!";
-        body.focus();
-        }
         if (title.value != '') 
         {
             title.style.border = "1px solid green";
@@ -33,4 +17,19 @@
             body.style.border = "1px solid green";
             bodyError.innerHTML = "";
         }
+        if (title.value == '') 
+    	{
+    	event.preventDefault();
+    	title.style.border = "1px solid red";
+        titleError.textContent = "Title is required!";
+        title.focus();
+        }
+        if(body.value == '')
+    	{        
+    	event.preventDefault();
+     	body.style.border = "1px solid red";
+        bodyError.textContent = "Body is required!";
+        body.focus();
+        }
+        
     })
