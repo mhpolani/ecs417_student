@@ -123,20 +123,20 @@ $months = selectAll('MONTHS');
     {
     	if (title.value === '' || title.value = null)
     	{
-    	e.preventDefault()
+    	e.preventDefault();
     	title.style.border = "1px solid red";
         titleError.textContent = "Title is required!";
         title.focus();
     	}
     	if(body.value == '' || body.value = null)
     	{
-    	e.preventDefault()
+    	e.preventDefault();
      	body.style.border = "1px solid red";
         bodyError.textContent = "Body is required!";
         body.focus();
     	}
     });
-    
+
     function check() 
     {
             
@@ -149,6 +149,7 @@ $months = selectAll('MONTHS');
           }
     };
     
+    console.log("Test");
     
     
     // title.addEventListener("click", Verify, true);
@@ -196,7 +197,7 @@ $months = selectAll('MONTHS');
 //         }
 //     }
     
-//         </script>
+   </script>
 
   </body>
   </html>
