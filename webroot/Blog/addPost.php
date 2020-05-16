@@ -94,7 +94,7 @@ $months = selectAll('MONTHS');
                     </div>
 
                     <div> 
-                        <button onclick = "check()" name ="clear-post" class = "btn btn-big">Clear</button>
+                        <button type = "reset" onclick = "check()" name ="clear-post" class = "btn btn-big">Clear</button>
                     </div>
                     
                </form>

@@ -34,6 +34,20 @@
         
     })
 
+    function check()
+    {
+         var response = window.confirm("Are you sure you want to clear all of the post? All unsaved changes will be lost.");
+         if(response)
+         {
+             return true;
+         }
+         else
+         {
+             return false;
+         }        
+
+    }
+
     // function check() 
     // {
     //     window.alert("I was called too");

@@ -157,7 +157,7 @@ function getPostsByMonth($month)
     return $records;   
 }
 
-function searchPosts($term)  //issue with query check please
+function searchPosts($term)  //issue with query. 
 {
     $match = '%' . $term . '%';
     global $conn;

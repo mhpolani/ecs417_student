@@ -1,3 +1,4 @@
+<!-- This file acts as the preview page. Includes edit post, view posts and publish posts functionality -->
 <?php include('posts.php'); //included to get functionality of db.php for reusable functions
 
 if (isset($_GET['ID']))
@@ -46,7 +47,7 @@ $posts = selectAll('POSTS', ['published' => 1]);
                     <?php if($post['published']):?>
                                 <a class = "btn btn-big" href="edit.php?published=0&p_id=<?php echo $post['ID']?>" class = "unpublish">Unpublish</a>  <!-- changes the state of the published field -->                                                
                             <?php else: ?>
-                                <a  class = "btn btn-big" href="edit.php?published=1&p_id=<?php echo $post['ID']?>" class = "publish">Publish</a>    <!-- i.e lets the user preview the entry and then post it -->                                                
+                                <a  class = "btn btn-big" href="edit.php?published=1&p_id=<?php echo $post['ID']?>" class = "publish">Publish</a>    <!-- i.e lets the user preview the entry and then publish it -->                                                
                             <?php endif; ?>    
                  </div>            
 
@@ -66,28 +67,7 @@ $posts = selectAll('POSTS', ['published' => 1]);
                 
 			  </div>			  
 			  <!-- End of Main COntent -->
-			  <!-- SideBar -->
-			  <!-- <div class = "sidebar preview">
-
-				  <div class="section trending">
-					  <h2 class="section-title">Popular</h2>	
-
-						<?php foreach($posts as $p): ?>
-					  <div class="post clearfloats">
-
-						  <img src="Images/wooh.png" alt="">
-						  <a href = "" class = "title">
-						  <h4><?php echo $p['title'] ?></h4>
-						  </a>
-					  </div>			
-					  <?php endforeach;?> -->
-					
-
-				  </div>
-
-				  
-			  </div>
-			  	<!-- End of SideBar -->
+			  
 		  </div>
 		  <!-- End of Content -->
        </div>

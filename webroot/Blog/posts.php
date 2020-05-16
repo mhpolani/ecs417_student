@@ -1,3 +1,5 @@
+<!-- This file includes functionality for adding, editing, deleting, publishing and unpublishing posts -->
+
 <?php 
 include('restrict.php');
 include_once('db.php');
