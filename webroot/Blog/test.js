@@ -35,7 +35,7 @@
         
     })
 
-    clear.addEventListener('click', check(event));
+    clear.addEventListener('reset', check(event));
     function check(event)
     {    
          var response = window.confirm("Are you sure you want to clear all of the post? All unsaved changes will be lost.");
