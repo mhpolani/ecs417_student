@@ -39,14 +39,14 @@
     function check(event)
     {    
          var response = window.confirm("Are you sure you want to clear all of the post? All unsaved changes will be lost.");
-         if(response)
-         {
-             return true;
-         }
-         else
+         if(!response)
          {
             event.preventDefault();
             return false;
+         }
+         else
+         {
+            return true;
          }        
 
     };
