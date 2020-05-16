@@ -1,3 +1,5 @@
+<!-- This file serves to provide functionality for register.php and login.php for the new user registration and current user login system.  -->
+
 <?php
 include('db.php');
 include('validateUser.php');
@@ -15,7 +17,7 @@ if (isset($_POST['register-btn']) || isset($_POST['admin-form']))   //code to pr
     {
         unset($_POST['register-btn'], $_POST['passwordConfirmation']);
         $_POST['admin'] = 0;
-        $_POST['password'] = password_hash($_POST['password'], PASSWORD_DEFAULT);   //encrypts the password the user sets in the sql database
+        $_POST['password'] = password_hash($_POST['password'], PASSWORD_DEFAULT);   //encrypts the password,set by the user, in the sql database
         $user_id = create('USERS', $_POST);
         $user = selectOne('USERS', ['ID' => $user_id]);
         
@@ -61,11 +63,11 @@ if (isset($_POST['register-btn']) || isset($_POST['admin-form']))   //code to pr
                 $_SESSION['type'] = 'success';
                 if ($_SESSION['admin'])
                 {
-                    header('location: dashboard.php');
+                    header('location: dashboard.php'); //redirects admin user to the dashboard page
                 } 
                 else 
                 {
-                     header('location: viewBlog.php');
+                     header('location: index.php');  //redirects a normal user to the main landing page
                 }
                 exit();       
             }

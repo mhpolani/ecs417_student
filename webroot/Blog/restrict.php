@@ -32,6 +32,4 @@ function guestsOnly($redirect = 'viewBlog.php')
     
 }
 
-
-
 ?>

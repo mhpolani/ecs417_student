@@ -145,15 +145,6 @@ function delete($table, $id)
     return $stmt->affected_rows;  //will return a negative value if query fails 
 }
 
-// function getPublishedPosts()
-// {
-//     global $conn;
-//     $sql = "SELECT * FROM POSTS WHERE published=? ORDER BY created_at DESC";
-//     $stmt = executeQuery($sql, ['published' => 1]);
-//     $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
-//     return $records;   
-// }
-
 function getPostsByMonth($month)
 {
     global $conn;
@@ -171,21 +162,21 @@ function getPostsByMonth($month)
     return $records;   
 }
 
-function searchPosts($term)  //functionality for searchbar and ultimately months
-{
-    $match = '%' . $term . '%';
-    global $conn;
-    $sql = "SELECT
-                p.*, u.username
-         FROM POSTS AS p
-        JOIN USERS AS u 
-        ON p.user_id=u.ID 
-        WHERE p.published=? 
-        AND p.title LIKE ? OR p.body LIKE ?";    
-    // $sql = "SELECT FROM POSTS WHERE published =? AND title LIKE ? OR body LIKE ?";
-    $stmt = executeQuery($sql, ['published' => 1, 'title' => $match, 'body' => $match]);
-    $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
-    return $records;   
-}
+// function searchPosts($term)  //functionality for searchbar and ultimately months
+// {
+//     $match = '%' . $term . '%';
+//     global $conn;
+//     $sql = "SELECT
+//                 p.*, u.username
+//          FROM POSTS AS p
+//         JOIN USERS AS u 
+//         ON p.user_id=u.ID 
+//         WHERE p.published=? 
+//         AND p.title LIKE ? OR p.body LIKE ?";    
+//     // $sql = "SELECT FROM POSTS WHERE published =? AND title LIKE ? OR body LIKE ?";
+//     $stmt = executeQuery($sql, ['published' => 1, 'title' => $match, 'body' => $match]);
+//     $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+//     return $records;   
+// }
  //The selectAll function returns all the records in the database, provided that the conditions, if passed, are met.
  //All the records in the table represent an array that in turn holds arrays, each of which represents a record.
