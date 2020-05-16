@@ -1,7 +1,7 @@
 <?php 
 
 include('db.php');
-$posts = selectAll('POSTS', ['published' => 1]);  //fetching only published posts
+$posts = selectAll('POSTS', ['published' => 1]);  //fetching only published posts. NOT USED
 
 ?>
 

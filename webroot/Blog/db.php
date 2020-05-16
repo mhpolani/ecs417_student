@@ -4,7 +4,7 @@
 session_start();
 require('connect.php');
 
-function dd($value)
+function dd($value)   
 {
     echo "<pre>", print_r($value,true), "</pre";
     die();
@@ -147,36 +147,25 @@ function delete($table, $id)
 
 function getPostsByMonth($month)
 {
-    global $conn;
-    // $sql = "SELECT
-    //  p.*, u.username
-    //   FROM POSTS AS p JOIN USERS AS u
-    //    ON p.user_id = u.ID WHERE p.published=?
-    //     AND p.month =?"; 
+    global $conn;    
     $sql = "SELECT * FROM POSTS WHERE month = '$month'"; //published = ? AND
-    // $stmt = executeQuery($sql, ['published' => 1, 'month' => $month]);
+    
     $stmt = $conn->prepare($sql);
     $stmt->execute();  
-    // $stmt = executeQuery($sql,['published' => 1, 'month' => '$month']);
+    
     $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
     return $records;   
 }
 
-// function searchPosts($term)  //functionality for searchbar and ultimately months
-// {
-//     $match = '%' . $term . '%';
-//     global $conn;
-//     $sql = "SELECT
-//                 p.*, u.username
-//          FROM POSTS AS p
-//         JOIN USERS AS u 
-//         ON p.user_id=u.ID 
-//         WHERE p.published=? 
-//         AND p.title LIKE ? OR p.body LIKE ?";    
-//     // $sql = "SELECT FROM POSTS WHERE published =? AND title LIKE ? OR body LIKE ?";
-//     $stmt = executeQuery($sql, ['published' => 1, 'title' => $match, 'body' => $match]);
-//     $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
-//     return $records;   
-// }
+function searchPosts($term)  //issue with query check please
+{
+    $match = '%' . $term . '%';
+    global $conn;
+    
+    $sql = "SELECT FROM POSTS WHERE published =? AND title LIKE ? OR body LIKE ?";
+    $stmt = executeQuery($sql, ['published' => 1, 'title' => $match, 'body' => $match]);
+    $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+    return $records;   
+}
  //The selectAll function returns all the records in the database, provided that the conditions, if passed, are met.
  //All the records in the table represent an array that in turn holds arrays, each of which represents a record.

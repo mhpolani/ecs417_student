@@ -2,23 +2,21 @@
 
 include_once('db.php');
 global $conn;
-$records = selectAll('POSTS');
-$posts = array();
+$records = selectAll('POSTS');    // selecting all posts to display under monthly search. Same as $posts but changed to prevent confusion
+$posts = array();     //
 $postsTitle = 'Recent Posts';
 
-if (isset($_GET['month']))
+if (isset($_GET['month']))   //showing posts by month
 {
 	$posts = getPostsByMonth($_GET['month']);	
-	$postsTitle = "You searched for posts released in the month of '" . $_GET['month'] . "'";
-	// dd($_GET['month']);
-	// dd($_POST);
+	$postsTitle = "You searched for posts released in the month of '" . $_GET['month'] . "'";	
 }
-else if (isset($_POST['search-term']))
+else if (isset($_POST['search-term']))  //showing posts matching search terms(doesnt work since query in searchPosts() is off) 
 {	
 	$postsTitle = "You searched for '" . $_POST['search-term'] . "'";
 	$posts = searchPosts($_POST['search-term']);
 }
-else
+else  //showing all published posts ordered by newest to oldest
 {	
 $sql = "SELECT * FROM POSTS WHERE published=? ORDER BY created_at DESC";  //fetching only ORDERED published posts for use in displaying them publicly
 $stmt = executeQuery($sql, ['published' => 1]);
@@ -48,8 +46,8 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
   	<title>Blog</title>
   </head>
   <body>
-  <?php include('header.php'); ?>
-  <?php include('messages.php'); ?>	
+  <?php include('header.php'); ?>  <!--navbar -->
+  <?php include('messages.php'); ?>	 <!--error/success messages -->
 
 
 	  <!-- Page Wrapper -->
@@ -213,7 +211,7 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 	<!-- Custom Script -->
-	<script src = "scripts.js"></script>
+	<script src = "scripts.js"></script>   
 
   </body>
   
