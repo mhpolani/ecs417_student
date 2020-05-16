@@ -5,6 +5,7 @@
     const title = document.getElementById('title');
     const body = document.getElementById('body');
     const form = document.getElementById('myForm');
+    const clear = document.getElementById('clear-post');
     
     form.addEventListener('submit', function prevent(event){
         if (title.value != '') 
@@ -34,8 +35,8 @@
         
     })
 
-    function check()
-    {
+    clear.addEventListener('submit', function check(event)
+    {    
          var response = window.confirm("Are you sure you want to clear all of the post? All unsaved changes will be lost.");
          if(response)
          {
@@ -43,10 +44,11 @@
          }
          else
          {
+            event.preventDefault();
              return false;
          }        
 
-    }
+    });
 
     // function check() 
     // {
