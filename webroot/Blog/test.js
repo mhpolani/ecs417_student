@@ -35,22 +35,9 @@
         
     })
 
-    clear.addEventListener('click', check(event));
-    function check(event)
-    {    
-         var response = window.confirm("Are you sure you want to clear all of the post? All unsaved changes will be lost.");
-         if(!response)
-         {            
-            return false;
-         }
-         else
-         {
-            return true;
-         }        
-
-    };
     function check()
     {
+
         var response = window.confirm("Are you sure you want to clear all of the post?");
         if(!response)
         {            
