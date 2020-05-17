@@ -41,6 +41,7 @@ if (isset($_POST['add-comment']))
 	  
 	  <!-- Reset Styling -->
 	  <link rel="stylesheet" type="text/css" href="reset.css">
+	  
   	<title><?php echo $post['title']; ?> | HamzaMan</title>
   </head>
   <body>

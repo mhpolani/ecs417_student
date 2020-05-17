@@ -18,6 +18,10 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 	
 	<!-- Custom Styling -->
   	<link rel = "stylesheet" href = "blog.css" type = "text/css">
+		
+		<!-- Reset Styling -->
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	
   	<title>Portfolio</title>
   </head>
   <body>
@@ -121,37 +125,14 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 
       </div>      
 		</div>
-
-	  
-		  
+	  		  
 		  <!-- Content -->
 		  <div class="content clearfloats">
 
 				<!-- Main Content -->
 				<p class = "aboutme"  >
 			 
-			  <!-- End of Main COntent -->
-			 
-			  <!-- <div class = "sidebar">
-				  <div class = "section search">
-					  <h2 class = "section-title">Search</h2>
-					  <form action = "index.html" method = "post">
-						  <input type = "text" name = "search-term" class = "text-input" placeholder = "Search....">						   
-					  </form>
-				  </div>
-
-				  <div class = "section topics">
-					  <h2 class = "section-title">Topics</h2>
-					  <ul>						
-						  <li><a href = "#">About Me</a></li>
-						  <li><a href = "#">Skills and Achievements</a></li>
-						  <li><a href = "#">Education and Qualifications</a></li>						
-						  <li><a href = "#">Portfolio</a></li>
-						  <li><a href = "#">Contact</a></li>
-						  <li><a href = "#">Blog</a></li>
-					  </ul>
-				  </div>
-			  </div> -->
+			  <!-- End of Main COntent -->			 
 
 		  </div>
 		  <!-- End of Content -->
