@@ -1,3 +1,4 @@
+<!-- This file is page that displays a single blog post after it has been selected from viewBlog.php -->
 <?php include_once('posts.php'); //included to get functionality of db.php for reusable functions
 global $conn;    
 if (isset($_GET['ID']))
@@ -41,7 +42,7 @@ if (isset($_POST['add-comment']))
 	  
 	  <!-- Reset Styling -->
 	  <link rel="stylesheet" type="text/css" href="reset.css">
-	  
+
   	<title><?php echo $post['title']; ?> | HamzaMan</title>
   </head>
   <body>

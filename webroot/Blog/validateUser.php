@@ -19,7 +19,7 @@ function validateUser($user)
     return $errors;
 }
 
-function validateLogin($user)
+function validateLogin($user)  
 {
     $errors = array();
     if (empty($user['username']))   // to prevent a user with null details to be created (validation)

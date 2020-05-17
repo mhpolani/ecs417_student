@@ -83,6 +83,7 @@ header *
 {
 	position: relative;
 	display: inline-block;
+	background:1px solid red;
 }
 
 .DD-content 
