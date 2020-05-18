@@ -22,11 +22,11 @@
       <!-- Reset Styling -->
 	  <link rel="stylesheet" type="text/css" href="reset.css">
       
-     <title>Admin Section - Manage Posts</title>
+     <title>Manage Posts</title>
   </head>
   <body>
 
-  <?php include("header.php"); ?>
+  <?php include("header.php"); ?>  <!-- code for including navbar -->
       
 	  <!-- Admin Page Wrapper -->
 	  <div class = "admin-wrapper">
@@ -66,9 +66,9 @@
                             <td><?php echo $key + 1; ?></td>
                             <td><?php echo $post['title'] ?></td>
                             <td>Hamza</td>
-                            <td><a href="edit.php?ID=<?php echo $post['ID']; ?> " class = "edit">Edit</a></td>            <!-- redirects the user to edit.php.  -->                                                
-                            <td><a href="preview.php?ID=<?php echo $post['ID']?>" class = "preview">Preview</a></td>      <!-- redirects user to the preview page where they can click the publish button if they wish to post it after reviewing it -->                                                
-                            <td><a href="edit.php?delete_id=<?php echo $post['ID']; ?> " class = "delete">Delete</a></td>   <!-- calls the deleted function in posts.php -->                                                
+                            <td><a href="edit.php?ID=<?php echo $post['ID']; ?> " class = "edit">Edit</a></td>            <!-- grabs the id of the clicked post and redirects the user to edit.php.  -->                                                
+                            <td><a href="preview.php?ID=<?php echo $post['ID']?>" class = "preview">Preview</a></td>      <!--grabs the id of the clicked post and redirects the user to the preview page where they can click the publish button if they wish to post it after reviewing it -->                                                
+                            <td><a href="edit.php?delete_id=<?php echo $post['ID']; ?> " class = "delete">Delete</a></td>   <!-- calls the delete function in posts.php -->                                                
                             <?php if($post['published']):?>
                                 <td><a href="edit.php?published=0&p_id=<?php echo $post['ID']?>" class = "unpublish">Unpublish</a></td>
                             <?php else: ?>
@@ -100,4 +100,4 @@
   </html>
 
 
-  <!-- <td><a href="edit.php?ID=<?php echo $post['ID']; ?> " class = "edit">Edit</a></td> -->
+  

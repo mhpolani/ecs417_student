@@ -32,7 +32,7 @@ $posts = selectAll('POSTS', ['published' => 1]);
   	<title><?php echo $post['title']; ?> | HamzaMan</title>
   </head>
   <body>
-  <?php include('header.php'); ?>
+  <?php include('header.php'); ?>  <!-- code for including navbar -->
 	  <!-- Page Wrapper -->
 	  <div class = "page-wrapper">
 				  

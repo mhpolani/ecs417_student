@@ -24,11 +24,11 @@
     <!-- Reset Styling -->
 	  <link rel="stylesheet" type="text/css" href="reset.css">
       
-     <title>Admin Section - Edit Posts</title>
+     <title>Edit Posts</title>
   </head>
   <body>
   	
-      <?php include('header.php'); ?>
+      <?php include('header.php'); ?>   <!-- code for including navbar -->
       
 	  <!-- Admin Page Wrapper -->
 	  <div class = "admin-wrapper">

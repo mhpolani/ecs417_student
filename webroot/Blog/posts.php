@@ -57,12 +57,8 @@ if (isset($_POST['add-post']))   //vvvv delicate
     header('location: postsindex.php');        
 }
 
-
 if (isset($_POST['edit-post']))  //update code. Also very important to toggle publish functionality
 {
-       
-    
-    
     $ID = $_POST['ID'];
     unset($_POST['edit-post'], $_POST['ID']);
     $_POST['user_id'] = $_SESSION['ID'];
@@ -75,10 +71,5 @@ if (isset($_POST['edit-post']))  //update code. Also very important to toggle pu
     exit();
     
 }
-// if (isset($_POST['clear-post']))                       
-// {
-//     $title = $_POST['title'];
-//     $body = $_POST['body'];
-//     unset($_POST['clear-post']);
-// }
+
 

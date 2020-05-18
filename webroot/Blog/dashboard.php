@@ -28,7 +28,7 @@
   </head>
   <body>
   	
-      <?php include('header.php'); ?>
+      <?php include('header.php'); ?>  <!-- code for including navbar -->
       
 	  <!-- Admin Page Wrapper -->
 	  <div class = "admin-wrapper">

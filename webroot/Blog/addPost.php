@@ -1,7 +1,7 @@
-<!-- This file adds a new blog post to the sql table -->
+<!-- This file adds a new blog post to the sql table and to the website itself -->
 
 <?php include('posts.php');
-$months = selectAll('MONTHS');
+$months = selectAll('MONTHS');   //the months database is basically just a table that has all the names of the months lol
 ?>
 <!DOCTYPE html>
  <html lang = "en">
@@ -19,16 +19,17 @@ $months = selectAll('MONTHS');
       <link rel = "stylesheet" href = "blog.css" type = "text/css">
       
     <!-- Custom Styling -->
-      <link rel = "stylesheet" href = "admin.css" type = "text/css">
+      <link rel = "stylesheet" href = "admin.css" type = "text/css">    <!-- Seperate styling for admin pages such as postsindex.php, addPost.php and edit.php -->
       
       <!-- Reset Styling -->
 	  <link rel="stylesheet" type="text/css" href="reset.css">
       
-     <title>Admin Section - Add Post</title>
+     <title>Add Post</title>
   </head>
   <body>
   	
-      <?php include('header.php'); ?>
+      <?php include('header.php'); ?>   <!-- code for including navbar -->
+      
       
 	  <!-- Admin Page Wrapper -->
 	  <div class = "admin-wrapper">
@@ -52,7 +53,7 @@ $months = selectAll('MONTHS');
             <div class = "content">
 
                 <h2 class="page-title">Add Posts</h2>
-                <?php include('messages.php'); ?>
+                <?php include('messages.php'); ?>   <!--error/success messages prompt-->
 
                  <?php if(count($errors) > 0):?>            
                 <div class="msg error">
@@ -76,10 +77,10 @@ $months = selectAll('MONTHS');
                         <div id = "body_error" class = "value_error"></div>
                     </div>
                     <div>
-                        <label>Month of Release</label>
+                        <label>Month of Release</label>       
                         <select name = "month" class = "text-input">
                         <?php foreach($months as $key => $month): ?>
-                            <option value = "<?php echo $month['name'] ?>"><?php echo $month['name'] ?></option>
+                            <option value = "<?php echo $month['name'] ?>"><?php echo $month['name'] ?></option>   
 					    <?php endforeach; ?>
                     </div>
                     <div>
@@ -94,7 +95,7 @@ $months = selectAll('MONTHS');
                     </div>
 
                     <div> 
-                        <button type = "reset" onclick = "return check()" name ="clear-post" class = "btn btn-big">Clear Post</button>
+                        <button type = "reset" onclick = "return check()" name ="clear-post" class = "btn btn-big">Clear Post</button>  <!-- the check function is present in test.js which adds event processing for the clear button --> 
                     </div>
                     
                </form>
@@ -110,86 +111,6 @@ $months = selectAll('MONTHS');
 
 	<!-- Custom Script -->
 	<script src = "test.js"></script>
-
-
-    <!-- // form.addEventListener('submit', (e) =>
-    // {
-    //     window.alert("I was called");
-    // 	if (title.value === '' || title.value = null)
-    // 	{
-    // 	e.preventDefault();
-    // 	title.style.border = "1px solid red";
-    //     titleError.textContent = "Title is required!";
-    //     title.focus();
-    // 	}
-    // 	if(body.value == '' || body.value = null)
-    // 	{
-    // 	e.preventDefault();
-    //  	body.style.border = "1px solid red";
-    //     bodyError.textContent = "Body is required!";
-    //     body.focus();
-    // 	}
-    // });
-
-    // function check() 
-    // {
-    //     window.alert("I was called too");
-    //       if(confirm("Are you sure you want to clear all of the post? All unsaved changes will be lost."))
-    //       {
-    //         document.getElementById("myForm").reset();
-    //       }
-    //       else
-    //       {            
-    //       }
-    // };
-    
-    
-    
-    
-    // title.addEventListener("click", Verify, true);
-    // body.addEventListener("click", Verify, true);
-    
-
-    
-// });
-//     function check()
-//     {
-//         if (title.value == "")
-//         {
-//             title.style.border = "1px solid red";
-//             titleError.textContent = "Title is required!";
-//             title.focus();
-//             return false;            
-//         }
-//         if (body.value == "")
-//         {   
-//             body.style.border = "1px solid red";
-//             bodyError.textContent = "Body is required!";
-//             body.focus();
-//             return false;            
-//         }
-        
-//     }
-    
-//     function titleVerify()
-//     {
-//         if(title.value != "")
-//         {
-//             title.style.border = "1px solid green";
-//             titleError.innerHTML = "";
-//             return true;
-//         }
-//     }
-
-//     function bodyVerify()
-//     {
-//         if(body.value != "")
-//         {
-//             body.style.border = "1px solid green";
-//             bodyError.innerHTML = "";
-//             return true;
-//         }
-//     } -->
     
 
   </body>

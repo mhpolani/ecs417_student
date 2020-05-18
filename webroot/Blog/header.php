@@ -1,3 +1,4 @@
+<!-- This is reusable code for the navbar that is used in addPost, index, viewBlog etc -->
 <header>
       <a href = "index.php" class = "logo">
   			<h1 class = "logo-text"><span>Hamza</span>Man</h1>

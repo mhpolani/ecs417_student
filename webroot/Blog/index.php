@@ -25,8 +25,8 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
   	<title>Portfolio</title>
   </head>
   <body>
-  <?php include('header.php'); ?>
-  <?php include('messages.php'); ?>	
+  <?php include('header.php'); ?>   <!-- code for including navbar -->
+  <?php include('messages.php'); ?>	 <!--error/success messages prompt-->
 
 
 	  <!-- Page Wrapper -->

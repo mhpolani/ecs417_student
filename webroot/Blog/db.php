@@ -9,14 +9,14 @@ function dd($value)
     echo "<pre>", print_r($value,true), "</pre";
     die();
 }
-function executeQuery($sql,$data)
+function executeQuery($sql,$data)   //using prepared statements
 {
     global $conn;
-    $stmt = $conn->prepare($sql);
+    $stmt = $conn->prepare($sql);  //prepares the query passed to the function
     $values = array_values($data); //  The array_values() function returns an array containing all the values of an array
-    $types = str_repeat('s',count($values));
-    $stmt->bind_param($types, ...$values);
-    $stmt->execute();
+    $types = str_repeat('s',count($values));  //repeats a string the same number of times as values
+    $stmt->bind_param($types, ...$values);  //binds the values passed in the array to the sql parameters in $stmt
+    $stmt->execute(); 
     return $stmt;
 }
 
@@ -51,7 +51,7 @@ function selectAll($table, $conditions = [])
         $stmt = $conn->prepare($sql);   
         $values = array_values($conditions);
         $types = str_repeat('s',count($values));  //
-        $stmt->bind_param($types, ...$values);   //Bind parameters—also called dynamic parameters or bind variables—are an alternative way to pass data to the database. ... When using bind parameters you do not write the actual values but instead insert placeholders into the SQL statement. That way the statements do not change when executing them with different values.
+        $stmt->bind_param($types, ...$values);   
         $stmt->execute();
         $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
         return $records;    
@@ -82,8 +82,8 @@ function selectOne($table, $conditions)
         $sql = $sql . " LIMIT 1";    //Limits records grabbed to only 1
         $stmt = $conn->prepare($sql);               //start of executeQuery()
         $values = array_values($conditions);
-        $types = str_repeat('s',count($values));  //
-        $stmt->bind_param($types, ...$values);   //Bind parameters—also called dynamic parameters or bind variables—are an alternative way to pass data to the database. ... When using bind parameters you do not write the actual values but instead insert placeholders into the SQL statement. That way the statements do not change when executing them with different values.
+        $types = str_repeat('s',count($values)); 
+        $stmt->bind_param($types, ...$values);   
         $stmt->execute();
         $records = $stmt->get_result()->fetch_assoc();
         return $records;       //end of executeQuery()
@@ -167,5 +167,4 @@ function searchPosts($term)  //issue with query.
     $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
     return $records;   
 }
- //The selectAll function returns all the records in the database, provided that the conditions, if passed, are met.
- //All the records in the table represent an array that in turn holds arrays, each of which represents a record.
+ 

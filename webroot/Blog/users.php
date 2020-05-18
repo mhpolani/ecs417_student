@@ -3,7 +3,6 @@
 <?php
 include('db.php');
 include('validateUser.php');
-include('restrict.php');
 
 $username = '';
 $email = '';
@@ -29,7 +28,7 @@ if (isset($_POST['register-btn']) || isset($_POST['admin-form']))   //code to pr
         $_SESSION['type'] = 'success';
         if ($_SESSION['admin'])
         {
-            header('location: dashboard.php');
+            header('location: dashboard.php');   //only admin user is redirected to the dashboard
         } 
         else 
         {

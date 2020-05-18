@@ -46,8 +46,8 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
   	<title>Blog</title>
   </head>
   <body>
-  <?php include('header.php'); ?>  <!--navbar -->
-  <?php include('messages.php'); ?>	 <!--error/success messages -->
+  <?php include('header.php'); ?>  <!-- code for including navbar -->
+  <?php include('messages.php'); ?>	 <!--error/success messages prompt-->
 
 
 	  <!-- Page Wrapper -->

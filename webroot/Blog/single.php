@@ -1,4 +1,5 @@
 <!-- This file is page that displays a single blog post after it has been selected from viewBlog.php -->
+
 <?php include_once('posts.php'); //included to get functionality of db.php for reusable functions
 global $conn;    
 if (isset($_GET['ID']))
@@ -9,17 +10,11 @@ $_POST['postid'] = $post['ID'];
 $_POST['userid'] = $_SESSION['ID']; 
 $pleasework = $post['ID'];
 
-if (isset($_POST['add-comment']))  
+if (isset($_POST['add-comment']))    
 {    
 	unset($_POST['add-comment']); 		
 	$_POST['userid'] = $_SESSION['ID']; 
-	$_POST['postid'] = $pleasework;
-	dd($_POST);
-	// $id = create('COMMENTS', $_POST);
-	// $_SESSION['message'] = "Comment added successfully.";
-	// $_SESSION['type'] = "success";	
-	// // dd($_POST);
-	// dd($_POST['ID']);
+	$_POST['postid'] = $pleasework;	
 }
 		
 
@@ -46,7 +41,7 @@ if (isset($_POST['add-comment']))
   	<title><?php echo $post['title']; ?> | HamzaMan</title>
   </head>
   <body>
-  <?php include('header.php'); ?>
+  <?php include('header.php'); ?>  <!-- code for including navbar -->
 	  <!-- Page Wrapper -->
 	  <div class = "page-wrapper">
 				  
@@ -95,18 +90,7 @@ if (isset($_POST['add-comment']))
 
 				  </div>   
 
-				  <!-- <div class = "section topics">
-					  <h2 class = "section-title">Topics</h2>
-					  <ul>
-						  <li><a href = "#">About Me</a></li>
-						  <li><a href = "#">Skills and Achievements</a></li>
-						  <li><a href = "#">Education and Qualifications</a></li>
-						  <li><a href = "#">Experience</a></li>
-						  <li><a href = "#">Portfolio</a></li>
-						  <li><a href = "#">Contact</a></li>
-						  <li><a href = "#">Blog</a></li>
-					  </ul>
-				  </div> -->
+				  
 				  
 			
 			  </div> 

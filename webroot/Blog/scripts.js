@@ -16,7 +16,7 @@ $(document).ready(function()
         prevArrow:$('.prev'),
         responsive: [   //makes the carousel responsive
             {
-              breakpoint: 1024,  //screen sizes
+              breakpoint: 1024,  //screen sizes. only the slider is responsive
               settings: {
                 slidesToShow: 3,
                 slidesToScroll: 3,

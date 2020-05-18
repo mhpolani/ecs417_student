@@ -24,7 +24,7 @@
   	<title>Log in</title>
   </head>
   <body>
-  <?php include('header.php'); ?>
+  <?php include('header.php'); ?>  <!-- code for including navbar -->
 
       <div class="author-content">
            
