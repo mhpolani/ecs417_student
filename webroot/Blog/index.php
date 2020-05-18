@@ -148,7 +148,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 					<h1 class = "logo-text" href = "index.php"><span>Hamza</span>Man</h1>
 					<p></p>
 					<div class = "contact">
-						<span><i class="fas fa-mobile-alt"></i> &nbsp; +44 1234 56789</span>
+						<span><i class="fas fa-mobile-alt"></i> &nbsp; +44 1234 56788</span>
 						<span><i class="fas fa-paper-plane"></i> info@mhpolanto.com</span>  
 					</div>
 					<div class = "socials">
