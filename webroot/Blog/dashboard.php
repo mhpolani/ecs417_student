@@ -1,7 +1,7 @@
 <!-- This is an admin only file to which the admin is redirected to once they login-->
 
 <?php include('posts.php'); 
- 
+   
 ?>
 <!DOCTYPE html>
  <html lang = "en">
