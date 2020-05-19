@@ -148,6 +148,7 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 	  <!-- End of page Wrapper -->
 
 	  <!-- Footer -->
+	  <footer>
 		   <div class = "footer"> 
 
 			<div class = "footer-content">  
@@ -202,6 +203,7 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 			  </div>
 
 		  </div>  
+		  </footer>
 	  <!-- End of footer -->
 
 	<!-- JQuery -->

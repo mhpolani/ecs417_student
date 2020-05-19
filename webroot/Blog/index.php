@@ -41,12 +41,14 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 		
 				
 <div class = "post">
+		<figure>
 		<img src = "Images/guy.png" alt = " " class = "Pslider-image">
+		</figure>
 		<div class = "Ppost-info">
 	  <h4><a href = "" >About Myself</a></h4>
 	  <i class="fas fa-user-secret"></i>&nbsp;
 	  <p class = "posttext">
-	  Since writing my first program in Java, I have been possessed with the idea of using software to solve practical problems. I have a strong conviction in the power of programming to develop the lives of people everywhere. Keenly interested in data analytics and tech auditing, I aspire to either be a data scientist or delve into FinTech.
+	  Since writing my first program in Java, I have been possessed with the idea of using software to solve practical problems. I possess a strong conviction in the power of programming to develop the lives of people everywhere. Keenly interested in data analytics and tech auditing, I aspire to either be a data scientist or delve into FinTech.
 	  </p>
 	  <!-- <i class = "far fa-user"></i> -->
 	  	  
@@ -54,7 +56,9 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 </div> 
 
 <div class = "post">
+		<figure>
 		<img src = "Images/qual.jpeg" alt = " " class = "Pslider-image">
+		</figure>
 		<div class = "Ppost-info">
 	  <h4><a href = "" >Skills & Achievements</a></h4>
 	  <i class="fas fa-trophy"></i>
@@ -65,7 +69,9 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 		</div>
 </div> 
 <div class = "post">
+		<figure>
 		<img src = "Images/kgs.png" alt = " " class = "Pslider-image">
+		</figure>
 		<div class = "Ppost-info">
 	  <h4><a href = "" >Education & Qualifiations</a></h4>
 	  <i class="fas fa-brain"></i> 
@@ -75,7 +81,9 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 </div> 
 
 <div class = "post">
+		<figure>
 		<img src = "Images/links.png" alt = " " class = "Pslider-image">
+		</figure>
 		<div class = "Ppost-info">
 	  <h4><a href = "" >Portfolio & Links</a></h4>
 	  <i class="fas fa-pen-fancy"></i> 
@@ -88,7 +96,9 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 </div> 
 
 <div class = "post">
+		<figure>
 		<img src = "Images/blog.png" alt = " " class = "Pslider-image">
+		</figure>
 		<div class = "Ppost-info">
 	  <h4><a href = "" >The tales of HamzaMan</a></h4>
 	  <i class="fas fa-book"></i> 
@@ -100,7 +110,9 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 </div> 
 		
 <div class = "post">
+		<figure>
 		<img src = "Images/contact.jpeg" alt = " " class = "Pslider-image">
+		</figure>
 		<div class = "Ppost-info">
 	  <h4><a href = "" >Contact me!</a></h4>
 	  <i class="fas fa-address-book"></i> 
@@ -112,7 +124,9 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 </div> 
 		 
 <div class = "post">
+		<figure>
 		<img src = "Images/ac.png" alt = " " class = "Pslider-image">
+		</figure>
 		<div class = "Ppost-info">
 	  <h4><a href = "" >Hobbies & Interests</a></h4>
 	  <i class="fas fa-dumbbell"></i> 
@@ -140,6 +154,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 	  <!-- End of page Wrapper -->
 
 	  <!-- Footer -->
+	  <footer>
 		   <div class = "footer"> 
 
 			<div class = "footer-content">  <!-- y -->
@@ -148,7 +163,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 					<h1 class = "logo-text" href = "index.php"><span>Hamza</span>Man</h1>
 					<p></p>
 					<div class = "contact">
-						<span><i class="fas fa-mobile-alt"></i> &nbsp; +44 1234 56788</span>
+						<span><i class="fas fa-mobile-alt"></i> &nbsp; +44 1234 56788 </span>
 						<span><i class="fas fa-paper-plane"></i> info@mhpolanto.com</span>  
 					</div>
 					<div class = "socials">
@@ -196,6 +211,8 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 			  </div>
 
 		  </div> 
+		  
+		  </footer>
 	  <!-- End of footer -->
 	<!-- JQuery -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>  
