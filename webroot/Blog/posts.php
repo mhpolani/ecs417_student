@@ -32,7 +32,6 @@ if(isset($_GET['delete_id']))  //when the delete button is clicked
     exit();
 }
 
-
 if (isset($_GET['published']) && isset($_GET['p_id']))
 {
     $published = $_GET['published'];

@@ -41,7 +41,7 @@
 
           <div>
               <label>Username</label>
-              <input type = "text" name = "username" value = "<?php echo $username; ?>" class = "text-input">
+              <input type = "text" name = "username" value = "<?php echo $username; ?>" class = "text-input">  
           </div>
           
           <div>
@@ -54,9 +54,8 @@
           <p><a href = "<?php echo 'register.php' ?>">Sign Up</a></p>
           </form>
 	
-
-
-
+	<!-- JQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>  
 
 	<!-- Custom Script -->
 	<script src = "scripts.js"></script>

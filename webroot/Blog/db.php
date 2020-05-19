@@ -42,7 +42,6 @@ function selectAll($table, $conditions = [])
             }
             $i++;
         }
-        
         $stmt = $conn->prepare($sql);   
         $values = array_values($conditions);
         $types = str_repeat('s',count($values));  //
@@ -55,9 +54,7 @@ function selectAll($table, $conditions = [])
 
 function selectOne($table, $conditions)
 {
-    
     $sql = "SELECT * FROM $table";
-        
         // $sql = "SELECT * FROM $tab
         $i = 0;
         foreach($conditions as $key => $value)        
@@ -72,7 +69,6 @@ function selectOne($table, $conditions)
             }
             $i++;
         }
-        
         global $conn; 
         $sql = $sql . " LIMIT 1";    //Limits records grabbed to only 1
         $stmt = $conn->prepare($sql);               //start of executeQuery()
@@ -88,7 +84,6 @@ function create($table,$data)
 {
     global $conn;
     $sql = "INSERT INTO $table SET ";
-    
     $i = 0;
     foreach($data as $key => $value)        
     {
@@ -102,7 +97,6 @@ function create($table,$data)
         }
         $i++;
     }
-    
     $stmt = executeQuery($sql,$data);
     $id = $stmt->insert_id;   //grab the id of the record
     return $id;
@@ -112,7 +106,6 @@ function update($table, $id, $data)
 {
     global $conn;
     $sql = "UPDATE $table SET ";
-    
     $i = 0;
     foreach($data as $key => $value)        
     {
@@ -144,10 +137,8 @@ function getPostsByMonth($month)
 {
     global $conn;    
     $sql = "SELECT * FROM POSTS WHERE month = '$month'"; //published = ? AND
-    
     $stmt = $conn->prepare($sql);
     $stmt->execute();  
-    
     $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
     return $records;   
 }
@@ -155,8 +146,7 @@ function getPostsByMonth($month)
 function searchPosts($term)  //issue with query. 
 {
     $match = '%' . $term . '%';
-    global $conn;
-    
+    global $conn;    
     $sql = "SELECT FROM POSTS WHERE published =? AND title LIKE ? OR body LIKE ?";
     $stmt = executeQuery($sql, ['published' => 1, 'title' => $match, 'body' => $match]);
     $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);

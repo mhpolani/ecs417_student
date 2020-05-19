@@ -666,3 +666,59 @@ header .menu-toggle
 	width:100px;
 	border: 1px solid red;
 }
+
+
+@media only screen and (max-width: 865px)
+{
+
+	header ul
+	{
+		width:100%;
+		background: #0e940e;
+		max-height:0px;
+		
+		overflow: hidden;
+	}
+	.showing
+	{
+		max-height: 100em;
+	}
+	header ul li
+	{
+		width:100%;
+	}
+	header ul li ul
+	{
+		position:static;
+		display:block;
+		width:100%;		
+	}
+	header ul li ul li a
+	{
+		padding:10px;
+		background: #0E940E;
+		color:white;
+		padding-left:50px;
+		
+	}
+	header ul li ul li a:hover
+	{
+		background:blue;
+	}
+	header ul li ul li a.logout
+	{
+		color:red;
+	}
+	header .menu-toggle
+	{
+		display:block;
+		position:absolute;
+		right:20px;
+		top:20px;
+		font-size:1.9em;		
+	}
+	header .logo
+	{
+	margin-left:.8em;
+	}		
+}

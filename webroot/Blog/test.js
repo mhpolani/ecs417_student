@@ -1,4 +1,4 @@
-    // This file is meant to add fucnctionality for addPost.php
+    // This file is meant to add event processing for addPost.php
 
     const titleError = document.getElementById("title_error");
     const bodyError = document.getElementById("body_error");
@@ -10,7 +10,7 @@
     form.addEventListener('submit', function prevent(event){
         if (title.value != '') 
         {
-            title.style.border = "1px solid green";
+            title.style.border = "1px solid green";   //changes field color to green if its not empty
             titleError.innerHTML = "";
         }
         if (body.value != '') 
@@ -21,7 +21,7 @@
         if (title.value == '') 
     	{
     	event.preventDefault();
-    	title.style.border = "1px solid red";
+    	title.style.border = "1px solid red";    //changes field color to red if its empty
         titleError.textContent = "Title is required!";
         title.focus();
         }
@@ -35,7 +35,7 @@
         
     })
 
-    function check()
+    function check()    //returns true if to the reset button if user clicks 'Ok'
     {
 
         var response = window.confirm("Are you sure you want to clear all of the post?");

@@ -64,7 +64,7 @@ $months = selectAll('MONTHS');   //the months database is basically just a table
             </div>    
             <?php endif; ?>       
 
-               <form name = "myForm" id = "myForm" action="addPost.php" method = "post" >  
+               <form name = "myForm" id = "myForm" action="addPost.php" method = "post" >    <!-- an eventlistener is added to implement preventDeault on the form's submit action -->
                  
                   <div>
                        <label>Title</label>
@@ -92,7 +92,7 @@ $months = selectAll('MONTHS');   //the months database is basically just a table
                     </div>
 
                     <div> 
-                        <button id = "add-post" type = "submit" name = "add-post" class = "btn btn-big">Post</button>
+                        <button id = "add-post" type = "submit" name = "add-post" class = "btn btn-big">Post</button>      
                     </div>
 
                     <div> 

@@ -1,8 +1,5 @@
 <?php 
-
 include('db.php');
-$posts = selectAll('POSTS', ['published' => 1]);  //fetching only published posts. NOT USED
-
 ?>
 
 <!DOCTYPE html>
@@ -88,7 +85,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 	  <h4><a href = "" >Portfolio & Links</a></h4>
 	  <i class="fas fa-pen-fancy"></i> 
 	  <p class = "posttext">
-	  Below you can find a link that will redirect you to an article I co-authored for a renowned medical journal while this you can look at my CV <a href = "CV.pdf"> here </a>.
+	  Below you can find a link that will redirect you to an article I co-authored for a renowned medical journal and you can check out my CV <a href = "CV.pdf"> here </a>.
 		               <a href = "https://www.cureus.com/articles/12863-knowledge-attitudes-and-practices-among-nurses-in-pakistan-towards-diabetic-foot?utm_medium=email&utm_source=transaction">Knowledge, Attitudes, and Practices Among Nurses in Pakistan Towards Diabetic Foot</a>
 	 </p>
 	  	  
@@ -214,8 +211,9 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 
 		  </footer>
 	  <!-- End of footer -->
-	
-	
+
+	<!-- JQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>  
 
 	<!-- SLICK Carousel -->
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

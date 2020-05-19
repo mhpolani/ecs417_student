@@ -4,11 +4,11 @@
   			<h1 class = "logo-text"><span>Hamza</span>Man</h1>
         </a>
   		<i class = "fa fa-bars menu-toggle"></i>
-  		<ul class = "nav">   		<!-- toggled by jquery toggle -->
+  		<ul class = "nav">   		
   			<li><a href = "index.php" class = "navbar">Portfolio</a></li>   
   			<li><a href = "viewBlog.php" class = "navbar">Blog</a></li>   
 			
-			<?php if(isset($_SESSION['ID'])): ?>
+			<?php if(isset($_SESSION['ID'])): ?>   <!-- if user is logged in only then can they see the dashboard/login option -->
 			
 			<li>
 				<a href = "#">					
@@ -21,7 +21,7 @@
 				<li><a href = "<?php echo 'dashboard.php' ?>">Dashboard</a></li>  
 					<?php endif; ?>
 
-				<li><a href = "<?php echo 'logout.php' ?>" class = "logout">Logout</a></li>
+				<li><a href = "<?php echo 'logout.php' ?>" class = "logout">Logout</a></li>   
 			 </ul>
   		</li>
 
