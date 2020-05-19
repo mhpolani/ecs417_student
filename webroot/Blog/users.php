@@ -66,7 +66,7 @@ if (isset($_POST['register-btn']) || isset($_POST['admin-form']))   //code to pr
                 } 
                 else 
                 {
-                     header('location: index.php');  //redirects a normal user to the main landing page
+                     header('location: addPost.php');  //redirects a normal user to the main landing page
                 }
                 exit();       
             }

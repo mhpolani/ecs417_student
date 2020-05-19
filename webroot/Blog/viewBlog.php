@@ -3,7 +3,7 @@
 include_once('db.php');
 global $conn;
 $records = selectAll('POSTS');    // selecting all posts to display under monthly search. Same as $posts but changed to prevent confusion
-$posts = array();     //
+$posts = array();     
 $postsTitle = 'Recent Posts';
 
 if (isset($_GET['month']))   //showing posts by month
@@ -11,7 +11,7 @@ if (isset($_GET['month']))   //showing posts by month
 	$posts = getPostsByMonth($_GET['month']);	
 	$postsTitle = "You searched for posts released in the month of '" . $_GET['month'] . "'";	
 }
-else if (isset($_POST['search-term']))  //showing posts matching search terms(doesnt work since query in searchPosts() is off) 
+else if (isset($_POST['search-term']))  //showing posts matching search terms(doesnt work since query in searchPosts() is eh) 
 {	
 	$postsTitle = "You searched for '" . $_POST['search-term'] . "'";
 	$posts = searchPosts($_POST['search-term']);
@@ -63,9 +63,9 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 		<?php foreach ($posts as $post): ?>
 				
 <div id = "blogPosts" class = "post">
-<!-- <figure> -->
+<figure>
 		<img src = "Images/blog.jpg" alt = " " class = "slider-image">
-<!-- </figure> -->
+</figure>
 		<div class = "post-info">
 	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>"><?php echo $post['title']; ?></a></h4>
 	  <i class="fas fa-user-edit"> Hamza Polani</i>
