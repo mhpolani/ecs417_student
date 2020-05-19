@@ -124,7 +124,7 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 
 				   <div class = "section topics">					  
 					   <div class="DD">
-						<button class="DDbtn">Months</button>
+						<button class="DDbtn">Month of Release</button>
 							<div class = "DD-content">
 
 				<?php foreach($records as $key => $record): ?>				  
