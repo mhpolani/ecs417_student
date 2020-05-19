@@ -63,7 +63,9 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 		<?php foreach ($posts as $post): ?>
 				
 <div id = "blogPosts" class = "post">
+<figure>
 		<img src = "Images/blog.jpg" alt = " " class = "slider-image">
+</figure>
 		<div class = "post-info">
 	  <h4><a href = "single.php?ID=<?php echo $post['ID']; ?>"><?php echo $post['title']; ?></a></h4>
 	  <i class="fas fa-user-edit"> Hamza Polani</i>
@@ -92,7 +94,9 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 					<?php foreach($posts as $post): ?>
 					
 				  <div class ="post clearfloats">
+				  <figure>
 					  <img src = "Images/post.jpg" alt = "" class = "post-image">
+					</figure>
 					  <div class = "post-preview">
 						  <h2><a href = "single.php?ID=<?php echo $post['ID']; ?>"><?php echo $post['title']; ?></a></h2>
 						  <i class="fas fa-user-ninja"> Hamza Polani</i>
@@ -131,15 +135,6 @@ $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 					</div>
 						</div>		
 
-					  <!-- <li><a href = "#">About Me</a></li>
-						  <li><a href = "#">Skills and Achievements</a></li>
-						  <li><a href = "#">Education and Qualifications</a></li>
-						  <li><a href = "#">Experience</a></li>
-						  <li><a href = "#">Portfolio</a></li>
-						  <li><a href = "#">Contact</a></li>
-						  <li><a href = "#">Blog</a></li> -->
-					  
-				  
 			  </div>
 
 		  </div> 

@@ -56,9 +56,9 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 </div> 
 
 <div class = "post">
-		<figure>
+		<!-- <figure> -->
 		<img src = "Images/qual.jpeg" alt = " " class = "Pslider-image">
-		</figure>
+		<!-- </figure> -->
 		<div class = "Ppost-info">
 	  <h4><a href = "" >Skills & Achievements</a></h4>
 	  <i class="fas fa-trophy"></i>
@@ -69,9 +69,9 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 		</div>
 </div> 
 <div class = "post">
-		<figure>
+		<!-- <figure> -->
 		<img src = "Images/kgs.png" alt = " " class = "Pslider-image">
-		</figure>
+		<!-- </figure> -->
 		<div class = "Ppost-info">
 	  <h4><a href = "" >Education & Qualifiations</a></h4>
 	  <i class="fas fa-brain"></i> 
@@ -81,9 +81,9 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 </div> 
 
 <div class = "post">
-		<figure>
+		<!-- <figure> -->
 		<img src = "Images/links.png" alt = " " class = "Pslider-image">
-		</figure>
+		<!-- </figure> -->
 		<div class = "Ppost-info">
 	  <h4><a href = "" >Portfolio & Links</a></h4>
 	  <i class="fas fa-pen-fancy"></i> 
@@ -96,9 +96,9 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 </div> 
 
 <div class = "post">
-		<figure>
+		<!-- <figure> -->
 		<img src = "Images/blog.png" alt = " " class = "Pslider-image">
-		</figure>
+		<!-- </figure> -->
 		<div class = "Ppost-info">
 	  <h4><a href = "" >The tales of HamzaMan</a></h4>
 	  <i class="fas fa-book"></i> 
@@ -110,9 +110,9 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 </div> 
 		
 <div class = "post">
-		<figure>
+		<!-- <figure> -->
 		<img src = "Images/contact.jpeg" alt = " " class = "Pslider-image">
-		</figure>
+		<!-- </figure> -->
 		<div class = "Ppost-info">
 	  <h4><a href = "" >Contact me!</a></h4>
 	  <i class="fas fa-address-book"></i> 
@@ -124,9 +124,9 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 </div> 
 		 
 <div class = "post">
-		<figure>
+		<!-- <figure> -->
 		<img src = "Images/ac.png" alt = " " class = "Pslider-image">
-		</figure>
+		<!-- </figure> -->
 		<div class = "Ppost-info">
 	  <h4><a href = "" >Hobbies & Interests</a></h4>
 	  <i class="fas fa-dumbbell"></i> 
@@ -211,7 +211,7 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 			  </div>
 
 		  </div> 
-		  
+
 		  </footer>
 	  <!-- End of footer -->
 	<!-- JQuery -->
