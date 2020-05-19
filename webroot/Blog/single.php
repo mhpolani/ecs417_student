@@ -73,7 +73,7 @@ if (isset($_POST['add-comment']))
 			  </div>			  
 			  <!-- End of Main COntent -->
 			  
-			  
+			  	<!-- End of SideBar -->
 		  </div>
 		  <!-- End of Content -->
        </div>
@@ -137,7 +137,9 @@ if (isset($_POST['add-comment']))
 		  </div>  
 	  <!-- End of footer -->
 
-	
+	<!-- JQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>  
+
 	<!-- SLICK Carousel -->
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
