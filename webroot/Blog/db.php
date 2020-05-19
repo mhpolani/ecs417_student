@@ -1,14 +1,9 @@
 <!-- This file contains reusable functions such as selectAll, create, delete (SQL CRUD) that are used in many parts of my program -->
 
 <?php
-session_start();
+session_start();   //starts a session in all files that include db.php
 require('connect.php');
 
-function dd($value)   
-{
-    echo "<pre>", print_r($value,true), "</pre";
-    die();
-}
 function executeQuery($sql,$data)   //using prepared statements
 {
     global $conn;
@@ -28,7 +23,7 @@ function selectAll($table, $conditions = [])
     {
         $stmt = $conn->prepare($sql);
         $stmt->execute();
-        $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+        $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);  //gets result from the prepared statement and fetch_all returns the affected record
         return $records;    
     }
     else

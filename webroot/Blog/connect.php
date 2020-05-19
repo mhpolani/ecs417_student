@@ -2,10 +2,7 @@
 
 <?php
 /*
-$servername = "localhost";
-$username = "root";
-$password = "password123"
-$db = "login_details";
+
 */
 $servername = getenv("MYSQL_SERVICE_HOST");
 $dbport = getenv("MYSQL_SERVICE_PORT");
