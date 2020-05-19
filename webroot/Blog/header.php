@@ -4,9 +4,9 @@
   			<h1 class = "logo-text"><span>Hamza</span>Man</h1>
         </a>
   		<i class = "fa fa-bars menu-toggle"></i>
-  		<ul class = "nav">
-  			<li><a href = "index.php" class = "navbar">Portfolio</a></li>
-  			<li><a href = "viewBlog.php" class = "navbar">Blog</a></li>
+  		<ul class = "nav">   		<!-- toggled by jquery toggle -->
+  			<li><a href = "index.php" class = "navbar">Portfolio</a></li>   
+  			<li><a href = "viewBlog.php" class = "navbar">Blog</a></li>   
 			
 			<?php if(isset($_SESSION['ID'])): ?>
 			
