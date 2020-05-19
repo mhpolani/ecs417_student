@@ -41,9 +41,9 @@ $posts = selectAll('POSTS', ['published' => 1]);  //fetching only published post
 		
 				
 <div class = "post">
-		<figure>
+		<!-- <figure> -->
 		<img src = "Images/guy.png" alt = " " class = "Pslider-image">
-		</figure>
+		<!-- </figure> -->
 		<div class = "Ppost-info">
 	  <h4><a href = "" >About Myself</a></h4>
 	  <i class="fas fa-user-secret"></i>&nbsp;
