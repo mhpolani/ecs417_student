@@ -107,6 +107,8 @@ $months = selectAll('MONTHS');   //the months database is basically just a table
 	</div>
 	  <!-- End of page Wrapper -->
 	  
+	<!-- JQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>  
 
 	<!-- Custom Script -->
 	<script src = "test.js"></script>
