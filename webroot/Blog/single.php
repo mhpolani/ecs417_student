@@ -72,29 +72,8 @@ if (isset($_POST['add-comment']))
 
 			  </div>			  
 			  <!-- End of Main COntent -->
-			  <!-- SideBar -->
-			    <!-- <div class = "sidebar single"> 
-
-				   <div class="section trending">
-					  <h2 class="section-title">Popular</h2>	
-
-						<?php foreach($posts as $p): ?>
-					  <div class="post clearfloats">
-
-						  <img src="Images/wooh.png" alt="">
-						  <a href = "" class = "title">
-						  <h4><?php echo $p['title'] ?></h4>
-						  </a>
-					  </div>			
-					  <?php endforeach;?>					 -->
-
-				  </div>   
-
-				  
-				  
-			
-			  </div> 
-			  	<!-- End of SideBar -->
+			  
+			  
 		  </div>
 		  <!-- End of Content -->
        </div>
