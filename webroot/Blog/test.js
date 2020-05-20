@@ -23,6 +23,8 @@
     	event.preventDefault();
     	title.style.border = "1px solid red";    //changes field color to red if its empty
         titleError.textContent = "Title is required!";
+        var forColor = titleError.textContent;
+        var result1 = forColor.fontcolor("red");    
         title.focus();
         }
         if(body.value == '')
@@ -30,6 +32,8 @@
     	event.preventDefault();
      	body.style.border = "1px solid red";
         bodyError.textContent = "Body is required!";
+        var forColor2 = titleError.textContent;
+        var result2 = forColor2.fontcolor("red");
         body.focus();
         }
         
