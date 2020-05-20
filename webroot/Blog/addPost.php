@@ -46,7 +46,7 @@ $months = selectAll('MONTHS');   //the months database is basically just a table
             <!-- Admin Content -->
             <div class="admin-content">
                 <div class="button-group">
-                    <a href="create.php" class="btn btn-big">Add Post</a>
+                    <a href="addPost.php" class="btn btn-big">Add Post</a>
                     <a href="postsindex.php" class = "btn btn-big">Manage Posts</a>
                 </div>            
             

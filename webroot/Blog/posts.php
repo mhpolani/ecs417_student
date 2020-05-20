@@ -13,7 +13,7 @@ $published = "";
 $months = selectAll('MONTHS');
 $errors = array();
 
-if(isset($_GET['ID']))  //when the edit button is clicked
+if(isset($_GET['ID']))  //fetchs the post with the corresponding ID
 {
     $post = selectOne($table, ['ID' => $_GET['ID']]);
     $ID = $post['ID'];
