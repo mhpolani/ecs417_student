@@ -23,17 +23,13 @@
     	event.preventDefault();
     	title.style.border = "1px solid red";    //changes field color to red if its empty
         titleError.textContent = "Title is required!";
-        var forColor = titleError.textContent;
-        var result1 = forColor.fontcolor("red");    
         title.focus();
         }
         if(body.value == '')
     	{        
     	event.preventDefault();
      	body.style.border = "1px solid red";
-        bodyError.textContent = "Body is required!";
-        var forColor2 = titleError.textContent;
-        var result2 = forColor2.fontcolor("red");
+        bodyError.textContent = "Body is required!";        
         body.focus();
         }
         
@@ -42,7 +38,7 @@
     function check()    //returns true if to the reset button if user clicks 'Ok'
     {
 
-        var response = window.confirm("Are you sure you want to clear all of the post?");
+        var response = window.confirm("Are you sure you want to clear all of the post? Any unsaved changes will be lost.");
         if(!response)
         {            
            return false;
